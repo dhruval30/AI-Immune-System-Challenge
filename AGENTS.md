@@ -25,3 +25,9 @@ Build and improve a classifier that predicts whether each conversation sample is
 - Prioritize solutions that generalize to subtle/indirect harmful intent.
 - Favor reproducible, end-to-end scripts for training, inference, and submission generation.
 - Before major changes, confirm compatibility with `data/solution_format.csv`.
+
+## Pre-Modeling TODO
+
+- Before modeling, read `outputs/eda_summary.md` and `outputs/next_eda_plan.md`.
+- Treat abnormality/noise detection as a working hypothesis that should be validated.
+- Do not rely only on explicit harmful keywords when framing features or analysis.
