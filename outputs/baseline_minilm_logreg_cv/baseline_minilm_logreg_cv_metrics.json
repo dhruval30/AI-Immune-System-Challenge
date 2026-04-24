@@ -1,0 +1,365 @@
+{
+  "model": "MiniLM sentence embeddings + LogisticRegression",
+  "seed": 42,
+  "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+  "device": "mps",
+  "cv": {
+    "strategy": "StratifiedKFold",
+    "n_splits": 5,
+    "shuffle": true,
+    "random_state": 42,
+    "fold_metrics": [
+      {
+        "fold": 1,
+        "n_train": 3920,
+        "n_val": 980,
+        "accuracy": 0.6673469387755102,
+        "f1": 0.5342857142857143,
+        "roc_auc": 0.7370357142857142
+      },
+      {
+        "fold": 2,
+        "n_train": 3920,
+        "n_val": 980,
+        "accuracy": 0.639795918367347,
+        "f1": 0.48914616497829233,
+        "roc_auc": 0.6872448979591836
+      },
+      {
+        "fold": 3,
+        "n_train": 3920,
+        "n_val": 980,
+        "accuracy": 0.7010204081632653,
+        "f1": 0.5684830633284241,
+        "roc_auc": 0.741188775510204
+      },
+      {
+        "fold": 4,
+        "n_train": 3920,
+        "n_val": 980,
+        "accuracy": 0.6693877551020408,
+        "f1": 0.5331412103746398,
+        "roc_auc": 0.7084387755102041
+      },
+      {
+        "fold": 5,
+        "n_train": 3920,
+        "n_val": 980,
+        "accuracy": 0.6724489795918367,
+        "f1": 0.5201793721973094,
+        "roc_auc": 0.7035357142857143
+      }
+    ]
+  },
+  "threshold_tuning": {
+    "search_range": [
+      0.3,
+      0.7
+    ],
+    "step": 0.01,
+    "selection_objective": "max_oof_f1",
+    "selected_threshold": 0.5,
+    "table": [
+      {
+        "threshold": 0.3,
+        "precision": 0.334345735256897,
+        "recall": 0.9435714285714286,
+        "f1": 0.4937394879461783
+      },
+      {
+        "threshold": 0.31,
+        "precision": 0.33754512635379064,
+        "recall": 0.935,
+        "f1": 0.4960212201591512
+      },
+      {
+        "threshold": 0.32,
+        "precision": 0.3395630429060279,
+        "recall": 0.9214285714285714,
+        "f1": 0.49624927870744373
+      },
+      {
+        "threshold": 0.33,
+        "precision": 0.3444474321054047,
+        "recall": 0.915,
+        "f1": 0.5004883766360617
+      },
+      {
+        "threshold": 0.34,
+        "precision": 0.3477661334804192,
+        "recall": 0.9007142857142857,
+        "f1": 0.5017906884202149
+      },
+      {
+        "threshold": 0.35,
+        "precision": 0.3529078014184397,
+        "recall": 0.8885714285714286,
+        "f1": 0.5051776649746192
+      },
+      {
+        "threshold": 0.36,
+        "precision": 0.35920630288882405,
+        "recall": 0.8792857142857143,
+        "f1": 0.5100476486430495
+      },
+      {
+        "threshold": 0.37,
+        "precision": 0.36527485731450887,
+        "recall": 0.8685714285714285,
+        "f1": 0.5142736307887502
+      },
+      {
+        "threshold": 0.38,
+        "precision": 0.3694168734491315,
+        "recall": 0.8507142857142858,
+        "f1": 0.5151384083044983
+      },
+      {
+        "threshold": 0.39,
+        "precision": 0.37531969309462915,
+        "recall": 0.8385714285714285,
+        "f1": 0.5185512367491166
+      },
+      {
+        "threshold": 0.4,
+        "precision": 0.3792302587923026,
+        "recall": 0.8164285714285714,
+        "f1": 0.517897598550068
+      },
+      {
+        "threshold": 0.41,
+        "precision": 0.3846682708834651,
+        "recall": 0.7992857142857143,
+        "f1": 0.5193780459503365
+      },
+      {
+        "threshold": 0.42,
+        "precision": 0.3913509649749821,
+        "recall": 0.7821428571428571,
+        "f1": 0.5216769890424011
+      },
+      {
+        "threshold": 0.43,
+        "precision": 0.3949021056520133,
+        "recall": 0.7635714285714286,
+        "f1": 0.5205746286827367
+      },
+      {
+        "threshold": 0.44,
+        "precision": 0.3986280487804878,
+        "recall": 0.7471428571428571,
+        "f1": 0.5198807157057654
+      },
+      {
+        "threshold": 0.45,
+        "precision": 0.40626238604835513,
+        "recall": 0.7321428571428571,
+        "f1": 0.5225592658679582
+      },
+      {
+        "threshold": 0.46,
+        "precision": 0.4120788824979458,
+        "recall": 0.7164285714285714,
+        "f1": 0.5232133541992697
+      },
+      {
+        "threshold": 0.47,
+        "precision": 0.4216401889222842,
+        "recall": 0.7014285714285714,
+        "f1": 0.5266827567712523
+      },
+      {
+        "threshold": 0.48,
+        "precision": 0.42704149933065594,
+        "recall": 0.6835714285714286,
+        "f1": 0.525679758308157
+      },
+      {
+        "threshold": 0.49,
+        "precision": 0.43470149253731344,
+        "recall": 0.6657142857142857,
+        "f1": 0.5259593679458239
+      },
+      {
+        "threshold": 0.5,
+        "precision": 0.4466305951795376,
+        "recall": 0.6485714285714286,
+        "f1": 0.5289833964462569
+      },
+      {
+        "threshold": 0.51,
+        "precision": 0.45430944963655245,
+        "recall": 0.625,
+        "f1": 0.5261575466025256
+      },
+      {
+        "threshold": 0.52,
+        "precision": 0.46276013143483025,
+        "recall": 0.6035714285714285,
+        "f1": 0.5238685678859268
+      },
+      {
+        "threshold": 0.53,
+        "precision": 0.46624350836699363,
+        "recall": 0.5771428571428572,
+        "f1": 0.5157995531439515
+      },
+      {
+        "threshold": 0.54,
+        "precision": 0.4696969696969697,
+        "recall": 0.5535714285714286,
+        "f1": 0.5081967213114754
+      },
+      {
+        "threshold": 0.55,
+        "precision": 0.4779552715654952,
+        "recall": 0.5342857142857143,
+        "f1": 0.5045531197301855
+      },
+      {
+        "threshold": 0.56,
+        "precision": 0.48243243243243245,
+        "recall": 0.51,
+        "f1": 0.49583333333333335
+      },
+      {
+        "threshold": 0.57,
+        "precision": 0.488555078683834,
+        "recall": 0.4878571428571429,
+        "f1": 0.4882058613295211
+      },
+      {
+        "threshold": 0.58,
+        "precision": 0.49581111957349583,
+        "recall": 0.465,
+        "f1": 0.47991153704386286
+      },
+      {
+        "threshold": 0.59,
+        "precision": 0.49959316517493896,
+        "recall": 0.43857142857142856,
+        "f1": 0.4670977558006847
+      },
+      {
+        "threshold": 0.6,
+        "precision": 0.5096491228070176,
+        "recall": 0.415,
+        "f1": 0.4574803149606299
+      },
+      {
+        "threshold": 0.61,
+        "precision": 0.5146641438032167,
+        "recall": 0.38857142857142857,
+        "f1": 0.44281644281644283
+      },
+      {
+        "threshold": 0.62,
+        "precision": 0.5248447204968945,
+        "recall": 0.36214285714285716,
+        "f1": 0.42857142857142855
+      },
+      {
+        "threshold": 0.63,
+        "precision": 0.5269662921348315,
+        "recall": 0.335,
+        "f1": 0.4096069868995633
+      },
+      {
+        "threshold": 0.64,
+        "precision": 0.5333333333333333,
+        "recall": 0.3142857142857143,
+        "f1": 0.3955056179775281
+      },
+      {
+        "threshold": 0.65,
+        "precision": 0.5365205843293492,
+        "recall": 0.2885714285714286,
+        "f1": 0.3752902926149559
+      },
+      {
+        "threshold": 0.66,
+        "precision": 0.5402635431918009,
+        "recall": 0.26357142857142857,
+        "f1": 0.3542966874699952
+      },
+      {
+        "threshold": 0.67,
+        "precision": 0.5442834138486312,
+        "recall": 0.24142857142857144,
+        "f1": 0.33448787728847107
+      },
+      {
+        "threshold": 0.68,
+        "precision": 0.5413669064748201,
+        "recall": 0.215,
+        "f1": 0.30777096114519426
+      },
+      {
+        "threshold": 0.69,
+        "precision": 0.5483870967741935,
+        "recall": 0.19428571428571428,
+        "f1": 0.2869198312236287
+      },
+      {
+        "threshold": 0.7,
+        "precision": 0.5582417582417583,
+        "recall": 0.18142857142857144,
+        "f1": 0.2738544474393531
+      }
+    ]
+  },
+  "oof": {
+    "threshold": 0.5,
+    "accuracy": 0.67,
+    "precision": 0.4466305951795376,
+    "recall": 0.6485714285714286,
+    "f1": 0.5289833964462569,
+    "roc_auc": 0.7155265306122449,
+    "confusion_matrix": {
+      "labels": [
+        "FALSE",
+        "TRUE"
+      ],
+      "matrix": [
+        [
+          2375,
+          1125
+        ],
+        [
+          492,
+          908
+        ]
+      ],
+      "format": "[[TN, FP], [FN, TP]]"
+    },
+    "prediction_distribution": {
+      "pred_FALSE": 2867,
+      "pred_TRUE": 2033
+    }
+  },
+  "inference": {
+    "approach": "mean_probability_across_fold_models",
+    "prediction_distribution": {
+      "pred_FALSE": 1271,
+      "pred_TRUE": 829
+    },
+    "ensemble_test_prob_summary": {
+      "mean": 0.45911626992550136,
+      "std": 0.16640776962238307,
+      "min": 0.038294676497938045,
+      "max": 0.9388741422226147
+    }
+  },
+  "cache": {
+    "train_embeddings": "/Users/dhruval/Documents/AI-Immune-System-Challenge/outputs/baseline_minilm_logreg_cv/baseline_minilm_logreg_cv_train_embeddings.npy",
+    "test_embeddings": "/Users/dhruval/Documents/AI-Immune-System-Challenge/outputs/baseline_minilm_logreg_cv/baseline_minilm_logreg_cv_test_embeddings.npy",
+    "train_meta": "/Users/dhruval/Documents/AI-Immune-System-Challenge/outputs/baseline_minilm_logreg_cv/baseline_minilm_logreg_cv_train_embeddings_meta.json",
+    "test_meta": "/Users/dhruval/Documents/AI-Immune-System-Challenge/outputs/baseline_minilm_logreg_cv/baseline_minilm_logreg_cv_test_embeddings_meta.json"
+  },
+  "paths": {
+    "oof_predictions": "/Users/dhruval/Documents/AI-Immune-System-Challenge/outputs/baseline_minilm_logreg_cv/baseline_minilm_logreg_cv_oof_predictions.csv",
+    "error_analysis": "/Users/dhruval/Documents/AI-Immune-System-Challenge/outputs/baseline_minilm_logreg_cv/baseline_minilm_logreg_cv_error_analysis.csv",
+    "submission": "/Users/dhruval/Documents/AI-Immune-System-Challenge/outputs/baseline_minilm_logreg_cv/baseline_minilm_logreg_cv_submission.csv",
+    "notes": "/Users/dhruval/Documents/AI-Immune-System-Challenge/outputs/baseline_minilm_logreg_cv/baseline_minilm_logreg_cv_notes.md"
+  }
+}

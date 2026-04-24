@@ -1,0 +1,6 @@
+{
+  "model_name": "sentence-transformers/all-MiniLM-L6-v2",
+  "num_rows": 2100,
+  "embedding_dim": 384,
+  "text_signature": "e79f80bd0cfe9d5a83251015e6fdbc74cdd7bb10d4bcda0285b814e0fc86120f"
+}
