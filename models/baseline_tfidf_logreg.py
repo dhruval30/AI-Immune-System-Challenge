@@ -1,5 +1,3 @@
-#!/usr/bin/env python3
-# Dependencies:
 # pip install pandas numpy scikit-learn tqdm
 
 from __future__ import annotations
