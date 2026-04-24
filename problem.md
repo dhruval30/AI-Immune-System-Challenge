@@ -42,3 +42,12 @@ Build a robust text-classification pipeline that generalizes to unseen conversat
 - Validation strategy that reflects leaderboard behavior while minimizing overfitting.
 - Reproducible training and inference flow that can be rerun end to end.
 
+## Working Dataset Hypothesis
+
+The official target remains binary classification with `TRUE` vs `FALSE`.
+
+For current analysis, `TRUE` should be interpreted broadly as potentially harmful, unsafe, or abnormal conversation behavior.
+
+Manual sample reading suggests abnormal text quality (incoherence, spam-like phrasing, suspicious tone, formatting noise) may be a major signal for many `TRUE` cases.
+
+This means future modeling should combine semantic understanding with abnormality/noise detection, instead of relying only on explicit harmful keywords.
