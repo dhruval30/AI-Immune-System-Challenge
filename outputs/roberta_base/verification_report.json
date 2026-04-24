@@ -1,0 +1,39 @@
+{
+  "device": "mps",
+  "selected_threshold": 0.32,
+  "max_length": 256,
+  "test_rows": 2100,
+  "solution_format_shape": [
+    2100,
+    1
+  ],
+  "original_submission_shape": [
+    2100,
+    1
+  ],
+  "regenerated_submission_shape": [
+    2100,
+    1
+  ],
+  "columns_match_solution_format": true,
+  "exact_match_with_original_submission": true,
+  "differing_rows": 0,
+  "differing_row_indices_preview": [],
+  "original_prediction_distribution": {
+    "FALSE": 1523,
+    "TRUE": 577
+  },
+  "regenerated_prediction_distribution": {
+    "FALSE": 1523,
+    "TRUE": 577
+  },
+  "paths": {
+    "test": "/Users/dhruval/Documents/AI-Immune-System-Challenge/data/test_labeled_comp.jsonl",
+    "solution_format": "/Users/dhruval/Documents/AI-Immune-System-Challenge/data/solution_format.csv",
+    "best_model_dir": "/Users/dhruval/Documents/AI-Immune-System-Challenge/outputs/roberta_base/best_model",
+    "metrics": "/Users/dhruval/Documents/AI-Immune-System-Challenge/outputs/roberta_base/roberta_base_metrics.json",
+    "original_submission": "/Users/dhruval/Documents/AI-Immune-System-Challenge/outputs/roberta_base/roberta_base_submission.csv",
+    "regenerated_submission": "/Users/dhruval/Documents/AI-Immune-System-Challenge/outputs/roberta_base/verification_regenerated_submission.csv",
+    "verification_report": "/Users/dhruval/Documents/AI-Immune-System-Challenge/outputs/roberta_base/verification_report.json"
+  }
+}
