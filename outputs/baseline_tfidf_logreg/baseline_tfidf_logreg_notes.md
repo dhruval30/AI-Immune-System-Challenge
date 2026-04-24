@@ -35,3 +35,9 @@ It aligns with the current working hypothesis that `TRUE` may capture harmful/un
 - Inspect confident false positives and false negatives in `outputs/baseline_tfidf_logreg/baseline_tfidf_logreg_error_analysis.csv`.
 - Check if errors correlate with incoherence, token noise, formatting artifacts, or ambiguous semantics.
 - Decide whether the next iteration should add explicit weirdness/fluency features or threshold tuning before heavier models.
+
+## Next Experiment
+
+The next baseline (`models/baseline_tfidf_features_logreg.py`) keeps TF-IDF features and adds explicit abnormality/fluency numeric features (length, token repetition, casing/digits/punctuation/noise ratios, URL/newline signals, and sentence proxies).
+
+Goal: test whether the first baseline's false positives and false negatives were partly caused by missing surface-level numeric signals that TF-IDF alone does not encode strongly enough.
