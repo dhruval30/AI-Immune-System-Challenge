@@ -1,3 +1,6 @@
 immune-venv
 __pycache__
 *.npy
+*.pt
+*.safetensors
+.DS_Store
