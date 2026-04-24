@@ -1,0 +1,381 @@
+{
+  "model": "TF-IDF (word+char+engineered numeric) + LogisticRegression",
+  "seed": 42,
+  "cv": {
+    "strategy": "StratifiedKFold",
+    "n_splits": 5,
+    "shuffle": true,
+    "random_state": 42,
+    "fold_metrics": [
+      {
+        "fold": 1,
+        "n_train": 3920,
+        "n_val": 980,
+        "accuracy": 0.7979591836734694,
+        "f1": 0.6867088607594937,
+        "roc_auc": 0.8567857142857143
+      },
+      {
+        "fold": 2,
+        "n_train": 3920,
+        "n_val": 980,
+        "accuracy": 0.7724489795918368,
+        "f1": 0.6326194398682042,
+        "roc_auc": 0.8486071428571429
+      },
+      {
+        "fold": 3,
+        "n_train": 3920,
+        "n_val": 980,
+        "accuracy": 0.8122448979591836,
+        "f1": 0.6827586206896552,
+        "roc_auc": 0.8507908163265305
+      },
+      {
+        "fold": 4,
+        "n_train": 3920,
+        "n_val": 980,
+        "accuracy": 0.7724489795918368,
+        "f1": 0.6201022146507666,
+        "roc_auc": 0.833561224489796
+      },
+      {
+        "fold": 5,
+        "n_train": 3920,
+        "n_val": 980,
+        "accuracy": 0.7816326530612245,
+        "f1": 0.6503267973856209,
+        "roc_auc": 0.854030612244898
+      }
+    ]
+  },
+  "engineered_features": [
+    "char_length",
+    "word_count",
+    "unique_word_ratio",
+    "avg_word_length",
+    "digit_ratio",
+    "uppercase_ratio",
+    "punctuation_ratio",
+    "non_alphanumeric_ratio",
+    "newline_count",
+    "url_count",
+    "repeated_token_count",
+    "very_long_token_count",
+    "short_sentence_count",
+    "long_sentence_count",
+    "approx_sentence_count"
+  ],
+  "threshold_tuning": {
+    "search_range": [
+      0.3,
+      0.7
+    ],
+    "step": 0.01,
+    "selection_objective": "max_oof_f1",
+    "selected_threshold": 0.41,
+    "table": [
+      {
+        "threshold": 0.3,
+        "precision": 0.49102263856362216,
+        "recall": 0.8985714285714286,
+        "f1": 0.6350328117112569
+      },
+      {
+        "threshold": 0.31,
+        "precision": 0.4986016779864163,
+        "recall": 0.8914285714285715,
+        "f1": 0.6395080707148347
+      },
+      {
+        "threshold": 0.32,
+        "precision": 0.5071691929537075,
+        "recall": 0.8842857142857142,
+        "f1": 0.6446237958864879
+      },
+      {
+        "threshold": 0.33,
+        "precision": 0.513604018417748,
+        "recall": 0.8764285714285714,
+        "f1": 0.6476642913697546
+      },
+      {
+        "threshold": 0.34,
+        "precision": 0.5208602150537635,
+        "recall": 0.865,
+        "f1": 0.6502013422818792
+      },
+      {
+        "threshold": 0.35,
+        "precision": 0.5270567531896172,
+        "recall": 0.8557142857142858,
+        "f1": 0.6523277974407841
+      },
+      {
+        "threshold": 0.36,
+        "precision": 0.5331529093369418,
+        "recall": 0.8442857142857143,
+        "f1": 0.6535803151783246
+      },
+      {
+        "threshold": 0.37,
+        "precision": 0.5363720073664825,
+        "recall": 0.8321428571428572,
+        "f1": 0.6522956326987682
+      },
+      {
+        "threshold": 0.38,
+        "precision": 0.5421176470588235,
+        "recall": 0.8228571428571428,
+        "f1": 0.6536170212765957
+      },
+      {
+        "threshold": 0.39,
+        "precision": 0.5481231953801733,
+        "recall": 0.8135714285714286,
+        "f1": 0.6549741230592294
+      },
+      {
+        "threshold": 0.4,
+        "precision": 0.5544603252833908,
+        "recall": 0.8035714285714286,
+        "f1": 0.6561679790026247
+      },
+      {
+        "threshold": 0.41,
+        "precision": 0.5667340748230536,
+        "recall": 0.8007142857142857,
+        "f1": 0.6637063351095323
+      },
+      {
+        "threshold": 0.42,
+        "precision": 0.5692941782586296,
+        "recall": 0.7892857142857143,
+        "f1": 0.6614785992217899
+      },
+      {
+        "threshold": 0.43,
+        "precision": 0.5745914602003163,
+        "recall": 0.7785714285714286,
+        "f1": 0.6612071580224447
+      },
+      {
+        "threshold": 0.44,
+        "precision": 0.5793437331898871,
+        "recall": 0.7692857142857142,
+        "f1": 0.6609389383246395
+      },
+      {
+        "threshold": 0.45,
+        "precision": 0.5846153846153846,
+        "recall": 0.76,
+        "f1": 0.6608695652173913
+      },
+      {
+        "threshold": 0.46,
+        "precision": 0.5905511811023622,
+        "recall": 0.75,
+        "f1": 0.6607929515418502
+      },
+      {
+        "threshold": 0.47,
+        "precision": 0.5960761684939412,
+        "recall": 0.7378571428571429,
+        "f1": 0.6594318544526013
+      },
+      {
+        "threshold": 0.48,
+        "precision": 0.5990566037735849,
+        "recall": 0.7257142857142858,
+        "f1": 0.6563307493540051
+      },
+      {
+        "threshold": 0.49,
+        "precision": 0.6028968014484007,
+        "recall": 0.7135714285714285,
+        "f1": 0.6535819430814525
+      },
+      {
+        "threshold": 0.5,
+        "precision": 0.6106304079110012,
+        "recall": 0.7057142857142857,
+        "f1": 0.6547382372432075
+      },
+      {
+        "threshold": 0.51,
+        "precision": 0.6131896005072923,
+        "recall": 0.6907142857142857,
+        "f1": 0.6496472959355055
+      },
+      {
+        "threshold": 0.52,
+        "precision": 0.616135328562134,
+        "recall": 0.6764285714285714,
+        "f1": 0.644875723527409
+      },
+      {
+        "threshold": 0.53,
+        "precision": 0.6193029490616622,
+        "recall": 0.66,
+        "f1": 0.6390041493775933
+      },
+      {
+        "threshold": 0.54,
+        "precision": 0.6257753273604411,
+        "recall": 0.6485714285714286,
+        "f1": 0.6369694843914416
+      },
+      {
+        "threshold": 0.55,
+        "precision": 0.6291578202406228,
+        "recall": 0.635,
+        "f1": 0.6320654105936723
+      },
+      {
+        "threshold": 0.56,
+        "precision": 0.6335766423357664,
+        "recall": 0.62,
+        "f1": 0.6267148014440433
+      },
+      {
+        "threshold": 0.57,
+        "precision": 0.6363636363636364,
+        "recall": 0.605,
+        "f1": 0.6202856096667887
+      },
+      {
+        "threshold": 0.58,
+        "precision": 0.6426356589147287,
+        "recall": 0.5921428571428572,
+        "f1": 0.61635687732342
+      },
+      {
+        "threshold": 0.59,
+        "precision": 0.6446740858505564,
+        "recall": 0.5792857142857143,
+        "f1": 0.6102332580887886
+      },
+      {
+        "threshold": 0.6,
+        "precision": 0.6481632653061224,
+        "recall": 0.5671428571428572,
+        "f1": 0.6049523809523809
+      },
+      {
+        "threshold": 0.61,
+        "precision": 0.6547921967769296,
+        "recall": 0.5514285714285714,
+        "f1": 0.5986816595579683
+      },
+      {
+        "threshold": 0.62,
+        "precision": 0.6566637246248896,
+        "recall": 0.5314285714285715,
+        "f1": 0.5874457165416502
+      },
+      {
+        "threshold": 0.63,
+        "precision": 0.6524886877828054,
+        "recall": 0.515,
+        "f1": 0.5756487025948104
+      },
+      {
+        "threshold": 0.64,
+        "precision": 0.660056657223796,
+        "recall": 0.4992857142857143,
+        "f1": 0.5685237901586011
+      },
+      {
+        "threshold": 0.65,
+        "precision": 0.6692913385826772,
+        "recall": 0.4857142857142857,
+        "f1": 0.5629139072847682
+      },
+      {
+        "threshold": 0.66,
+        "precision": 0.6790123456790124,
+        "recall": 0.4714285714285714,
+        "f1": 0.5564924114671164
+      },
+      {
+        "threshold": 0.67,
+        "precision": 0.6822529224229543,
+        "recall": 0.4585714285714286,
+        "f1": 0.5484835540367364
+      },
+      {
+        "threshold": 0.68,
+        "precision": 0.6875687568756875,
+        "recall": 0.44642857142857145,
+        "f1": 0.5413598960589
+      },
+      {
+        "threshold": 0.69,
+        "precision": 0.6908267270668177,
+        "recall": 0.4357142857142857,
+        "f1": 0.5343845816907578
+      },
+      {
+        "threshold": 0.7,
+        "precision": 0.6942148760330579,
+        "recall": 0.42,
+        "f1": 0.5233644859813084
+      }
+    ]
+  },
+  "oof": {
+    "threshold": 0.41,
+    "accuracy": 0.7681632653061224,
+    "precision": 0.5667340748230536,
+    "recall": 0.8007142857142857,
+    "f1": 0.6637063351095323,
+    "roc_auc": 0.8485544897959184,
+    "confusion_matrix": {
+      "labels": [
+        "FALSE",
+        "TRUE"
+      ],
+      "matrix": [
+        [
+          2643,
+          857
+        ],
+        [
+          279,
+          1121
+        ]
+      ],
+      "format": "[[TN, FP], [FN, TP]]"
+    },
+    "prediction_distribution": {
+      "pred_FALSE": 2922,
+      "pred_TRUE": 1978
+    }
+  },
+  "inference": {
+    "approach": "mean_probability_across_fold_models",
+    "full_model_trained_on_all_data": true,
+    "full_model_test_prob_summary": {
+      "mean": 0.3848854106623869,
+      "std": 0.2779675541586913,
+      "min": 0.014695641097959102,
+      "max": 0.9999999557837411
+    },
+    "ensemble_test_prob_summary": {
+      "mean": 0.38720846497254424,
+      "std": 0.2738847129215941,
+      "min": 0.017730605757215565,
+      "max": 0.9999999367128634
+    },
+    "prediction_distribution": {
+      "pred_FALSE": 1281,
+      "pred_TRUE": 819
+    }
+  },
+  "paths": {
+    "oof_predictions": "/Users/dhruval/Documents/AI-Immune-System-Challenge/outputs/baseline_tfidf_features_logreg_cv/baseline_tfidf_features_logreg_cv_oof_predictions.csv",
+    "error_analysis": "/Users/dhruval/Documents/AI-Immune-System-Challenge/outputs/baseline_tfidf_features_logreg_cv/baseline_tfidf_features_logreg_cv_error_analysis.csv",
+    "submission": "/Users/dhruval/Documents/AI-Immune-System-Challenge/outputs/baseline_tfidf_features_logreg_cv/baseline_tfidf_features_logreg_cv_submission.csv",
+    "notes": "/Users/dhruval/Documents/AI-Immune-System-Challenge/outputs/baseline_tfidf_features_logreg_cv/baseline_tfidf_features_logreg_cv_notes.md"
+  }
+}
