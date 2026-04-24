@@ -1,7 +1,4 @@
-#!/usr/bin/env python3
-# Dependencies:
 # pip install pandas numpy scikit-learn tqdm torch transformers accelerate
-# Safety: This script is generated but not executed by Codex. User should run it manually.
 
 from __future__ import annotations
 
