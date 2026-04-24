@@ -1,0 +1,56 @@
+{
+  "model": "TF-IDF (word+char+engineered numeric) + LogisticRegression",
+  "seed": 42,
+  "engineered_features": [
+    "char_length",
+    "word_count",
+    "unique_word_ratio",
+    "avg_word_length",
+    "digit_ratio",
+    "uppercase_ratio",
+    "punctuation_ratio",
+    "non_alphanumeric_ratio",
+    "newline_count",
+    "url_count",
+    "repeated_token_count",
+    "very_long_token_count",
+    "short_sentence_count",
+    "long_sentence_count",
+    "approx_sentence_count"
+  ],
+  "validation": {
+    "n_samples": 980,
+    "accuracy": 0.7765306122448979,
+    "precision": 0.5927051671732523,
+    "recall": 0.6964285714285714,
+    "f1": 0.6403940886699507,
+    "roc_auc": 0.8410051020408162,
+    "confusion_matrix": {
+      "labels": [
+        "FALSE",
+        "TRUE"
+      ],
+      "matrix": [
+        [
+          566,
+          134
+        ],
+        [
+          85,
+          195
+        ]
+      ],
+      "format": "[[TN, FP], [FN, TP]]"
+    },
+    "prediction_distribution": {
+      "pred_FALSE": 651,
+      "pred_TRUE": 329
+    }
+  },
+  "paths": {
+    "val_predictions": "/Users/dhruval/Documents/AI-Immune-System-Challenge/outputs/baseline_tfidf_features_logreg/baseline_tfidf_features_logreg_val_predictions.csv",
+    "error_analysis": "/Users/dhruval/Documents/AI-Immune-System-Challenge/outputs/baseline_tfidf_features_logreg/baseline_tfidf_features_logreg_error_analysis.csv",
+    "submission": "/Users/dhruval/Documents/AI-Immune-System-Challenge/outputs/baseline_tfidf_features_logreg/baseline_tfidf_features_logreg_submission.csv",
+    "notes": "/Users/dhruval/Documents/AI-Immune-System-Challenge/outputs/baseline_tfidf_features_logreg/baseline_tfidf_features_logreg_notes.md"
+  }
+}
