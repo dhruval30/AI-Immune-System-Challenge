@@ -1,0 +1,458 @@
+{
+  "model": "answerdotai/ModernBERT-base",
+  "mode": "lora_finetuning",
+  "seed": 42,
+  "device": "mps",
+  "config": {
+    "max_length": 256,
+    "epochs": 3,
+    "train_batch_size": 8,
+    "effective_train_batch_size": 8,
+    "eval_batch_size": 16,
+    "gradient_accumulation_steps": 2,
+    "effective_gradient_accumulation_steps": 2,
+    "learning_rate": 0.0001,
+    "effective_learning_rate": 0.0001,
+    "weight_decay": 0.01,
+    "adam_eps": 1e-08,
+    "effective_adam_eps": 1e-08,
+    "optimizer": "AdamW",
+    "scheduler": "linear_warmup",
+    "warmup_steps": 73,
+    "lora_r": 8,
+    "lora_alpha": 16,
+    "lora_dropout": 0.05,
+    "lora_target_modules": [
+      "Wqkv",
+      "Wi",
+      "Wo"
+    ],
+    "lora_modules_to_save": [
+      "head",
+      "classifier",
+      "classifier",
+      "score"
+    ],
+    "trainable_parameters": 2281730,
+    "total_parameters": 151888132,
+    "trainable_parameter_percent": 1.5022437697765616,
+    "fp16_amp_used": false
+  },
+  "split": {
+    "train_rows": 3920,
+    "val_rows": 980,
+    "test_rows": 2100,
+    "stratified": true,
+    "random_state": 42
+  },
+  "epoch_metrics_threshold_0_5": [
+    {
+      "threshold": 0.5,
+      "accuracy": 0.8857142857142857,
+      "precision": 0.7625,
+      "recall": 0.8714285714285714,
+      "f1": 0.8133333333333334,
+      "roc_auc": 0.9475204081632653,
+      "confusion_matrix": {
+        "labels": [
+          "FALSE",
+          "TRUE"
+        ],
+        "matrix": [
+          [
+            624,
+            76
+          ],
+          [
+            36,
+            244
+          ]
+        ],
+        "format": "[[TN, FP], [FN, TP]]"
+      },
+      "prediction_distribution": {
+        "pred_FALSE": 660,
+        "pred_TRUE": 320
+      },
+      "epoch": 1,
+      "train_loss": 0.40125088287821536,
+      "val_loss": 0.2818743264188572,
+      "skipped_non_finite_loss_batches": 0,
+      "skipped_non_finite_grad_steps": 0
+    },
+    {
+      "threshold": 0.5,
+      "accuracy": 0.8948979591836734,
+      "precision": 0.8702928870292888,
+      "recall": 0.7428571428571429,
+      "f1": 0.8015414258188824,
+      "roc_auc": 0.9655663265306123,
+      "confusion_matrix": {
+        "labels": [
+          "FALSE",
+          "TRUE"
+        ],
+        "matrix": [
+          [
+            669,
+            31
+          ],
+          [
+            72,
+            208
+          ]
+        ],
+        "format": "[[TN, FP], [FN, TP]]"
+      },
+      "prediction_distribution": {
+        "pred_FALSE": 741,
+        "pred_TRUE": 239
+      },
+      "epoch": 2,
+      "train_loss": 0.2015994065081254,
+      "val_loss": 0.25660991115989734,
+      "skipped_non_finite_loss_batches": 0,
+      "skipped_non_finite_grad_steps": 0
+    },
+    {
+      "threshold": 0.5,
+      "accuracy": 0.9091836734693878,
+      "precision": 0.8498168498168498,
+      "recall": 0.8285714285714286,
+      "f1": 0.8390596745027125,
+      "roc_auc": 0.9675918367346938,
+      "confusion_matrix": {
+        "labels": [
+          "FALSE",
+          "TRUE"
+        ],
+        "matrix": [
+          [
+            659,
+            41
+          ],
+          [
+            48,
+            232
+          ]
+        ],
+        "format": "[[TN, FP], [FN, TP]]"
+      },
+      "prediction_distribution": {
+        "pred_FALSE": 707,
+        "pred_TRUE": 273
+      },
+      "epoch": 3,
+      "train_loss": 0.13464794968716962,
+      "val_loss": 0.24538085559497075,
+      "skipped_non_finite_loss_batches": 0,
+      "skipped_non_finite_grad_steps": 0
+    }
+  ],
+  "best_epoch": {
+    "epoch": 3,
+    "val_f1_threshold_0_5": 0.8390596745027125,
+    "checkpoint_dir": "/Users/dhruval/Documents/AI-Immune-System-Challenge/outputs/modernbert_lora/best_model",
+    "state_dict_path": "/Users/dhruval/Documents/AI-Immune-System-Challenge/outputs/modernbert_lora/modernbert_lora_best_adapter_state_dict.pt"
+  },
+  "threshold_tuning": {
+    "search_range": [
+      0.3,
+      0.7
+    ],
+    "step": 0.01,
+    "selection_objective": "max_validation_f1",
+    "selected_threshold": 0.3,
+    "table": [
+      {
+        "threshold": 0.3,
+        "precision": 0.8272425249169435,
+        "recall": 0.8892857142857142,
+        "f1": 0.8571428571428571
+      },
+      {
+        "threshold": 0.31,
+        "precision": 0.8316498316498316,
+        "recall": 0.8821428571428571,
+        "f1": 0.8561525129982669
+      },
+      {
+        "threshold": 0.32,
+        "precision": 0.8338983050847457,
+        "recall": 0.8785714285714286,
+        "f1": 0.8556521739130435
+      },
+      {
+        "threshold": 0.33,
+        "precision": 0.8333333333333334,
+        "recall": 0.875,
+        "f1": 0.8536585365853658
+      },
+      {
+        "threshold": 0.34,
+        "precision": 0.8384879725085911,
+        "recall": 0.8714285714285714,
+        "f1": 0.8546409807355516
+      },
+      {
+        "threshold": 0.35,
+        "precision": 0.8379310344827586,
+        "recall": 0.8678571428571429,
+        "f1": 0.8526315789473684
+      },
+      {
+        "threshold": 0.36,
+        "precision": 0.8373702422145328,
+        "recall": 0.8642857142857143,
+        "f1": 0.8506151142355008
+      },
+      {
+        "threshold": 0.37,
+        "precision": 0.8402777777777778,
+        "recall": 0.8642857142857143,
+        "f1": 0.852112676056338
+      },
+      {
+        "threshold": 0.38,
+        "precision": 0.8402777777777778,
+        "recall": 0.8642857142857143,
+        "f1": 0.852112676056338
+      },
+      {
+        "threshold": 0.39,
+        "precision": 0.8397212543554007,
+        "recall": 0.8607142857142858,
+        "f1": 0.8500881834215167
+      },
+      {
+        "threshold": 0.4,
+        "precision": 0.8397212543554007,
+        "recall": 0.8607142857142858,
+        "f1": 0.8500881834215167
+      },
+      {
+        "threshold": 0.41,
+        "precision": 0.8380281690140845,
+        "recall": 0.85,
+        "f1": 0.8439716312056738
+      },
+      {
+        "threshold": 0.42,
+        "precision": 0.8409893992932862,
+        "recall": 0.85,
+        "f1": 0.8454706927175843
+      },
+      {
+        "threshold": 0.43,
+        "precision": 0.8434163701067615,
+        "recall": 0.8464285714285714,
+        "f1": 0.8449197860962567
+      },
+      {
+        "threshold": 0.44,
+        "precision": 0.8434163701067615,
+        "recall": 0.8464285714285714,
+        "f1": 0.8449197860962567
+      },
+      {
+        "threshold": 0.45,
+        "precision": 0.8428571428571429,
+        "recall": 0.8428571428571429,
+        "f1": 0.8428571428571429
+      },
+      {
+        "threshold": 0.46,
+        "precision": 0.8458781362007168,
+        "recall": 0.8428571428571429,
+        "f1": 0.8443649373881932
+      },
+      {
+        "threshold": 0.47,
+        "precision": 0.8453237410071942,
+        "recall": 0.8392857142857143,
+        "f1": 0.8422939068100358
+      },
+      {
+        "threshold": 0.48,
+        "precision": 0.8453237410071942,
+        "recall": 0.8392857142857143,
+        "f1": 0.8422939068100358
+      },
+      {
+        "threshold": 0.49,
+        "precision": 0.8467153284671532,
+        "recall": 0.8285714285714286,
+        "f1": 0.8375451263537906
+      },
+      {
+        "threshold": 0.5,
+        "precision": 0.8498168498168498,
+        "recall": 0.8285714285714286,
+        "f1": 0.8390596745027125
+      },
+      {
+        "threshold": 0.51,
+        "precision": 0.8487084870848709,
+        "recall": 0.8214285714285714,
+        "f1": 0.8348457350272233
+      },
+      {
+        "threshold": 0.52,
+        "precision": 0.8507462686567164,
+        "recall": 0.8142857142857143,
+        "f1": 0.8321167883211679
+      },
+      {
+        "threshold": 0.53,
+        "precision": 0.8528301886792453,
+        "recall": 0.8071428571428572,
+        "f1": 0.8293577981651377
+      },
+      {
+        "threshold": 0.54,
+        "precision": 0.8517110266159695,
+        "recall": 0.8,
+        "f1": 0.8250460405156538
+      },
+      {
+        "threshold": 0.55,
+        "precision": 0.8549618320610687,
+        "recall": 0.8,
+        "f1": 0.8265682656826568
+      },
+      {
+        "threshold": 0.56,
+        "precision": 0.8544061302681992,
+        "recall": 0.7964285714285714,
+        "f1": 0.8243992606284658
+      },
+      {
+        "threshold": 0.57,
+        "precision": 0.861003861003861,
+        "recall": 0.7964285714285714,
+        "f1": 0.8274582560296846
+      },
+      {
+        "threshold": 0.58,
+        "precision": 0.8604651162790697,
+        "recall": 0.7928571428571428,
+        "f1": 0.8252788104089219
+      },
+      {
+        "threshold": 0.59,
+        "precision": 0.859375,
+        "recall": 0.7857142857142857,
+        "f1": 0.8208955223880597
+      },
+      {
+        "threshold": 0.6,
+        "precision": 0.8661417322834646,
+        "recall": 0.7857142857142857,
+        "f1": 0.8239700374531835
+      },
+      {
+        "threshold": 0.61,
+        "precision": 0.8645418326693227,
+        "recall": 0.775,
+        "f1": 0.8173258003766478
+      },
+      {
+        "threshold": 0.62,
+        "precision": 0.864,
+        "recall": 0.7714285714285715,
+        "f1": 0.8150943396226416
+      },
+      {
+        "threshold": 0.63,
+        "precision": 0.8669354838709677,
+        "recall": 0.7678571428571429,
+        "f1": 0.8143939393939394
+      },
+      {
+        "threshold": 0.64,
+        "precision": 0.8647540983606558,
+        "recall": 0.7535714285714286,
+        "f1": 0.8053435114503816
+      },
+      {
+        "threshold": 0.65,
+        "precision": 0.8636363636363636,
+        "recall": 0.7464285714285714,
+        "f1": 0.8007662835249042
+      },
+      {
+        "threshold": 0.66,
+        "precision": 0.8702928870292888,
+        "recall": 0.7428571428571429,
+        "f1": 0.8015414258188824
+      },
+      {
+        "threshold": 0.67,
+        "precision": 0.8739495798319328,
+        "recall": 0.7428571428571429,
+        "f1": 0.803088803088803
+      },
+      {
+        "threshold": 0.68,
+        "precision": 0.8765957446808511,
+        "recall": 0.7357142857142858,
+        "f1": 0.8
+      },
+      {
+        "threshold": 0.69,
+        "precision": 0.8793103448275862,
+        "recall": 0.7285714285714285,
+        "f1": 0.796875
+      },
+      {
+        "threshold": 0.7,
+        "precision": 0.8787878787878788,
+        "recall": 0.725,
+        "f1": 0.7945205479452054
+      }
+    ]
+  },
+  "validation_final": {
+    "threshold": 0.3,
+    "accuracy": 0.9153061224489796,
+    "precision": 0.8272425249169435,
+    "recall": 0.8892857142857142,
+    "f1": 0.8571428571428571,
+    "roc_auc": 0.9675918367346938,
+    "confusion_matrix": {
+      "labels": [
+        "FALSE",
+        "TRUE"
+      ],
+      "matrix": [
+        [
+          648,
+          52
+        ],
+        [
+          31,
+          249
+        ]
+      ],
+      "format": "[[TN, FP], [FN, TP]]"
+    },
+    "prediction_distribution": {
+      "pred_FALSE": 679,
+      "pred_TRUE": 301
+    }
+  },
+  "test_prediction_distribution": {
+    "pred_FALSE": 1468,
+    "pred_TRUE": 632
+  },
+  "paths": {
+    "metrics": "/Users/dhruval/Documents/AI-Immune-System-Challenge/outputs/modernbert_lora/modernbert_lora_metrics.json",
+    "val_predictions": "/Users/dhruval/Documents/AI-Immune-System-Challenge/outputs/modernbert_lora/modernbert_lora_val_predictions.csv",
+    "error_analysis": "/Users/dhruval/Documents/AI-Immune-System-Challenge/outputs/modernbert_lora/modernbert_lora_error_analysis.csv",
+    "test_probabilities": "/Users/dhruval/Documents/AI-Immune-System-Challenge/outputs/modernbert_lora/modernbert_lora_test_probabilities.csv",
+    "submission": "/Users/dhruval/Documents/AI-Immune-System-Challenge/outputs/modernbert_lora/modernbert_lora_submission.csv",
+    "notes": "/Users/dhruval/Documents/AI-Immune-System-Challenge/outputs/modernbert_lora/modernbert_lora_notes.md",
+    "best_model_dir": "/Users/dhruval/Documents/AI-Immune-System-Challenge/outputs/modernbert_lora/best_model",
+    "best_state_dict": "/Users/dhruval/Documents/AI-Immune-System-Challenge/outputs/modernbert_lora/modernbert_lora_best_adapter_state_dict.pt"
+  }
+}
