@@ -1,0 +1,904 @@
+{
+  "model": "answerdotai/ModernBERT-base",
+  "mode": "lora_finetuning",
+  "seed": 42,
+  "device": "mps",
+  "config": {
+    "max_length": 256,
+    "epochs": 8,
+    "train_batch_size": 8,
+    "effective_train_batch_size": 8,
+    "eval_batch_size": 16,
+    "gradient_accumulation_steps": 2,
+    "effective_gradient_accumulation_steps": 2,
+    "learning_rate": 5e-05,
+    "effective_learning_rate": 5e-05,
+    "weight_decay": 0.01,
+    "adam_eps": 1e-08,
+    "effective_adam_eps": 1e-08,
+    "optimizer": "AdamW",
+    "scheduler": "linear_warmup",
+    "warmup_steps": 196,
+    "lora_r": 8,
+    "lora_alpha": 16,
+    "lora_dropout": 0.05,
+    "lora_target_modules": [
+      "Wqkv",
+      "Wi",
+      "Wo"
+    ],
+    "lora_modules_to_save": [
+      "head",
+      "classifier",
+      "classifier",
+      "score"
+    ],
+    "trainable_parameters": 2281730,
+    "total_parameters": 151888132,
+    "trainable_parameter_percent": 1.5022437697765616,
+    "fp16_amp_used": false
+  },
+  "split": {
+    "train_rows": 3920,
+    "val_rows": 980,
+    "test_rows": 2100,
+    "stratified": true,
+    "random_state": 42
+  },
+  "epoch_metrics_threshold_0_5": [
+    {
+      "threshold": 0.5,
+      "accuracy": 0.8214285714285714,
+      "precision": 0.6309226932668329,
+      "recall": 0.9035714285714286,
+      "f1": 0.7430249632892805,
+      "roc_auc": 0.9183265306122448,
+      "confusion_matrix": {
+        "labels": [
+          "FALSE",
+          "TRUE"
+        ],
+        "matrix": [
+          [
+            552,
+            148
+          ],
+          [
+            27,
+            253
+          ]
+        ],
+        "format": "[[TN, FP], [FN, TP]]"
+      },
+      "prediction_distribution": {
+        "pred_FALSE": 579,
+        "pred_TRUE": 401
+      },
+      "epoch": 1,
+      "train_loss": 0.5104127903830032,
+      "val_loss": 0.4086026038442339,
+      "skipped_non_finite_loss_batches": 0,
+      "skipped_non_finite_grad_steps": 0
+    },
+    {
+      "threshold": 0.5,
+      "accuracy": 0.8938775510204081,
+      "precision": 0.8120567375886525,
+      "recall": 0.8178571428571428,
+      "f1": 0.8149466192170819,
+      "roc_auc": 0.9545255102040817,
+      "confusion_matrix": {
+        "labels": [
+          "FALSE",
+          "TRUE"
+        ],
+        "matrix": [
+          [
+            647,
+            53
+          ],
+          [
+            51,
+            229
+          ]
+        ],
+        "format": "[[TN, FP], [FN, TP]]"
+      },
+      "prediction_distribution": {
+        "pred_FALSE": 698,
+        "pred_TRUE": 282
+      },
+      "epoch": 2,
+      "train_loss": 0.26031619119885546,
+      "val_loss": 0.25362566137800413,
+      "skipped_non_finite_loss_batches": 0,
+      "skipped_non_finite_grad_steps": 0
+    },
+    {
+      "threshold": 0.5,
+      "accuracy": 0.8989795918367347,
+      "precision": 0.8467432950191571,
+      "recall": 0.7892857142857143,
+      "f1": 0.8170055452865065,
+      "roc_auc": 0.9647551020408163,
+      "confusion_matrix": {
+        "labels": [
+          "FALSE",
+          "TRUE"
+        ],
+        "matrix": [
+          [
+            660,
+            40
+          ],
+          [
+            59,
+            221
+          ]
+        ],
+        "format": "[[TN, FP], [FN, TP]]"
+      },
+      "prediction_distribution": {
+        "pred_FALSE": 719,
+        "pred_TRUE": 261
+      },
+      "epoch": 3,
+      "train_loss": 0.17888288478466816,
+      "val_loss": 0.2687524514234796,
+      "skipped_non_finite_loss_batches": 0,
+      "skipped_non_finite_grad_steps": 0
+    },
+    {
+      "threshold": 0.5,
+      "accuracy": 0.9091836734693878,
+      "precision": 0.8472727272727273,
+      "recall": 0.8321428571428572,
+      "f1": 0.8396396396396396,
+      "roc_auc": 0.9682397959183674,
+      "confusion_matrix": {
+        "labels": [
+          "FALSE",
+          "TRUE"
+        ],
+        "matrix": [
+          [
+            658,
+            42
+          ],
+          [
+            47,
+            233
+          ]
+        ],
+        "format": "[[TN, FP], [FN, TP]]"
+      },
+      "prediction_distribution": {
+        "pred_FALSE": 705,
+        "pred_TRUE": 275
+      },
+      "epoch": 4,
+      "train_loss": 0.1319998630859749,
+      "val_loss": 0.2735662881665084,
+      "skipped_non_finite_loss_batches": 0,
+      "skipped_non_finite_grad_steps": 0
+    },
+    {
+      "threshold": 0.5,
+      "accuracy": 0.9010204081632653,
+      "precision": 0.8828451882845189,
+      "recall": 0.7535714285714286,
+      "f1": 0.8131021194605009,
+      "roc_auc": 0.9704948979591836,
+      "confusion_matrix": {
+        "labels": [
+          "FALSE",
+          "TRUE"
+        ],
+        "matrix": [
+          [
+            672,
+            28
+          ],
+          [
+            69,
+            211
+          ]
+        ],
+        "format": "[[TN, FP], [FN, TP]]"
+      },
+      "prediction_distribution": {
+        "pred_FALSE": 741,
+        "pred_TRUE": 239
+      },
+      "epoch": 5,
+      "train_loss": 0.10170341302200912,
+      "val_loss": 0.33369013399113806,
+      "skipped_non_finite_loss_batches": 0,
+      "skipped_non_finite_grad_steps": 0
+    },
+    {
+      "threshold": 0.5,
+      "accuracy": 0.9132653061224489,
+      "precision": 0.8597785977859779,
+      "recall": 0.8321428571428572,
+      "f1": 0.8457350272232305,
+      "roc_auc": 0.972515306122449,
+      "confusion_matrix": {
+        "labels": [
+          "FALSE",
+          "TRUE"
+        ],
+        "matrix": [
+          [
+            662,
+            38
+          ],
+          [
+            47,
+            233
+          ]
+        ],
+        "format": "[[TN, FP], [FN, TP]]"
+      },
+      "prediction_distribution": {
+        "pred_FALSE": 709,
+        "pred_TRUE": 271
+      },
+      "epoch": 6,
+      "train_loss": 0.07071659523957703,
+      "val_loss": 0.3290378421725591,
+      "skipped_non_finite_loss_batches": 0,
+      "skipped_non_finite_grad_steps": 0
+    },
+    {
+      "threshold": 0.5,
+      "accuracy": 0.9163265306122449,
+      "precision": 0.8721804511278195,
+      "recall": 0.8285714285714286,
+      "f1": 0.8498168498168498,
+      "roc_auc": 0.9727244897959185,
+      "confusion_matrix": {
+        "labels": [
+          "FALSE",
+          "TRUE"
+        ],
+        "matrix": [
+          [
+            666,
+            34
+          ],
+          [
+            48,
+            232
+          ]
+        ],
+        "format": "[[TN, FP], [FN, TP]]"
+      },
+      "prediction_distribution": {
+        "pred_FALSE": 714,
+        "pred_TRUE": 266
+      },
+      "epoch": 7,
+      "train_loss": 0.0585948733569165,
+      "val_loss": 0.3566724818532488,
+      "skipped_non_finite_loss_batches": 0,
+      "skipped_non_finite_grad_steps": 0
+    },
+    {
+      "threshold": 0.5,
+      "accuracy": 0.9122448979591836,
+      "precision": 0.8646616541353384,
+      "recall": 0.8214285714285714,
+      "f1": 0.8424908424908425,
+      "roc_auc": 0.9725357142857143,
+      "confusion_matrix": {
+        "labels": [
+          "FALSE",
+          "TRUE"
+        ],
+        "matrix": [
+          [
+            664,
+            36
+          ],
+          [
+            50,
+            230
+          ]
+        ],
+        "format": "[[TN, FP], [FN, TP]]"
+      },
+      "prediction_distribution": {
+        "pred_FALSE": 714,
+        "pred_TRUE": 266
+      },
+      "epoch": 8,
+      "train_loss": 0.0437171847856631,
+      "val_loss": 0.3640481903170216,
+      "skipped_non_finite_loss_batches": 0,
+      "skipped_non_finite_grad_steps": 0
+    }
+  ],
+  "epoch_metrics_tuned_threshold": [
+    {
+      "threshold": 0.69,
+      "accuracy": 0.8561224489795919,
+      "precision": 0.7087087087087087,
+      "recall": 0.8428571428571429,
+      "f1": 0.7699836867862969,
+      "roc_auc": 0.9183265306122448,
+      "confusion_matrix": {
+        "labels": [
+          "FALSE",
+          "TRUE"
+        ],
+        "matrix": [
+          [
+            603,
+            97
+          ],
+          [
+            44,
+            236
+          ]
+        ],
+        "format": "[[TN, FP], [FN, TP]]"
+      },
+      "prediction_distribution": {
+        "pred_FALSE": 647,
+        "pred_TRUE": 333
+      },
+      "epoch": 1,
+      "train_loss": 0.5104127903830032,
+      "val_loss": 0.4086026038442339,
+      "selected_threshold": 0.69
+    },
+    {
+      "threshold": 0.35,
+      "accuracy": 0.8979591836734694,
+      "precision": 0.78125,
+      "recall": 0.8928571428571429,
+      "f1": 0.8333333333333334,
+      "roc_auc": 0.9545255102040817,
+      "confusion_matrix": {
+        "labels": [
+          "FALSE",
+          "TRUE"
+        ],
+        "matrix": [
+          [
+            630,
+            70
+          ],
+          [
+            30,
+            250
+          ]
+        ],
+        "format": "[[TN, FP], [FN, TP]]"
+      },
+      "prediction_distribution": {
+        "pred_FALSE": 660,
+        "pred_TRUE": 320
+      },
+      "epoch": 2,
+      "train_loss": 0.26031619119885546,
+      "val_loss": 0.25362566137800413,
+      "selected_threshold": 0.35
+    },
+    {
+      "threshold": 0.32,
+      "accuracy": 0.9010204081632653,
+      "precision": 0.818815331010453,
+      "recall": 0.8392857142857143,
+      "f1": 0.8289241622574955,
+      "roc_auc": 0.9647551020408163,
+      "confusion_matrix": {
+        "labels": [
+          "FALSE",
+          "TRUE"
+        ],
+        "matrix": [
+          [
+            648,
+            52
+          ],
+          [
+            45,
+            235
+          ]
+        ],
+        "format": "[[TN, FP], [FN, TP]]"
+      },
+      "prediction_distribution": {
+        "pred_FALSE": 693,
+        "pred_TRUE": 287
+      },
+      "epoch": 3,
+      "train_loss": 0.17888288478466816,
+      "val_loss": 0.2687524514234796,
+      "selected_threshold": 0.32
+    },
+    {
+      "threshold": 0.49,
+      "accuracy": 0.9112244897959184,
+      "precision": 0.8483754512635379,
+      "recall": 0.8392857142857143,
+      "f1": 0.8438061041292639,
+      "roc_auc": 0.9682397959183674,
+      "confusion_matrix": {
+        "labels": [
+          "FALSE",
+          "TRUE"
+        ],
+        "matrix": [
+          [
+            658,
+            42
+          ],
+          [
+            45,
+            235
+          ]
+        ],
+        "format": "[[TN, FP], [FN, TP]]"
+      },
+      "prediction_distribution": {
+        "pred_FALSE": 703,
+        "pred_TRUE": 277
+      },
+      "epoch": 4,
+      "train_loss": 0.1319998630859749,
+      "val_loss": 0.2735662881665084,
+      "selected_threshold": 0.49
+    },
+    {
+      "threshold": 0.31,
+      "accuracy": 0.9071428571428571,
+      "precision": 0.8735177865612648,
+      "recall": 0.7892857142857143,
+      "f1": 0.8292682926829268,
+      "roc_auc": 0.9704948979591836,
+      "confusion_matrix": {
+        "labels": [
+          "FALSE",
+          "TRUE"
+        ],
+        "matrix": [
+          [
+            668,
+            32
+          ],
+          [
+            59,
+            221
+          ]
+        ],
+        "format": "[[TN, FP], [FN, TP]]"
+      },
+      "prediction_distribution": {
+        "pred_FALSE": 727,
+        "pred_TRUE": 253
+      },
+      "epoch": 5,
+      "train_loss": 0.10170341302200912,
+      "val_loss": 0.33369013399113806,
+      "selected_threshold": 0.31
+    },
+    {
+      "threshold": 0.37,
+      "accuracy": 0.9173469387755102,
+      "precision": 0.8540925266903915,
+      "recall": 0.8571428571428571,
+      "f1": 0.8556149732620321,
+      "roc_auc": 0.972515306122449,
+      "confusion_matrix": {
+        "labels": [
+          "FALSE",
+          "TRUE"
+        ],
+        "matrix": [
+          [
+            659,
+            41
+          ],
+          [
+            40,
+            240
+          ]
+        ],
+        "format": "[[TN, FP], [FN, TP]]"
+      },
+      "prediction_distribution": {
+        "pred_FALSE": 699,
+        "pred_TRUE": 281
+      },
+      "epoch": 6,
+      "train_loss": 0.07071659523957703,
+      "val_loss": 0.3290378421725591,
+      "selected_threshold": 0.37
+    },
+    {
+      "threshold": 0.49,
+      "accuracy": 0.9173469387755102,
+      "precision": 0.8726591760299626,
+      "recall": 0.8321428571428572,
+      "f1": 0.8519195612431444,
+      "roc_auc": 0.9727244897959185,
+      "confusion_matrix": {
+        "labels": [
+          "FALSE",
+          "TRUE"
+        ],
+        "matrix": [
+          [
+            666,
+            34
+          ],
+          [
+            47,
+            233
+          ]
+        ],
+        "format": "[[TN, FP], [FN, TP]]"
+      },
+      "prediction_distribution": {
+        "pred_FALSE": 713,
+        "pred_TRUE": 267
+      },
+      "epoch": 7,
+      "train_loss": 0.0585948733569165,
+      "val_loss": 0.3566724818532488,
+      "selected_threshold": 0.49
+    },
+    {
+      "threshold": 0.39,
+      "accuracy": 0.9153061224489796,
+      "precision": 0.8581818181818182,
+      "recall": 0.8428571428571429,
+      "f1": 0.8504504504504504,
+      "roc_auc": 0.9725357142857143,
+      "confusion_matrix": {
+        "labels": [
+          "FALSE",
+          "TRUE"
+        ],
+        "matrix": [
+          [
+            661,
+            39
+          ],
+          [
+            44,
+            236
+          ]
+        ],
+        "format": "[[TN, FP], [FN, TP]]"
+      },
+      "prediction_distribution": {
+        "pred_FALSE": 705,
+        "pred_TRUE": 275
+      },
+      "epoch": 8,
+      "train_loss": 0.0437171847856631,
+      "val_loss": 0.3640481903170216,
+      "selected_threshold": 0.39
+    }
+  ],
+  "best_epoch": {
+    "epoch": 6,
+    "selection_metric": "validation_f1_at_epoch_best_threshold",
+    "val_f1_best_threshold": 0.8556149732620321,
+    "val_auc": 0.972515306122449,
+    "val_loss": 0.3290378421725591,
+    "best_threshold": 0.37,
+    "checkpoint_dir": "/Users/dhruval/Documents/AI-Immune-System-Challenge/outputs/modernbert_lora_v2/best_model",
+    "state_dict_path": "/Users/dhruval/Documents/AI-Immune-System-Challenge/outputs/modernbert_lora_v2/modernbert_lora_v2_best_adapter_state_dict.pt"
+  },
+  "resume_state": {
+    "last_model_dir": "/Users/dhruval/Documents/AI-Immune-System-Challenge/outputs/modernbert_lora_v2/last_model",
+    "training_state_path": "/Users/dhruval/Documents/AI-Immune-System-Challenge/outputs/modernbert_lora_v2/modernbert_lora_v2_training_state.pt"
+  },
+  "threshold_tuning": {
+    "search_range": [
+      0.3,
+      0.7
+    ],
+    "step": 0.01,
+    "selection_objective": "max_validation_f1_on_best_epoch",
+    "selected_threshold": 0.37,
+    "table": [
+      {
+        "threshold": 0.3,
+        "precision": 0.8402777777777778,
+        "recall": 0.8642857142857143,
+        "f1": 0.852112676056338
+      },
+      {
+        "threshold": 0.31,
+        "precision": 0.8397212543554007,
+        "recall": 0.8607142857142858,
+        "f1": 0.8500881834215167
+      },
+      {
+        "threshold": 0.32,
+        "precision": 0.8456140350877193,
+        "recall": 0.8607142857142858,
+        "f1": 0.8530973451327434
+      },
+      {
+        "threshold": 0.33,
+        "precision": 0.8456140350877193,
+        "recall": 0.8607142857142858,
+        "f1": 0.8530973451327434
+      },
+      {
+        "threshold": 0.34,
+        "precision": 0.8456140350877193,
+        "recall": 0.8607142857142858,
+        "f1": 0.8530973451327434
+      },
+      {
+        "threshold": 0.35,
+        "precision": 0.8450704225352113,
+        "recall": 0.8571428571428571,
+        "f1": 0.851063829787234
+      },
+      {
+        "threshold": 0.36,
+        "precision": 0.8480565371024735,
+        "recall": 0.8571428571428571,
+        "f1": 0.8525754884547069
+      },
+      {
+        "threshold": 0.37,
+        "precision": 0.8540925266903915,
+        "recall": 0.8571428571428571,
+        "f1": 0.8556149732620321
+      },
+      {
+        "threshold": 0.38,
+        "precision": 0.8561151079136691,
+        "recall": 0.85,
+        "f1": 0.8530465949820788
+      },
+      {
+        "threshold": 0.39,
+        "precision": 0.8561151079136691,
+        "recall": 0.85,
+        "f1": 0.8530465949820788
+      },
+      {
+        "threshold": 0.4,
+        "precision": 0.8561151079136691,
+        "recall": 0.85,
+        "f1": 0.8530465949820788
+      },
+      {
+        "threshold": 0.41,
+        "precision": 0.855595667870036,
+        "recall": 0.8464285714285714,
+        "f1": 0.8509874326750448
+      },
+      {
+        "threshold": 0.42,
+        "precision": 0.855595667870036,
+        "recall": 0.8464285714285714,
+        "f1": 0.8509874326750448
+      },
+      {
+        "threshold": 0.43,
+        "precision": 0.8586956521739131,
+        "recall": 0.8464285714285714,
+        "f1": 0.8525179856115108
+      },
+      {
+        "threshold": 0.44,
+        "precision": 0.8581818181818182,
+        "recall": 0.8428571428571429,
+        "f1": 0.8504504504504504
+      },
+      {
+        "threshold": 0.45,
+        "precision": 0.8581818181818182,
+        "recall": 0.8428571428571429,
+        "f1": 0.8504504504504504
+      },
+      {
+        "threshold": 0.46,
+        "precision": 0.8581818181818182,
+        "recall": 0.8428571428571429,
+        "f1": 0.8504504504504504
+      },
+      {
+        "threshold": 0.47,
+        "precision": 0.8576642335766423,
+        "recall": 0.8392857142857143,
+        "f1": 0.8483754512635379
+      },
+      {
+        "threshold": 0.48,
+        "precision": 0.8608058608058609,
+        "recall": 0.8392857142857143,
+        "f1": 0.8499095840867993
+      },
+      {
+        "threshold": 0.49,
+        "precision": 0.8597785977859779,
+        "recall": 0.8321428571428572,
+        "f1": 0.8457350272232305
+      },
+      {
+        "threshold": 0.5,
+        "precision": 0.8597785977859779,
+        "recall": 0.8321428571428572,
+        "f1": 0.8457350272232305
+      },
+      {
+        "threshold": 0.51,
+        "precision": 0.8597785977859779,
+        "recall": 0.8321428571428572,
+        "f1": 0.8457350272232305
+      },
+      {
+        "threshold": 0.52,
+        "precision": 0.8629629629629629,
+        "recall": 0.8321428571428572,
+        "f1": 0.8472727272727273
+      },
+      {
+        "threshold": 0.53,
+        "precision": 0.8629629629629629,
+        "recall": 0.8321428571428572,
+        "f1": 0.8472727272727273
+      },
+      {
+        "threshold": 0.54,
+        "precision": 0.8629629629629629,
+        "recall": 0.8321428571428572,
+        "f1": 0.8472727272727273
+      },
+      {
+        "threshold": 0.55,
+        "precision": 0.8629629629629629,
+        "recall": 0.8321428571428572,
+        "f1": 0.8472727272727273
+      },
+      {
+        "threshold": 0.56,
+        "precision": 0.8629629629629629,
+        "recall": 0.8321428571428572,
+        "f1": 0.8472727272727273
+      },
+      {
+        "threshold": 0.57,
+        "precision": 0.862453531598513,
+        "recall": 0.8285714285714286,
+        "f1": 0.8451730418943534
+      },
+      {
+        "threshold": 0.58,
+        "precision": 0.862453531598513,
+        "recall": 0.8285714285714286,
+        "f1": 0.8451730418943534
+      },
+      {
+        "threshold": 0.59,
+        "precision": 0.862453531598513,
+        "recall": 0.8285714285714286,
+        "f1": 0.8451730418943534
+      },
+      {
+        "threshold": 0.6,
+        "precision": 0.862453531598513,
+        "recall": 0.8285714285714286,
+        "f1": 0.8451730418943534
+      },
+      {
+        "threshold": 0.61,
+        "precision": 0.862453531598513,
+        "recall": 0.8285714285714286,
+        "f1": 0.8451730418943534
+      },
+      {
+        "threshold": 0.62,
+        "precision": 0.8619402985074627,
+        "recall": 0.825,
+        "f1": 0.843065693430657
+      },
+      {
+        "threshold": 0.63,
+        "precision": 0.8646616541353384,
+        "recall": 0.8214285714285714,
+        "f1": 0.8424908424908425
+      },
+      {
+        "threshold": 0.64,
+        "precision": 0.870722433460076,
+        "recall": 0.8178571428571428,
+        "f1": 0.8434622467771639
+      },
+      {
+        "threshold": 0.65,
+        "precision": 0.8702290076335878,
+        "recall": 0.8142857142857143,
+        "f1": 0.8413284132841329
+      },
+      {
+        "threshold": 0.66,
+        "precision": 0.8697318007662835,
+        "recall": 0.8107142857142857,
+        "f1": 0.8391866913123844
+      },
+      {
+        "threshold": 0.67,
+        "precision": 0.8697318007662835,
+        "recall": 0.8107142857142857,
+        "f1": 0.8391866913123844
+      },
+      {
+        "threshold": 0.68,
+        "precision": 0.8725868725868726,
+        "recall": 0.8071428571428572,
+        "f1": 0.8385899814471243
+      },
+      {
+        "threshold": 0.69,
+        "precision": 0.8725868725868726,
+        "recall": 0.8071428571428572,
+        "f1": 0.8385899814471243
+      },
+      {
+        "threshold": 0.7,
+        "precision": 0.8725868725868726,
+        "recall": 0.8071428571428572,
+        "f1": 0.8385899814471243
+      }
+    ]
+  },
+  "validation_final": {
+    "threshold": 0.37,
+    "accuracy": 0.9173469387755102,
+    "precision": 0.8540925266903915,
+    "recall": 0.8571428571428571,
+    "f1": 0.8556149732620321,
+    "roc_auc": 0.972515306122449,
+    "confusion_matrix": {
+      "labels": [
+        "FALSE",
+        "TRUE"
+      ],
+      "matrix": [
+        [
+          659,
+          41
+        ],
+        [
+          40,
+          240
+        ]
+      ],
+      "format": "[[TN, FP], [FN, TP]]"
+    },
+    "prediction_distribution": {
+      "pred_FALSE": 699,
+      "pred_TRUE": 281
+    }
+  },
+  "test_prediction_distribution": {
+    "pred_FALSE": 1483,
+    "pred_TRUE": 617
+  },
+  "paths": {
+    "metrics": "/Users/dhruval/Documents/AI-Immune-System-Challenge/outputs/modernbert_lora_v2/modernbert_lora_v2_metrics.json",
+    "val_predictions": "/Users/dhruval/Documents/AI-Immune-System-Challenge/outputs/modernbert_lora_v2/modernbert_lora_v2_val_predictions.csv",
+    "error_analysis": "/Users/dhruval/Documents/AI-Immune-System-Challenge/outputs/modernbert_lora_v2/modernbert_lora_v2_error_analysis.csv",
+    "test_probabilities": "/Users/dhruval/Documents/AI-Immune-System-Challenge/outputs/modernbert_lora_v2/modernbert_lora_v2_test_probabilities.csv",
+    "submission": "/Users/dhruval/Documents/AI-Immune-System-Challenge/outputs/modernbert_lora_v2/modernbert_lora_v2_submission.csv",
+    "notes": "/Users/dhruval/Documents/AI-Immune-System-Challenge/outputs/modernbert_lora_v2/modernbert_lora_v2_notes.md",
+    "best_model_dir": "/Users/dhruval/Documents/AI-Immune-System-Challenge/outputs/modernbert_lora_v2/best_model",
+    "best_state_dict": "/Users/dhruval/Documents/AI-Immune-System-Challenge/outputs/modernbert_lora_v2/modernbert_lora_v2_best_adapter_state_dict.pt",
+    "last_model_dir": "/Users/dhruval/Documents/AI-Immune-System-Challenge/outputs/modernbert_lora_v2/last_model",
+    "training_state": "/Users/dhruval/Documents/AI-Immune-System-Challenge/outputs/modernbert_lora_v2/modernbert_lora_v2_training_state.pt"
+  }
+}
