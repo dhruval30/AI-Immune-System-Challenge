@@ -1,6 +1,8 @@
 #!/usr/bin/env python3
 # pip install pandas numpy scikit-learn tqdm torch transformers accelerate peft
 # Safety: This script is generated but not executed by Codex. User should run it manually.
+# This variant is tuned for a longer run and selects checkpoints by threshold-tuned
+# validation F1 instead of fixed-threshold F1@0.5.
 
 from __future__ import annotations
 
@@ -35,16 +37,16 @@ INSTALL_CMD = "pip install pandas numpy scikit-learn tqdm torch transformers acc
 SEED = 42
 MODEL_NAME = "answerdotai/ModernBERT-base"
 MAX_LENGTH = 256
-EPOCHS = 5
+EPOCHS = 8
 TRAIN_BATCH_SIZE = 8
 EVAL_BATCH_SIZE = 16
 GRADIENT_ACCUMULATION_STEPS = 2
-LEARNING_RATE = 1e-4
+LEARNING_RATE = 5e-5
 WEIGHT_DECAY = 0.01
 ADAM_EPS = 1e-8
 
-LORA_R = 8
-LORA_ALPHA = 16
+LORA_R = 16
+LORA_ALPHA = 32
 LORA_DROPOUT = 0.05
 LORA_TARGET_MODULES = ["Wqkv", "Wi", "Wo"]
 LORA_MODULES_TO_SAVE = ["head", "classifier"]
@@ -53,22 +55,22 @@ THRESHOLD_GRID = np.round(np.arange(0.30, 0.701, 0.01), 2)
 
 ROOT_DIR = Path(__file__).resolve().parents[1]
 DATA_DIR = ROOT_DIR / "data"
-OUTPUT_DIR = ROOT_DIR / "outputs" / "modernbert_lora"
+OUTPUT_DIR = ROOT_DIR / "outputs" / "modernbert_lora_v2"
 BEST_MODEL_DIR = OUTPUT_DIR / "best_model"
 LAST_MODEL_DIR = OUTPUT_DIR / "last_model"
-BEST_STATE_DICT_PATH = OUTPUT_DIR / "modernbert_lora_best_adapter_state_dict.pt"
-TRAINING_STATE_PATH = OUTPUT_DIR / "modernbert_lora_training_state.pt"
+BEST_STATE_DICT_PATH = OUTPUT_DIR / "modernbert_lora_v2_best_adapter_state_dict.pt"
+TRAINING_STATE_PATH = OUTPUT_DIR / "modernbert_lora_v2_training_state.pt"
 
 TRAIN_PATH = DATA_DIR / "train_labeled_comp.jsonl"
 TEST_PATH = DATA_DIR / "test_labeled_comp.jsonl"
 SOLUTION_FORMAT_PATH = DATA_DIR / "solution_format.csv"
 
-METRICS_PATH = OUTPUT_DIR / "modernbert_lora_metrics.json"
-VAL_PRED_PATH = OUTPUT_DIR / "modernbert_lora_val_predictions.csv"
-ERROR_ANALYSIS_PATH = OUTPUT_DIR / "modernbert_lora_error_analysis.csv"
-TEST_PROB_PATH = OUTPUT_DIR / "modernbert_lora_test_probabilities.csv"
-SUBMISSION_PATH = OUTPUT_DIR / "modernbert_lora_submission.csv"
-NOTES_PATH = OUTPUT_DIR / "modernbert_lora_notes.md"
+METRICS_PATH = OUTPUT_DIR / "modernbert_lora_v2_metrics.json"
+VAL_PRED_PATH = OUTPUT_DIR / "modernbert_lora_v2_val_predictions.csv"
+ERROR_ANALYSIS_PATH = OUTPUT_DIR / "modernbert_lora_v2_error_analysis.csv"
+TEST_PROB_PATH = OUTPUT_DIR / "modernbert_lora_v2_test_probabilities.csv"
+SUBMISSION_PATH = OUTPUT_DIR / "modernbert_lora_v2_submission.csv"
+NOTES_PATH = OUTPUT_DIR / "modernbert_lora_v2_notes.md"
 
 
 def set_seeds(seed: int = SEED) -> None:
@@ -438,6 +440,7 @@ def main() -> None:
     print(f"device: {device}")
     print(f"model name: {MODEL_NAME}")
     print(f"configured epochs: {EPOCHS}")
+    print("checkpoint selection: best tuned validation F1 across thresholds 0.30-0.70")
     print("precision mode: fp32 (no AMP/fp16)")
 
     train_batch_size = TRAIN_BATCH_SIZE
@@ -552,9 +555,14 @@ def main() -> None:
     print("\n=== Training ===")
     best_epoch = -1
     best_epoch_f1 = -1.0
+    best_epoch_auc = -1.0
+    best_epoch_val_loss = float("inf")
+    best_epoch_threshold = 0.5
     best_epoch_val_probs: np.ndarray | None = None
     best_epoch_val_labels: np.ndarray | None = None
     epoch_history: List[dict] = []
+    epoch_tuned_history: List[dict] = []
+    best_epoch_threshold_table: List[dict] = []
 
     for epoch in range(1, EPOCHS + 1):
         train_loader = make_epoch_train_loader(
@@ -645,16 +653,46 @@ def main() -> None:
         val_metrics_05["skipped_non_finite_grad_steps"] = int(non_finite_grad_steps)
         epoch_history.append(val_metrics_05)
 
+        epoch_best_threshold, epoch_threshold_table = tune_threshold_for_f1(
+            y_true=val_true,
+            prob_true=val_prob_true,
+            thresholds=THRESHOLD_GRID,
+        )
+        epoch_tuned_metrics = compute_metrics(val_true, val_prob_true, threshold=epoch_best_threshold)
+        epoch_tuned_metrics["epoch"] = int(epoch)
+        epoch_tuned_metrics["train_loss"] = float(train_loss)
+        epoch_tuned_metrics["val_loss"] = float(val_loss if val_loss is not None else np.nan)
+        epoch_tuned_metrics["selected_threshold"] = float(epoch_best_threshold)
+        epoch_tuned_history.append(epoch_tuned_metrics)
+
         print(
             f"Epoch {epoch} | train_loss={train_loss:.6f} | val_loss={val_metrics_05['val_loss']:.6f} "
             f"| val_f1@0.5={val_metrics_05['f1']:.6f} | val_auc={val_metrics_05['roc_auc']:.6f} "
+            f"| val_best_thr={epoch_best_threshold:.2f} | val_f1@best_thr={epoch_tuned_metrics['f1']:.6f} "
             f"| skipped_non_finite_loss_batches={non_finite_loss_batches} "
             f"| skipped_non_finite_grad_steps={non_finite_grad_steps}"
         )
 
-        if val_metrics_05["f1"] > best_epoch_f1:
-            best_epoch_f1 = float(val_metrics_05["f1"])
+        should_update_best = (
+            (epoch_tuned_metrics["f1"] > best_epoch_f1)
+            or (
+                np.isclose(epoch_tuned_metrics["f1"], best_epoch_f1)
+                and epoch_tuned_metrics["roc_auc"] > best_epoch_auc
+            )
+            or (
+                np.isclose(epoch_tuned_metrics["f1"], best_epoch_f1)
+                and np.isclose(epoch_tuned_metrics["roc_auc"], best_epoch_auc)
+                and val_metrics_05["val_loss"] < best_epoch_val_loss
+            )
+        )
+
+        if should_update_best:
+            best_epoch_f1 = float(epoch_tuned_metrics["f1"])
             best_epoch = int(epoch)
+            best_epoch_auc = float(epoch_tuned_metrics["roc_auc"])
+            best_epoch_val_loss = float(val_metrics_05["val_loss"])
+            best_epoch_threshold = float(epoch_best_threshold)
+            best_epoch_threshold_table = epoch_threshold_table
             best_epoch_val_probs = val_prob_true.copy()
             best_epoch_val_labels = val_true.copy()
 
@@ -663,12 +701,18 @@ def main() -> None:
             torch.save(
                 {
                     "epoch": best_epoch,
-                    "best_val_f1": best_epoch_f1,
+                    "best_val_f1_tuned": best_epoch_f1,
+                    "best_val_auc": best_epoch_auc,
+                    "best_threshold": best_epoch_threshold,
                     "adapter_state_dict": extract_adapter_state_dict(model),
                 },
                 BEST_STATE_DICT_PATH,
             )
-            print(f"Saved new best model at epoch {best_epoch} with val_f1@0.5={best_epoch_f1:.6f}")
+            print(
+                f"Saved new best model at epoch {best_epoch} "
+                f"with val_f1@best_thr={best_epoch_f1:.6f} "
+                f"(threshold={best_epoch_threshold:.2f})"
+            )
 
         save_last_checkpoint(
             model=model,
@@ -691,11 +735,8 @@ def main() -> None:
         raise RuntimeError("Best validation predictions were not captured.")
 
     print("\n=== Threshold tuning on validation probabilities ===")
-    best_threshold, threshold_table = tune_threshold_for_f1(
-        y_true=best_epoch_val_labels,
-        prob_true=best_epoch_val_probs,
-        thresholds=THRESHOLD_GRID,
-    )
+    best_threshold = float(best_epoch_threshold)
+    threshold_table = best_epoch_threshold_table
     print(f"Best threshold by validation F1: {best_threshold:.2f}")
 
     final_val_metrics = compute_metrics(
@@ -815,9 +856,14 @@ def main() -> None:
             "random_state": SEED,
         },
         "epoch_metrics_threshold_0_5": epoch_history,
+        "epoch_metrics_tuned_threshold": epoch_tuned_history,
         "best_epoch": {
             "epoch": int(best_epoch),
-            "val_f1_threshold_0_5": float(best_epoch_f1),
+            "selection_metric": "validation_f1_at_epoch_best_threshold",
+            "val_f1_best_threshold": float(best_epoch_f1),
+            "val_auc": float(best_epoch_auc),
+            "val_loss": float(best_epoch_val_loss),
+            "best_threshold": float(best_epoch_threshold),
             "checkpoint_dir": str(BEST_MODEL_DIR),
             "state_dict_path": str(BEST_STATE_DICT_PATH),
         },
@@ -828,7 +874,7 @@ def main() -> None:
         "threshold_tuning": {
             "search_range": [float(THRESHOLD_GRID.min()), float(THRESHOLD_GRID.max())],
             "step": 0.01,
-            "selection_objective": "max_validation_f1",
+            "selection_objective": "max_validation_f1_on_best_epoch",
             "selected_threshold": float(best_threshold),
             "table": threshold_table,
         },
@@ -851,7 +897,7 @@ def main() -> None:
     METRICS_PATH.write_text(json.dumps(metrics_payload, indent=2), encoding="utf-8")
     print(f"Saved metrics: {METRICS_PATH}")
 
-    notes_text = f"""# ModernBERT-base LoRA Fine-Tuning Notes
+    notes_text = f"""# ModernBERT-base LoRA Fine-Tuning V2 Notes
 
 ## Run Configuration
 
@@ -876,8 +922,9 @@ def main() -> None:
 ## Validation Strategy
 
 - Stratified train/validation split (`test_size=0.2`, `random_state=42`)
-- Best checkpoint selected by validation F1 at threshold 0.5 each epoch
-- Final threshold tuned over 0.30-0.70 for best validation F1
+- Best checkpoint selected by validation F1 at each epoch's best threshold over `0.30-0.70`
+- Final threshold taken from the best checkpoint's validation threshold search
+- This is a longer, lower-LR LoRA run intended to improve on the earlier 3-epoch ModernBERT LoRA result
 
 ## Final Validation Metrics
 
@@ -892,16 +939,16 @@ def main() -> None:
 
 ## Outputs
 
-- `outputs/modernbert_lora/modernbert_lora_metrics.json`
-- `outputs/modernbert_lora/modernbert_lora_val_predictions.csv`
-- `outputs/modernbert_lora/modernbert_lora_error_analysis.csv`
-- `outputs/modernbert_lora/modernbert_lora_test_probabilities.csv`
-- `outputs/modernbert_lora/modernbert_lora_submission.csv`
-- `outputs/modernbert_lora/modernbert_lora_notes.md`
-- `outputs/modernbert_lora/best_model/`
-- `outputs/modernbert_lora/modernbert_lora_best_adapter_state_dict.pt`
-- `outputs/modernbert_lora/last_model/`
-- `outputs/modernbert_lora/modernbert_lora_training_state.pt`
+- `outputs/modernbert_lora_v2/modernbert_lora_v2_metrics.json`
+- `outputs/modernbert_lora_v2/modernbert_lora_v2_val_predictions.csv`
+- `outputs/modernbert_lora_v2/modernbert_lora_v2_error_analysis.csv`
+- `outputs/modernbert_lora_v2/modernbert_lora_v2_test_probabilities.csv`
+- `outputs/modernbert_lora_v2/modernbert_lora_v2_submission.csv`
+- `outputs/modernbert_lora_v2/modernbert_lora_v2_notes.md`
+- `outputs/modernbert_lora_v2/best_model/`
+- `outputs/modernbert_lora_v2/modernbert_lora_v2_best_adapter_state_dict.pt`
+- `outputs/modernbert_lora_v2/last_model/`
+- `outputs/modernbert_lora_v2/modernbert_lora_v2_training_state.pt`
 """
     NOTES_PATH.write_text(notes_text, encoding="utf-8")
     print(f"Saved notes: {NOTES_PATH}")
