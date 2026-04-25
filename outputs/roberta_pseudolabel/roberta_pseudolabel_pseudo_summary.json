@@ -1,0 +1,9 @@
+{
+  "source_probability_path": "/Users/dhruval/Documents/AI-Immune-System-Challenge/outputs/roberta_base/roberta_base_test_probabilities.csv",
+  "pseudo_true_threshold": 0.95,
+  "pseudo_false_threshold": 0.05,
+  "pseudo_true_count": 362,
+  "pseudo_false_count": 1412,
+  "pseudo_total": 1774,
+  "ignored_test_rows": 326
+}
