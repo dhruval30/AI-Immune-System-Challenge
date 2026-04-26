@@ -1,0 +1,169 @@
+{
+  "script_type": "inspection_only_no_training",
+  "model_anchor": "roberta-base",
+  "current_config": {
+    "MAX_LENGTH": 256,
+    "known_best_lb_anchor": "outputs/roberta_base/roberta_base_submission.csv -> 0.90909091"
+  },
+  "recommended_config": {
+    "MAX_LENGTH": 384,
+    "EPOCHS": 2,
+    "TRAIN_BATCH_SIZE": 4,
+    "EVAL_BATCH_SIZE": 8,
+    "GRADIENT_ACCUMULATION_STEPS": 4,
+    "LEARNING_RATE": 1e-05,
+    "WEIGHT_DECAY": 0.01,
+    "ADAM_EPS": 1e-08,
+    "effective_train_batch_size": 16,
+    "optional_if_memory_fails": {
+      "enable_gradient_checkpointing": true,
+      "reduce_train_batch_size_to": 2,
+      "increase_gradient_accumulation_to": 8
+    },
+    "efficient_baseline_reference": {
+      "MAX_LENGTH": 256,
+      "reason": "256 remains the efficient baseline because only a small percentage of rows are truncated. The recommended larger value is for the next experiment, not because 256 is objectively broken.",
+      "train_truncated_pct_at_256": 0.2653061224489796,
+      "test_truncated_pct_at_256": 0.33333333333333337
+    }
+  },
+  "max_length_reasons": [
+    "Use max_length=384 for the next controlled larger-context experiment. Pure coverage says 256 is efficient, but 256 does truncate some train/test rows, and repeating the current 256 setup is not an informative next run.",
+    "Do not jump straight to 512 first: 384 removes nearly all truncation with lower cost and memory risk."
+  ],
+  "hyperparam_reasons": [
+    "For max_length=384, use batch_size=4 and grad_accum=4 to preserve effective batch size 16 on MPS.",
+    "Existing RoBERTa selected epoch 1 as best, so a larger-context run should avoid long overfit cycles; use 2 epochs with best-checkpoint saving.",
+    "Validation F1 fell after epoch 1 in the anchor run; do not increase epochs first.",
+    "Validation loss increased after epoch 1 in the anchor run; longer training is likely overfitting."
+  ],
+  "roberta_summary": {
+    "available": true,
+    "metrics_path": "/Users/dhruval/Documents/AI-Immune-System-Challenge/outputs/roberta_base/roberta_base_metrics.json",
+    "best_epoch": 1,
+    "selected_threshold": 0.32,
+    "validation_final_f1": 0.8675623800383877,
+    "validation_final_auc": 0.9741989795918368,
+    "test_prediction_distribution": {
+      "pred_FALSE": 1523,
+      "pred_TRUE": 577
+    },
+    "epoch_history": [
+      {
+        "threshold": 0.5,
+        "accuracy": 0.9255102040816326,
+        "precision": 0.9367088607594937,
+        "recall": 0.7928571428571428,
+        "f1": 0.8588007736943907,
+        "roc_auc": 0.9741989795918368,
+        "confusion_matrix": {
+          "labels": [
+            "FALSE",
+            "TRUE"
+          ],
+          "matrix": [
+            [
+              685,
+              15
+            ],
+            [
+              58,
+              222
+            ]
+          ],
+          "format": "[[TN, FP], [FN, TP]]"
+        },
+        "prediction_distribution": {
+          "pred_FALSE": 743,
+          "pred_TRUE": 237
+        },
+        "epoch": 1,
+        "train_loss": 0.4542990431455629,
+        "val_loss": 0.22832367677165538
+      },
+      {
+        "threshold": 0.5,
+        "accuracy": 0.8836734693877552,
+        "precision": 0.9662921348314607,
+        "recall": 0.6142857142857143,
+        "f1": 0.7510917030567685,
+        "roc_auc": 0.9626224489795919,
+        "confusion_matrix": {
+          "labels": [
+            "FALSE",
+            "TRUE"
+          ],
+          "matrix": [
+            [
+              694,
+              6
+            ],
+            [
+              108,
+              172
+            ]
+          ],
+          "format": "[[TN, FP], [FN, TP]]"
+        },
+        "prediction_distribution": {
+          "pred_FALSE": 802,
+          "pred_TRUE": 178
+        },
+        "epoch": 2,
+        "train_loss": 0.1539760285710479,
+        "val_loss": 0.6568242592432973
+      },
+      {
+        "threshold": 0.5,
+        "accuracy": 0.9193877551020408,
+        "precision": 0.958904109589041,
+        "recall": 0.75,
+        "f1": 0.8416833667334669,
+        "roc_auc": 0.9701505102040816,
+        "confusion_matrix": {
+          "labels": [
+            "FALSE",
+            "TRUE"
+          ],
+          "matrix": [
+            [
+              691,
+              9
+            ],
+            [
+              70,
+              210
+            ]
+          ],
+          "format": "[[TN, FP], [FN, TP]]"
+        },
+        "prediction_distribution": {
+          "pred_FALSE": 761,
+          "pred_TRUE": 219
+        },
+        "epoch": 3,
+        "train_loss": 0.08706631492158132,
+        "val_loss": 0.46814500466369247
+      }
+    ]
+  },
+  "error_summary": {
+    "available": true,
+    "validation_rows": 980,
+    "error_length_analysis_path": "/Users/dhruval/Documents/AI-Immune-System-Challenge/outputs/roberta_hyperparam_inspection/roberta_error_length_analysis.csv",
+    "false_negative_count": 54,
+    "false_positive_count": 15,
+    "false_negative_truncated_at_256_pct": 0.0,
+    "true_positive_truncated_at_256_pct": 0.0,
+    "false_negative_token_p95": 62.04999999999998,
+    "true_positive_token_p95": 64.5
+  },
+  "paths": {
+    "train_token_lengths": "/Users/dhruval/Documents/AI-Immune-System-Challenge/outputs/roberta_hyperparam_inspection/train_token_lengths.csv",
+    "test_token_lengths": "/Users/dhruval/Documents/AI-Immune-System-Challenge/outputs/roberta_hyperparam_inspection/test_token_lengths.csv",
+    "token_stats": "/Users/dhruval/Documents/AI-Immune-System-Challenge/outputs/roberta_hyperparam_inspection/token_length_stats_by_label.csv",
+    "coverage": "/Users/dhruval/Documents/AI-Immune-System-Challenge/outputs/roberta_hyperparam_inspection/max_length_coverage.csv",
+    "error_length_analysis": "/Users/dhruval/Documents/AI-Immune-System-Challenge/outputs/roberta_hyperparam_inspection/roberta_error_length_analysis.csv",
+    "markdown_report": "/Users/dhruval/Documents/AI-Immune-System-Challenge/outputs/roberta_hyperparam_inspection/roberta_hyperparam_recommendations.md"
+  }
+}
