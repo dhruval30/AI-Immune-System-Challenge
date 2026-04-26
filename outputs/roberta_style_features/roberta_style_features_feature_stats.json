@@ -1,0 +1,39 @@
+{
+  "feature_columns": [
+    "char_length",
+    "word_count",
+    "sentence_count",
+    "max_word_length",
+    "avg_word_length",
+    "stopword_ratio",
+    "unique_word_ratio",
+    "repeated_token_count",
+    "newline_count"
+  ],
+  "mean": [
+    148.75152587890625,
+    24.762245178222656,
+    1.8344388008117676,
+    10.746428489685059,
+    4.931713104248047,
+    0.3110460638999939,
+    0.9074905514717102,
+    0.1270408183336258,
+    0.5530612468719482
+  ],
+  "std": [
+    81.64244842529297,
+    14.678915977478027,
+    1.8448373079299927,
+    2.5874600410461426,
+    0.8570930361747742,
+    0.10433261096477509,
+    0.10563451796770096,
+    2.5619492530822754,
+    2.538454055786133
+  ],
+  "normalization_source": "training split only",
+  "train_split_size": 3920,
+  "validation_split_size": 980,
+  "seed": 42
+}

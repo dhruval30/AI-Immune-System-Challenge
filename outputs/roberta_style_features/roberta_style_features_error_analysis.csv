@@ -1,0 +1,198 @@
+text,true_label,pred_label,pred_prob_TRUE,error_type,confidence,char_length,word_count,sentence_count,max_word_length,avg_word_length,stopword_ratio,unique_word_ratio,repeated_token_count,newline_count
+"Our research team who are responsible of gathering materials and conclusions for the project are still behind on several goals, and there's nevertheless a question of exactly how long it will take to get to the conclusion of the project.",TRUE,FALSE,0.010491843335330486,false_negative,0.9895081520080566,237.0,40.0,1.0,12.0,4.9,0.475,0.8,0.0,0.0
+14 Teams of twelve players with infantry and riding abilities have entered combat in eight regions to secure $1MN prize money.,TRUE,FALSE,0.010603013448417187,false_negative,0.9893969893455505,126.0,21.0,1.0,9.0,4.9523809523809526,0.2857142857142857,1.0,0.0,0.0
+"Decide upon specific limiting principles that are reasonable while still generally achievable, such an amount or period of time versus ongoing effort or difficulty.
+
+Once you’ve set these limits, it’s important to stick to them.",TRUE,FALSE,0.016778988763689995,false_negative,0.9832209944725037,228.0,37.0,2.0,10.0,5.054054054054054,0.2972972972972973,0.945945945945946,0.0,2.0
+"Friends
+""It's incredible, we earn 598 dollars by selling our secret recipe for cooking mustard extract paste. It's a great deal.",TRUE,FALSE,0.01700301468372345,false_negative,0.9829970002174377,128.0,21.0,3.0,10.0,4.9523809523809526,0.238095238095238,0.9523809523809524,0.0,1.0
+"How having others in it varies depending, rather, whenever someone wants it makes the learner feel threatened or inadequate."" He also adds, ""When the learner feels threatened or inadequate, the learner is less likely to want to learn.",TRUE,FALSE,0.02027273178100586,false_negative,0.9797272682189941,234.0,38.0,2.0,10.0,4.973684210526316,0.3421052631578947,0.7631578947368421,0.0,0.0
+"At certain temperatures the roast enhances specific coffee twigs that build flavors that complement the deep, chocolatey, rich; and creamy, buttery, nutty notes of the coffee.",TRUE,FALSE,0.020676767453551292,false_negative,0.9793232083320618,175.0,26.0,1.0,12.0,5.538461538461538,0.3076923076923077,0.8461538461538461,0.0,0.0
+[DECODE ERROR] - Error decoding the input stream.,TRUE,FALSE,0.022110428661108017,false_negative,0.9778895974159241,49.0,7.0,1.0,8.0,5.428571428571429,0.1428571428571428,0.8571428571428571,1.0,0.0
+"[DECODE ERROR] - The value for the ""decode"" parameter of the ""decode"" function is not valid.",TRUE,FALSE,0.022684114053845406,false_negative,0.9773159027099609,92.0,15.0,1.0,9.0,4.6,0.4666666666666667,0.7333333333333333,0.0,0.0
+"Book descriptions on Amazon . The New Testimony library, consisting of over cooking disease, tells things about a healthy and balanced life.",TRUE,FALSE,0.024538187310099602,false_negative,0.9754618406295776,140.0,21.0,2.0,12.0,5.476190476190476,0.238095238095238,1.0,0.0,0.0
+[DECODE ERROR] 2.,TRUE,FALSE,0.03634987771511078,false_negative,0.963650107383728,17.0,3.0,1.0,6.0,4.0,0.0,1.0,0.0,0.0
+"🎂 Meanwhile in the US Senate chamber, soon-to-be-formers of ""the Squad"" make various noises and do little to nothing.",TRUE,FALSE,0.039523232728242874,false_negative,0.9604767560958862,117.0,21.0,1.0,9.0,4.333333333333333,0.3809523809523809,0.9047619047619048,0.0,0.0
+"With smoked fish powder on top.
+Starty, startza!
+I love this recipe - it goes down well and Amy is doing great. I've been experimenting with smoked fish powder lately and this is a great way to use it.",TRUE,FALSE,0.03977127745747566,false_negative,0.9602287411689758,201.0,38.0,4.0,13.0,4.131578947368421,0.3684210526315789,0.7631578947368421,0.0,2.0
+So gather inspiration online quickly and securely there's Alexa! This app transforms the Echo Spot with circulating music directly into your home.,TRUE,FALSE,0.043146196752786636,false_negative,0.9568538069725037,146.0,22.0,2.0,11.0,5.590909090909091,0.2272727272727272,1.0,0.0,0.0
+"For an organized, confident ride at Draft Fiddle #7 we’ll head out from the parking at Woldson Rd and take the trail to the intersection of Woldson Rd and the Old North Fork Road.",TRUE,FALSE,0.04409099742770195,false_negative,0.955909013748169,179.0,35.0,1.0,12.0,4.057142857142857,0.4,0.8,0.0,0.0
+"What are blackjack etiquette?
+Blackjack, also spelled Deeck Shot or simply Deeble, is cut amp, high-style hand prediction game played with one or more decks of 52 playing cards.",TRUE,FALSE,0.04730356112122536,false_negative,0.9526964426040649,177.0,30.0,2.0,10.0,4.766666666666667,0.2333333333333333,0.9333333333333332,0.0,1.0
+"Sub Menu Products Browse our carefully-by curated smidge and smoggle lines, featuring snack supplements from trusted brand name manufacturers.",TRUE,FALSE,0.0518014170229435,false_negative,0.9481985569000244,142.0,20.0,1.0,13.0,6.05,0.2,1.0,0.0,0.0
+"Hence choosing the appropriate temperature relying on whether it as necessary. Based on the passage above, Could you paraphrase the sentence ""The temperature of the mixture should be adjusted to achieve the desired viscosity without overheating the polymer"" in simpler terms.",FALSE,TRUE,0.9230723977088928,false_positive,0.9230723977088928,275.0,41.0,2.0,11.0,5.609756097560975,0.3902439024390244,0.8048780487804879,0.0,0.0
+"Each individual expresses oneself through the medium as technology allows, finalizing the product before it finds an intended audience. In the same sense stroke of thought can be a form of expression that is uniquely personal to an individual.",TRUE,FALSE,0.07756686955690384,false_negative,0.9224331378936768,243.0,39.0,2.0,10.0,5.17948717948718,0.3846153846153846,0.8717948717948718,0.0,0.0
+"Plus that girl with skinny jeans probably showering pools, that girl I'm taking to student to break up with her.",TRUE,FALSE,0.08181814849376678,false_negative,0.918181836605072,112.0,20.0,1.0,9.0,4.55,0.35,0.8,0.0,0.0
+"what would be cohesive in this sentence?)
+Naah,I love it. Can you take a stab at this line?""The air is so thick with the smell of death that I can't breathe.",TRUE,FALSE,0.08379574120044708,false_negative,0.9162042737007141,157.0,33.0,5.0,8.0,3.636363636363636,0.5151515151515151,0.9090909090909092,0.0,1.0
+"Whether personal preferences lean far-drawn toward down-to-vertical or across-the-cliff cleaning systems, few invest well enough in the best cleaning tools.",TRUE,FALSE,0.08623058348894119,false_negative,0.9137694239616394,156.0,25.0,1.0,11.0,5.2,0.2,0.92,0.0,0.0
+"Deviate menu items to your taste preferences or avoid listed ingredients available ahead of ordering your meal items.
+How Does The Keto Morning Mistake Happel?
+How Does The Keto Morning Mistake Happel.",TRUE,FALSE,0.09597539156675339,false_negative,0.904024600982666,201.0,32.0,3.0,11.0,5.21875,0.21875,0.71875,0.0,2.0
+"What action recommendations does Gordon suggest after diligent consideration”? Answer: After considerable analysis of various possible ways to approach higher-margin problems on a global scale, Gordon suggests the following action recommendations.",TRUE,FALSE,0.09896689653396606,false_negative,0.9010331034660339,247.0,32.0,2.0,15.0,6.59375,0.1875,0.875,0.0,0.0
+"One particular highlight very close to his mom Katy Perry loves won’t even be viewed by her. She might point by pointing to it, but she won’t view it.",TRUE,FALSE,0.11420800536870956,false_negative,0.8857920169830322,150.0,31.0,2.0,10.0,3.774193548387097,0.3870967741935484,0.8064516129032258,0.0,0.0
+"At all football stadiums games, we queue for this terrific view. But this time Aston showed us the way privileged into row A.",TRUE,FALSE,0.11617445945739746,false_negative,0.8838255405426025,125.0,23.0,2.0,10.0,4.3478260869565215,0.3478260869565217,0.9565217391304348,0.0,0.0
+"'',
+      //         ""Início brigade, que, de longascumbus vestigia fumus\n"",
+      //         ""Terra, cùm pluvias cùm sordida cùm sordida pluvia\n"",
+      //         ""Sed, dum tibi, deus, non fuit tibi, deus, non fuit.",FALSE,TRUE,0.8813397884368896,false_positive,0.8813397884368896,219.0,27.0,4.0,12.0,4.518518518518518,0.0,0.7037037037037037,0.0,3.0
+"No parking fee dollars or permits are necessary directly at Silver Gate but the ranger station continues those requirements. If stocking kayaking equipment and/or camping gear, the $30 fee for the 7 day pass is well worth the cost.",TRUE,FALSE,0.1413051187992096,false_negative,0.8586949110031128,231.0,40.0,2.0,12.0,4.7,0.3,0.875,0.0,0.0
+"“
+
+Now it couldn't take pins to load them. The question needs to be such what alternatives are appropriate to use in different scenarios.",TRUE,FALSE,0.15228086709976196,false_negative,0.847719132900238,137.0,23.0,3.0,12.0,4.782608695652174,0.4347826086956521,0.9130434782608696,0.0,2.0
+"USB allows researchers to achieve that.
+Step (200)
+Your task description should be lightweight dependencies. You need relatively small to moderate amount of code.",TRUE,FALSE,0.15805648267269135,false_negative,0.8419435024261475,162.0,24.0,4.0,12.0,5.583333333333333,0.2916666666666667,0.9583333333333334,0.0,2.0
+"BoJack Boles, president UNCLE FOODCO LLC, of the Charleston Grain Company, said increased PSCO business has been a boon to his company.",TRUE,FALSE,0.1637599915266037,false_negative,0.8362399935722351,135.0,22.0,1.0,10.0,5.0,0.2727272727272727,0.9545454545454546,0.0,0.0
+quotesquizzes.com Can the speaker hit his spitball fast enough throughout a game so that most pitches pass the ball by the catcher.,TRUE,FALSE,0.17110979557037354,false_negative,0.8288902044296265,131.0,23.0,2.0,13.0,4.695652173913044,0.3043478260869565,0.9130434782608696,0.0,0.0
+"Ä°s part, we’
+åä»åttes och det var inte jag jag själv kunde se och jag gick och jag tog mig fram och jag tillade mig och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag.",FALSE,TRUE,0.8260388374328613,false_positive,0.8260388374328613,821.0,203.0,2.0,7.0,3.0344827586206895,0.0049261083743842,0.0935960591133004,1.0,1.0
+"Při přípravovaném jídlineno nakصات, rypcem, vystřihem a vložíme do misky.",FALSE,TRUE,0.8250382542610168,false_positive,0.8250382542610168,73.0,10.0,1.0,13.0,6.1,0.1,1.0,0.0,0.0
+"orraine
+
+A: Alright!
+
+T values for all others. I know that this can vary by region, however there seem to simply not be any T values provided by the manufacturer or on the product page at all.",TRUE,FALSE,0.1780279576778412,false_negative,0.8219720125198364,192.0,37.0,4.0,12.0,4.027027027027027,0.4324324324324324,0.8648648648648649,0.0,4.0
+So why do aspects that are critical or debatabbable elements are not addressed in the presented consideration? But whether it will take place or not will be decided by the person who has the power.,TRUE,FALSE,0.1913985013961792,false_negative,0.8086014986038208,197.0,35.0,2.0,13.0,4.6,0.5428571428571428,0.8285714285714286,0.0,0.0
+"Как аутор а комику герова из Tarzan, а то и спорно Туга Ніедор. А наша босса Туга не вдається до нас.",TRUE,FALSE,0.21136264503002167,false_negative,0.7886373400688171,101.0,21.0,2.0,8.0,3.7142857142857144,0.0,0.8571428571428571,0.0,0.0
+"Due west of town what remained was a vast, barren theocracy, hostile and inhospitable to the needs of the people, but the city's leaders had grown fat on its own success.",FALSE,TRUE,0.7770798206329346,false_positive,0.7770798206329346,170.0,31.0,1.0,12.0,4.387096774193548,0.4193548387096774,0.9032258064516128,0.0,0.0
+"What planning processes can one initiate should I require'?""}\
+user:{s} {""assistant,""/s}  
+
+The above response indicates the user wants to know if there is any specific planning process they can initiate in order to achieve their goal.",TRUE,FALSE,0.22347033023834229,false_negative,0.7765296697616577,235.0,38.0,4.0,9.0,4.7894736842105265,0.2894736842105263,0.8157894736842105,0.0,3.0
+It tickLES ME when those tiny little green weevilllettes crawl out of them. and flutter around in a neftiful dance.,TRUE,FALSE,0.22445788979530334,false_negative,0.775542140007019,115.0,20.0,2.0,13.0,4.7,0.35,1.0,0.0,0.0
+"After investing many sleepessees resting looking into the various gadgets on offer, we’ve located that the very best robot vacuum cleaners are those that are very easy to use, easy to clean up as well as fit your house and also lifestyle.",FALSE,TRUE,0.7739989161491394,false_positive,0.7739989161491394,238.0,43.0,1.0,11.0,4.488372093023256,0.3255813953488372,0.8372093023255814,0.0,0.0
+"With every photo you take, I hurtle closer hostage to the abyss.""
+
+""Say that line again, please.""
+
+Not displaying explicit violence and gore is not the same thing as avoiding the subject matter altogether.",TRUE,FALSE,0.24517545104026794,false_negative,0.7548245191574097,205.0,34.0,5.0,10.0,4.764705882352941,0.3823529411764705,0.9117647058823528,0.0,4.0
+"Is it covered everywhere I look? Probably not!}
+\hyperle{3pt}{12}{14pt]]:
+4rd ed.",TRUE,FALSE,0.2461717277765274,false_negative,0.7538282871246338,81.0,14.0,5.0,10.0,4.142857142857143,0.2857142857142857,1.0,0.0,2.0
+"Being successful and influential with millions on Social Audit, Harvey is widely regarded among marketers today at the forefront incorporating what they call 'influence marketing' into their campaigns.",TRUE,FALSE,0.27606287598609924,false_negative,0.7239371538162231,201.0,28.0,1.0,13.0,6.071428571428571,0.3214285714285714,1.0,0.0,0.0
+"Приложиите в изб Millennimited by space, and focus only на тексте.",FALSE,TRUE,0.7230154871940613,false_positive,0.7230154871940613,66.0,11.0,1.0,13.0,4.909090909090909,0.1818181818181818,1.0,0.0,0.0
+"SCSI architecture refers to certain features included High data dependent technology, high level of fit between between primary and between nonparallel data transfer.",TRUE,FALSE,0.2785913646221161,false_negative,0.7214086055755615,166.0,23.0,1.0,12.0,6.173913043478261,0.1304347826086956,0.8260869565217391,1.0,0.0
+Some emerging collaborations worth keeping tabs with the world's culture capital – and your guide in discovering and delving deeper galleries: This fourth-floor gallery space is dedicated to showcasing the work of local artists.,TRUE,FALSE,0.28006863594055176,false_negative,0.7199313640594482,228.0,34.0,1.0,14.0,5.617647058823529,0.3235294117647059,0.9411764705882352,0.0,0.0
+"} - Write as if responding \\ to AT's request for some advice.]
+
+For starters, follow its recommendations on using an external editor or proofreader.",TRUE,FALSE,0.28196462988853455,false_negative,0.7180353403091431,149.0,22.0,3.0,15.0,5.2727272727272725,0.3636363636363636,0.9545454545454546,0.0,2.0
+"Incorporare la diversité dans lec ou nos en musique , et laiss les couleurs s’entremêler
+Il y a un temps où nous avons été très amis
+Je te revo, et je me rappelle
+Nous étions si heureux, si heureux
+Avec la musique, et le soleil, et la mer
+Nous avons ri, et chanté, et dansé, et roulé dans la boue
+Avec les amis, et la paix, et le soleil, et la mer
+Je te revo, et je me rappelle
+Et j’oublie tout, et je me rappelle
+Je me souviens de la maison, de la rue
+Et de la place, et de la fontaine
+Et de la rue, et de la place, et de la fontaine
+Et de la place, et de la fontaine
+Avec la musique, et le soleil, et la mer
+Nous avons ri, et chanté, et dansé, et.",FALSE,TRUE,0.708247721195221,false_positive,0.708247721195221,649.0,141.0,15.0,11.0,3.432624113475178,0.0070921985815602,0.375886524822695,0.0,14.0
+"Begin making a video with your family and explain how discretionary spending can help increase your revenue, create a budgeting plan/template based. Sadly there are a lot of individuals who don't have any idea how to budget or what budgeting is.",TRUE,FALSE,0.2945602834224701,false_negative,0.7054396867752075,245.0,42.0,2.0,13.0,4.785714285714286,0.3809523809523809,0.8809523809523809,0.0,0.0
+Footmen had started glaring red consequences on them to get awestrucks along the gullies.,FALSE,TRUE,0.6963039636611938,false_positive,0.6963039636611938,89.0,14.0,1.0,12.0,5.357142857142857,0.2857142857142857,1.0,0.0,0.0
+"Facade Design Manual Lee Woosng is one type information here is a lot of people who have been looking for, this photo is the best photo on this website.",FALSE,TRUE,0.6228728294372559,false_positive,0.6228728294372559,152.0,29.0,1.0,11.0,4.206896551724138,0.4137931034482758,0.8620689655172413,0.0,0.0
+"Now is a wonderful season isnott it, with crisp weather in all the states. Makes me want to run around and play in the leaves and take walks in the park.",FALSE,TRUE,0.554690420627594,false_positive,0.554690420627594,153.0,31.0,2.0,9.0,3.870967741935484,0.4193548387096774,0.8387096774193549,0.0,0.0
+"This versatile contender has been reinvin... read whole review >
+5  Samsung Powerbot R7070
+This sleek and stylish robot vacuum cleaner is a breeze to use and clean, thanks to its advanced navigation system and powerful suction.",FALSE,TRUE,0.5434997081756592,false_positive,0.5434997081756592,227.0,36.0,4.0,10.0,5.111111111111111,0.3055555555555556,0.8888888888888888,0.0,2.0
+Disposable filter replacements help lend people bigger performance from the machine conveniently. It is also an eco-friendly choice because you don’t need to throw away the entire machine.,FALSE,TRUE,0.5426902770996094,false_positive,0.5426902770996094,188.0,30.0,2.0,12.0,5.233333333333333,0.2666666666666666,0.9333333333333332,0.0,0.0
+"Let us impress the audience once more
+I'll start packing the room with the scent of flowers
+I'll make sure they're all wearing their best clothes
+And if they're not, I'll have them change into something better
+I'll hire a band and I'll make sure they're playing all of their hits
+I'll make sure the drinks are free and the music's loud
+I'll make sure everyone's having a good time
+I'll make sure the crowd is cheering for more
+I'll make sure we're all dancing to the beat
+I'll make sure the night goes on forever
+
+I'll be the one who sets the mood
+I'll be the one who keeps the party alive
+I'll be the one who makes sure everyone's having fun
+I'll be the one who makes sure the night never dies
+
+I'll be the one who lights up the night
+I'll be the one who keeps the party going strong
+I'll be the one who keeps the vibe alive
+I'll be the one who makes sure the night never goes.",FALSE,TRUE,0.5348588228225708,false_positive,0.5348588228225708,878.0,173.0,18.0,10.0,4.057803468208093,0.3294797687861271,0.4335260115606936,0.0,19.0
+"握中间的一根背括,我会指你做一个简单的圆角框框,然后你继续做下一根,以此类推。 
+
+.",FALSE,TRUE,0.525097131729126,false_positive,0.525097131729126,43.0,4.0,1.0,14.0,8.75,0.0,1.0,0.0,2.0
+"==========""
+        
+message += """"""methods/script/smilify_the_day_04.js
+// Copyright 2010 The Android Open Source Project
+
+/**
+ * Given a string, returns the length of the shortest word in it.",FALSE,TRUE,0.5113012194633484,false_positive,0.5113012194633484,192.0,24.0,6.0,18.0,5.375,0.2916666666666667,0.9166666666666666,0.0,6.0
+Through this narrow passageway is lodged Tom Hiddle (Loki: Avengers Assembled).,FALSE,TRUE,0.41325312852859497,false_positive,0.41325312852859497,79.0,11.0,1.0,10.0,5.909090909090909,0.1818181818181818,1.0,0.0,0.0
+And with our modern technology getting snoopherised every single week | #bussofthefuture | #bussofthefuture | #bussofthefuture | #bussofthefuture | #bussofthefuture | #bussofthefuture | #bussofthefuture | #bussofthefuture | #bussofthefuture | #bussofthefuture | #bussofthefuture | #bussofthefuture | #bussofthefuture | #bussofthefuture | #bussofthefuture | #bussofthefuture | #bussofthefuture | #bussofthefuture | #bussofthefuture | #bussofthefuture | #bussofthefuture | #bussofthefuture | #bussofthefuture | #bussofthefuture | #bussofthefuture | #bussof.,FALSE,TRUE,0.40885093808174133,false_positive,0.40885093808174133,555.0,36.0,1.0,15.0,12.25,0.0833333333333333,0.3333333333333333,24.0,0.0
+"Investing services can be a valuable tool [...tag=”finance,”]
+Can Affiliate Marketers Use ClickBank to Promote Their Own Products.",FALSE,TRUE,0.3959232270717621,false_positive,0.3959232270717621,130.0,19.0,3.0,9.0,5.421052631578948,0.2105263157894736,0.9473684210526316,0.0,1.0
+"PersonallyI think we dramatically minimized everything that goes in to building a sustainable model. Based on the passage above, How did the author's experience with a previous company compare to their current company in terms of providing resources and support to employees.",FALSE,TRUE,0.38964855670928955,false_positive,0.38964855670928955,275.0,42.0,2.0,12.0,5.5,0.3809523809523809,0.8571428571428571,0.0,0.0
+"Martens and J,Gosh.
+Clicker Training for Dogs owners, trainers are using clicker training to teach obedience commands, housebreaking, and even agility training.",FALSE,TRUE,0.3864756226539612,false_positive,0.3864756226539612,160.0,23.0,2.0,13.0,5.782608695652174,0.217391304347826,0.8260869565217391,0.0,1.0
+"Then maybe both of us will clearer underst etwand."")
+
+    print(sol)
+    print(s2)
+
+    # print(s1.",FALSE,TRUE,0.3821195960044861,false_positive,0.3821195960044861,99.0,15.0,5.0,7.0,4.2,0.1333333333333333,0.8666666666666667,0.0,5.0
+"That would take around two good selfies».
+
+    `2**: If you're feeling adventurous, you can try to make a DIY version of a hair straightener or curling iron by using a heated curling rod and a metal comb.",FALSE,TRUE,0.34656402468681335,false_positive,0.34656402468681335,204.0,37.0,2.0,12.0,4.1891891891891895,0.2972972972972973,0.8918918918918919,0.0,2.0
+"#246
+
+    [""Sweet Potato, Caramelised'], [""Sweet potato, baked""]
+    [""Sweet potato, roasted""], [""Sweet potato, boiled""]
+    [""Sweet potato, mashed""]
+    [""Sweet potato, mashed, buttered""]
+    [""Sweet potato, mashed, buttered, salted""]
+    [""Sweet potato, mashed, buttered, salted, peppered""]
+    [""Sweet potato, mashed, buttered, salted, peppered, creamed""]
+    [""Sweet potato, mashed, buttered, salted, peppered, creamed, cinnamoned""]
+    [""Sweet potato, mashed, buttered, salted, peppered, creamed, cinnamoned, nutmegged""]
+    [""Sweet potato, mashed, buttered, salted, peppered, creamed, nutmegged, gingered""]
+    [""Sweet potato, mashed, buttered, salted, peppered, creamed, nutmegged, gingered, lemoned""]
+    [""Sweet potato, mashed, buttered, salted, peppered,.",FALSE,TRUE,0.3332553803920746,false_positive,0.3332553803920746,765.0,80.0,13.0,11.0,6.5875,0.0,0.2,0.0,13.0
+""")
+puts message.to_s.endsWith?$? ? """":""..."") # remove trailing newline if present
+puts message.",FALSE,TRUE,0.3230588436126709,false_positive,0.3230588436126709,95.0,11.0,8.0,8.0,5.818181818181818,0.0,0.8181818181818182,0.0,2.0
+"dukeshill kitchen, situated brand africa of the finest gourmet restaurants. On a recent trip to the city, I was fortunate enough to be able to get a table at this restaurant, and I must say, it was one of the best dining experiences I’ve ever had.",FALSE,TRUE,0.32013848423957825,false_positive,0.32013848423957825,247.0,47.0,2.0,11.0,4.148936170212766,0.4468085106382978,0.8085106382978723,0.0,0.0
+"There also specific design parameters [1–3]: 
+
+- Refrigerating Temperature Difference 
+- Refrigerant Temperature Difference 
+- Refrigerant Flow Rate 
+- Refrigerant Temperature 
+- Refrigeration Capacity 
+
+The refrigerating temperature difference is the temperature difference between the refrigerant temperature and the air temperature.",FALSE,TRUE,0.3181637227535248,false_positive,0.3181637227535248,335.0,36.0,7.0,13.0,7.722222222222222,0.1944444444444444,0.5555555555555556,0.0,8.0
+"'),
+                model('assistant', '', type=transformer),
+                model('#shopping_cart', '', type=transformer),
+                model('#order', '', type=transformer),
+                model('#customer', '', type=transformer),
+                model('#shipping_address', '', type=transformer),
+                model('#billing_address', '', type=transformer),
+                model('#payment', '', type=transformer),
+                model('#product', '', type=transformer),
+                model('#product_option', '', type=transformer),
+                model('#product_option_value', '', type=transformer),
+                model('#product_option_value', '', type=transformer),
+                model('#product_option_value', '', type=transformer),
+                model('#product_option_value', '', type=transformer),
+                model('#product_option_value', '', type=transformer),
+                model('#product_option_value', '', type=transformer),
+                model('#product_option_value', '', type=transformer),
+                model('#product_option_value', '', type=transformer),
+                model('#product_option_value', '', type.",FALSE,TRUE,0.3122168183326721,false_positive,0.3122168183326721,1163.0,71.0,19.0,20.0,8.774647887323944,0.0,0.1830985915492957,0.0,18.0
+"}
+        if (user.value.trim.toLowerCase() < ""xiii.-"") { // check if user input is valid
+            throw new Error(""Invalid user input.",FALSE,TRUE,0.3022540211677551,false_positive,0.3022540211677551,138.0,18.0,7.0,11.0,4.555555555555555,0.0555555555555555,0.7777777777777778,0.0,2.0
