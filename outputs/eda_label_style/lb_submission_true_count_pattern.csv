@@ -1,0 +1,15 @@
+submission,path,lb_score,true_count,false_count
+blend_r095_m005_thr032,outputs/blends/roberta_modernbert_blend_r0p95_m0p05_thr0p32.csv,0.91919192,578,1522
+blend_r090_m010_thr036,outputs/blends/roberta_modernbert_blend_r0p90_m0p10_thr0p36.csv,0.91068301,574,1526
+blend_r090_m010_thr034,outputs/blends/roberta_modernbert_blend_r0p90_m0p10_thr0p34.csv,0.90940767,580,1520
+roberta_base,outputs/roberta_base/roberta_base_submission.csv,0.90909091,577,1523
+verification_regenerated,outputs/roberta_base/verification_regenerated_submission.csv,0.90909091,577,1523
+modernbert_lora_v2,outputs/modernbert_lora_v2/modernbert_lora_v2_submission.csv,0.88628763,617,1483
+roberta_base_cv,outputs/roberta_base_cv/roberta_base_cv_submission.csv,0.87591241,540,1560
+modernbert_lora,outputs/modernbert_lora/modernbert_lora_submission.csv,0.87145242,632,1468
+roberta_base_cv_v2,outputs/roberta_base_cv_v2/roberta_base_cv_v2_submission.csv,0.83054004,501,1599
+modernbert_base,outputs/modernbert_base/modernbert_base_submission.csv,0.83012821,680,1420
+roberta_pseudolabel,outputs/roberta_pseudolabel/roberta_pseudolabel_submission.csv,0.79125249,436,1664
+tfidf_features_cv,outputs/baseline_tfidf_features_logreg_cv/baseline_tfidf_features_logreg_cv_submission.csv,0.64610866,819,1281
+tfidf_features,outputs/baseline_tfidf_features_logreg/baseline_tfidf_features_logreg_submission.csv,0.62416107,657,1443
+minilm_cv,outputs/baseline_minilm_logreg_cv/baseline_minilm_logreg_cv_submission.csv,0.51649928,829,1271
