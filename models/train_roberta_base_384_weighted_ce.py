@@ -1,8 +1,4 @@
 # pip install pandas numpy scikit-learn tqdm torch transformers accelerate
-#
-# Current direct-model anchor: max_length=256, normal CrossEntropyLoss, outputs/roberta_base/.
-# For the larger-context weighted-loss experiment, use models/train_roberta_base_384_weighted_ce.py
-# so the known best RoBERTa artifacts are not overwritten.
 
 from __future__ import annotations
 
@@ -33,33 +29,35 @@ INSTALL_CMD = "pip install pandas numpy scikit-learn tqdm torch transformers acc
 
 SEED = 42
 MODEL_NAME = "roberta-base"
-MAX_LENGTH = 256
+MAX_LENGTH = 384
 EPOCHS = 3
-TRAIN_BATCH_SIZE = 8
-EVAL_BATCH_SIZE = 16
-GRADIENT_ACCUMULATION_STEPS = 2
-LEARNING_RATE = 1e-5
+TRAIN_BATCH_SIZE = 4
+EVAL_BATCH_SIZE = 8
+GRADIENT_ACCUMULATION_STEPS = 4
+LEARNING_RATE = 8e-6
 WEIGHT_DECAY = 0.01
 ADAM_EPS = 1e-8
+CLASS_WEIGHTS = [1.0, 1.5]  # [FALSE, TRUE], softened weighting for 71/29 class split.
+LABEL_SMOOTHING = 0.03
 
 THRESHOLD_GRID = np.round(np.arange(0.30, 0.701, 0.01), 2)
 
 ROOT_DIR = Path(__file__).resolve().parents[1]
 DATA_DIR = ROOT_DIR / "data"
-OUTPUT_DIR = ROOT_DIR / "outputs" / "roberta_base"
+OUTPUT_DIR = ROOT_DIR / "outputs" / "roberta_base_384_weighted_ce"
 BEST_MODEL_DIR = OUTPUT_DIR / "best_model"
-BEST_STATE_DICT_PATH = OUTPUT_DIR / "roberta_base_best_state_dict.pt"
+BEST_STATE_DICT_PATH = OUTPUT_DIR / "roberta_base_384_weighted_ce_best_state_dict.pt"
 
 TRAIN_PATH = DATA_DIR / "train_labeled_comp.jsonl"
 TEST_PATH = DATA_DIR / "test_labeled_comp.jsonl"
 SOLUTION_FORMAT_PATH = DATA_DIR / "solution_format.csv"
 
-METRICS_PATH = OUTPUT_DIR / "roberta_base_metrics.json"
-VAL_PRED_PATH = OUTPUT_DIR / "roberta_base_val_predictions.csv"
-ERROR_ANALYSIS_PATH = OUTPUT_DIR / "roberta_base_error_analysis.csv"
-TEST_PROB_PATH = OUTPUT_DIR / "roberta_base_test_probabilities.csv"
-SUBMISSION_PATH = OUTPUT_DIR / "roberta_base_submission.csv"
-NOTES_PATH = OUTPUT_DIR / "roberta_base_notes.md"
+METRICS_PATH = OUTPUT_DIR / "roberta_base_384_weighted_ce_metrics.json"
+VAL_PRED_PATH = OUTPUT_DIR / "roberta_base_384_weighted_ce_val_predictions.csv"
+ERROR_ANALYSIS_PATH = OUTPUT_DIR / "roberta_base_384_weighted_ce_error_analysis.csv"
+TEST_PROB_PATH = OUTPUT_DIR / "roberta_base_384_weighted_ce_test_probabilities.csv"
+SUBMISSION_PATH = OUTPUT_DIR / "roberta_base_384_weighted_ce_submission.csv"
+NOTES_PATH = OUTPUT_DIR / "roberta_base_384_weighted_ce_notes.md"
 
 
 
@@ -260,6 +258,7 @@ def evaluate_model(
     device: torch.device,
     desc: str,
     has_labels: bool,
+    loss_fn: torch.nn.Module | None = None,
 ) -> tuple[float | None, np.ndarray, np.ndarray | None]:
     model.eval()
     all_probs = []
@@ -279,19 +278,18 @@ def evaluate_model(
             input_ids = input_ids.to(device)
             attention_mask = attention_mask.to(device)
 
-            outputs = model(
-                input_ids=input_ids,
-                attention_mask=attention_mask,
-                labels=labels,
-            )
+            outputs = model(input_ids=input_ids, attention_mask=attention_mask)
 
             probs = torch.softmax(outputs.logits, dim=1)[:, 1]
             all_probs.append(probs.detach().cpu().numpy())
 
             if has_labels and labels is not None:
+                if loss_fn is None:
+                    raise ValueError("loss_fn is required when evaluating labeled data.")
+                loss = loss_fn(outputs.logits, labels)
                 all_labels.append(labels.detach().cpu().numpy())
                 batch_size = input_ids.size(0)
-                total_loss += outputs.loss.item() * batch_size
+                total_loss += loss.item() * batch_size
                 total_examples += batch_size
 
     prob_true = np.concatenate(all_probs)
@@ -329,6 +327,14 @@ def build_optimizer(model: AutoModelForSequenceClassification, learning_rate: fl
         lr=learning_rate,
         eps=adam_eps,
     )
+
+
+
+def build_loss_fn(device: torch.device) -> torch.nn.CrossEntropyLoss:
+    # Train distribution is 3500 FALSE / 1400 TRUE. This softened weighting improves
+    # TRUE recall pressure without using the full inverse-frequency ratio.
+    weights = torch.tensor(CLASS_WEIGHTS, dtype=torch.float32, device=device)
+    return torch.nn.CrossEntropyLoss(weight=weights, label_smoothing=LABEL_SMOOTHING)
 
 
 
@@ -386,6 +392,11 @@ def main() -> None:
     tokenizer = AutoTokenizer.from_pretrained(MODEL_NAME, use_fast=True)
     model = AutoModelForSequenceClassification.from_pretrained(MODEL_NAME, num_labels=2)
     model.to(device)
+    loss_fn = build_loss_fn(device)
+    print(
+        "Using weighted CrossEntropyLoss with "
+        f"class weights [FALSE, TRUE] = {CLASS_WEIGHTS} and label_smoothing = {LABEL_SMOOTHING}"
+    )
 
     print("\n=== Tokenizing ===")
     train_input_ids, train_attention_mask = tokenize_texts(
@@ -458,7 +469,9 @@ def main() -> None:
 
     print("\n=== Training ===")
     best_epoch = -1
-    best_epoch_f1 = -1.0
+    best_epoch_auc = -1.0
+    best_epoch_val_loss = math.inf
+    best_epoch_f1_at_05 = -1.0
     best_epoch_val_probs: np.ndarray | None = None
     best_epoch_val_labels: np.ndarray | None = None
     epoch_history: List[dict] = []
@@ -479,8 +492,8 @@ def main() -> None:
             attention_mask = attention_mask.to(device)
             labels = labels.to(device)
 
-            outputs = model(input_ids=input_ids, attention_mask=attention_mask, labels=labels)
-            loss = outputs.loss
+            outputs = model(input_ids=input_ids, attention_mask=attention_mask)
+            loss = loss_fn(outputs.logits, labels)
 
             loss_value = float(loss.detach().cpu().item())
             if not math.isfinite(loss_value):
@@ -534,6 +547,7 @@ def main() -> None:
             device=device,
             desc=f"Epoch {epoch}/{EPOCHS} - validation",
             has_labels=True,
+            loss_fn=loss_fn,
         )
 
         val_metrics_05 = compute_metrics(val_true, val_prob_true, threshold=0.5)
@@ -549,8 +563,17 @@ def main() -> None:
             f"| skipped_non_finite_grad_steps={non_finite_grad_steps}"
         )
 
-        if val_metrics_05["f1"] > best_epoch_f1:
-            best_epoch_f1 = float(val_metrics_05["f1"])
+        current_auc = float(val_metrics_05["roc_auc"])
+        current_val_loss = float(val_metrics_05["val_loss"])
+        is_best_checkpoint = (
+            current_auc > best_epoch_auc
+            or (np.isclose(current_auc, best_epoch_auc) and current_val_loss < best_epoch_val_loss)
+        )
+
+        if is_best_checkpoint:
+            best_epoch_auc = current_auc
+            best_epoch_val_loss = current_val_loss
+            best_epoch_f1_at_05 = float(val_metrics_05["f1"])
             best_epoch = int(epoch)
             best_epoch_val_probs = val_prob_true.copy()
             best_epoch_val_labels = val_true.copy()
@@ -560,12 +583,18 @@ def main() -> None:
             torch.save(
                 {
                     "epoch": best_epoch,
-                    "best_val_f1": best_epoch_f1,
+                    "best_val_auc": best_epoch_auc,
+                    "best_val_loss": best_epoch_val_loss,
+                    "best_val_f1_at_0_5": best_epoch_f1_at_05,
                     "model_state_dict": model.state_dict(),
                 },
                 BEST_STATE_DICT_PATH,
             )
-            print(f"Saved new best model at epoch {best_epoch} with val_f1@0.5={best_epoch_f1:.6f}")
+            print(
+                f"Saved new best model at epoch {best_epoch} with "
+                f"val_auc={best_epoch_auc:.6f}, val_loss={best_epoch_val_loss:.6f}, "
+                f"val_f1@0.5={best_epoch_f1_at_05:.6f}"
+            )
 
     if best_epoch_val_probs is None or best_epoch_val_labels is None:
         raise RuntimeError("Best validation predictions were not captured.")
@@ -627,6 +656,7 @@ def main() -> None:
         device=device,
         desc="Test inference",
         has_labels=False,
+        loss_fn=None,
     )
 
     test_prob_df = pd.DataFrame(
@@ -674,6 +704,9 @@ def main() -> None:
             "weight_decay": WEIGHT_DECAY,
             "adam_eps": ADAM_EPS,
             "effective_adam_eps": adam_eps,
+            "loss": "weighted_cross_entropy_with_label_smoothing",
+            "class_weights_false_true": CLASS_WEIGHTS,
+            "label_smoothing": LABEL_SMOOTHING,
             "optimizer": "AdamW",
             "scheduler": "linear_warmup",
             "warmup_steps": warmup_steps,
@@ -688,14 +721,17 @@ def main() -> None:
         "epoch_metrics_threshold_0_5": epoch_history,
         "best_epoch": {
             "epoch": int(best_epoch),
-            "val_f1_threshold_0_5": float(best_epoch_f1),
+            "selection_objective": "max_validation_roc_auc_tiebreak_min_validation_loss",
+            "val_auc": float(best_epoch_auc),
+            "val_loss": float(best_epoch_val_loss),
+            "val_f1_threshold_0_5": float(best_epoch_f1_at_05),
             "checkpoint_dir": str(BEST_MODEL_DIR),
             "state_dict_path": str(BEST_STATE_DICT_PATH),
         },
         "threshold_tuning": {
             "search_range": [float(THRESHOLD_GRID.min()), float(THRESHOLD_GRID.max())],
             "step": 0.01,
-            "selection_objective": "max_validation_f1",
+            "selection_objective": "max_validation_f1_after_auc_selected_checkpoint",
             "selected_threshold": float(best_threshold),
             "table": threshold_table,
         },
@@ -716,7 +752,14 @@ def main() -> None:
     METRICS_PATH.write_text(json.dumps(metrics_payload, indent=2), encoding="utf-8")
     print(f"Saved metrics: {METRICS_PATH}")
 
-    notes_text = f"""# RoBERTa-base Fine-Tuning Notes
+    notes_text = f"""# RoBERTa-base 384 Weighted CE Fine-Tuning Notes
+
+## Why This Run Exists
+
+This is a controlled follow-up to `models/train_roberta_base.py`, which remains the current direct-model anchor.
+The hyperparameter inspection recommended testing `max_length=384` because 256 truncates a small number of train/test rows.
+The train label split is 3500 FALSE / 1400 TRUE, so this run uses softened weighted cross-entropy to improve TRUE recall pressure without switching to focal loss.
+It also adds light label smoothing and selects the best checkpoint by validation ROC AUC, using validation loss as the tie-breaker. Final F1 threshold tuning still happens after checkpoint selection.
 
 ## Run Configuration
 
@@ -731,11 +774,14 @@ def main() -> None:
 - Learning rate: `{LEARNING_RATE}` (effective: `{learning_rate}`)
 - Weight decay: `{WEIGHT_DECAY}`
 - Adam epsilon: `{ADAM_EPS}` (effective: `{adam_eps}`)
+- Loss: `weighted_cross_entropy_with_label_smoothing`
+- Class weights `[FALSE, TRUE]`: `{CLASS_WEIGHTS}`
+- Label smoothing: `{LABEL_SMOOTHING}`
 
 ## Validation Strategy
 
 - Stratified train/validation split (`test_size=0.2`, `random_state=42`)
-- Best checkpoint selected by validation F1 at threshold 0.5 each epoch
+- Best checkpoint selected by validation ROC AUC each epoch, tie-breaker validation loss
 - Final threshold tuned over 0.30-0.70 for best validation F1
 
 ## Final Validation Metrics
@@ -751,14 +797,14 @@ def main() -> None:
 
 ## Outputs
 
-- `outputs/roberta_base/roberta_base_metrics.json`
-- `outputs/roberta_base/roberta_base_val_predictions.csv`
-- `outputs/roberta_base/roberta_base_error_analysis.csv`
-- `outputs/roberta_base/roberta_base_test_probabilities.csv`
-- `outputs/roberta_base/roberta_base_submission.csv`
-- `outputs/roberta_base/roberta_base_notes.md`
-- `outputs/roberta_base/best_model/`
-- `outputs/roberta_base/roberta_base_best_state_dict.pt`
+- `outputs/roberta_base_384_weighted_ce/roberta_base_384_weighted_ce_metrics.json`
+- `outputs/roberta_base_384_weighted_ce/roberta_base_384_weighted_ce_val_predictions.csv`
+- `outputs/roberta_base_384_weighted_ce/roberta_base_384_weighted_ce_error_analysis.csv`
+- `outputs/roberta_base_384_weighted_ce/roberta_base_384_weighted_ce_test_probabilities.csv`
+- `outputs/roberta_base_384_weighted_ce/roberta_base_384_weighted_ce_submission.csv`
+- `outputs/roberta_base_384_weighted_ce/roberta_base_384_weighted_ce_notes.md`
+- `outputs/roberta_base_384_weighted_ce/best_model/`
+- `outputs/roberta_base_384_weighted_ce/roberta_base_384_weighted_ce_best_state_dict.pt`
 """
     NOTES_PATH.write_text(notes_text, encoding="utf-8")
     print(f"Saved notes: {NOTES_PATH}")
