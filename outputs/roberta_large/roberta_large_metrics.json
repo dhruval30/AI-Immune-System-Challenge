@@ -1,0 +1,369 @@
+{
+  "model": "roberta-large",
+  "seed": 42,
+  "device": "mps",
+  "config": {
+    "max_length": 256,
+    "epochs": 1,
+    "train_batch_size": 2,
+    "effective_train_batch_size": 2,
+    "eval_batch_size": 4,
+    "gradient_accumulation_steps": 8,
+    "effective_gradient_accumulation_steps": 8,
+    "learning_rate": 1e-05,
+    "effective_learning_rate": 1e-05,
+    "weight_decay": 0.01,
+    "adam_eps": 1e-08,
+    "effective_adam_eps": 1e-08,
+    "optimizer": "AdamW",
+    "scheduler": "linear_warmup",
+    "warmup_steps": 24
+  },
+  "split": {
+    "train_rows": 3920,
+    "val_rows": 980,
+    "test_rows": 2100,
+    "stratified": true,
+    "random_state": 42
+  },
+  "epoch_metrics_threshold_0_5": [
+    {
+      "threshold": 0.5,
+      "accuracy": 0.8938775510204081,
+      "precision": 0.9680851063829787,
+      "recall": 0.65,
+      "f1": 0.7777777777777778,
+      "roc_auc": 0.9648979591836735,
+      "confusion_matrix": {
+        "labels": [
+          "FALSE",
+          "TRUE"
+        ],
+        "matrix": [
+          [
+            694,
+            6
+          ],
+          [
+            98,
+            182
+          ]
+        ],
+        "format": "[[TN, FP], [FN, TP]]"
+      },
+      "prediction_distribution": {
+        "pred_FALSE": 792,
+        "pred_TRUE": 188
+      },
+      "epoch": 1,
+      "train_loss": 0.34710475757827375,
+      "val_loss": 0.40740749565124207
+    }
+  ],
+  "best_epoch": {
+    "epoch": 1,
+    "val_f1_threshold_0_5": 0.7777777777777778,
+    "checkpoint_dir": "/Users/dhruval/Documents/AI-Immune-System-Challenge/outputs/roberta_large/best_model",
+    "state_dict_path": "/Users/dhruval/Documents/AI-Immune-System-Challenge/outputs/roberta_large/roberta_large_best_state_dict.pt"
+  },
+  "threshold_tuning": {
+    "search_range": [
+      0.3,
+      0.7
+    ],
+    "step": 0.01,
+    "selection_objective": "max_validation_f1",
+    "selected_threshold": 0.35,
+    "table": [
+      {
+        "threshold": 0.3,
+        "precision": 0.8986175115207373,
+        "recall": 0.6964285714285714,
+        "f1": 0.7847082494969819
+      },
+      {
+        "threshold": 0.31,
+        "precision": 0.9027777777777778,
+        "recall": 0.6964285714285714,
+        "f1": 0.7862903225806451
+      },
+      {
+        "threshold": 0.32,
+        "precision": 0.9112149532710281,
+        "recall": 0.6964285714285714,
+        "f1": 0.7894736842105263
+      },
+      {
+        "threshold": 0.33,
+        "precision": 0.9112149532710281,
+        "recall": 0.6964285714285714,
+        "f1": 0.7894736842105263
+      },
+      {
+        "threshold": 0.34,
+        "precision": 0.9241706161137441,
+        "recall": 0.6964285714285714,
+        "f1": 0.7942973523421588
+      },
+      {
+        "threshold": 0.35,
+        "precision": 0.9285714285714286,
+        "recall": 0.6964285714285714,
+        "f1": 0.7959183673469388
+      },
+      {
+        "threshold": 0.36,
+        "precision": 0.9282296650717703,
+        "recall": 0.6928571428571428,
+        "f1": 0.7934560327198364
+      },
+      {
+        "threshold": 0.37,
+        "precision": 0.9323671497584541,
+        "recall": 0.6892857142857143,
+        "f1": 0.7926078028747433
+      },
+      {
+        "threshold": 0.38,
+        "precision": 0.9317073170731708,
+        "recall": 0.6821428571428572,
+        "f1": 0.7876288659793814
+      },
+      {
+        "threshold": 0.39,
+        "precision": 0.9317073170731708,
+        "recall": 0.6821428571428572,
+        "f1": 0.7876288659793814
+      },
+      {
+        "threshold": 0.4,
+        "precision": 0.9362745098039216,
+        "recall": 0.6821428571428572,
+        "f1": 0.7892561983471075
+      },
+      {
+        "threshold": 0.41,
+        "precision": 0.9405940594059405,
+        "recall": 0.6785714285714286,
+        "f1": 0.7883817427385892
+      },
+      {
+        "threshold": 0.42,
+        "precision": 0.945,
+        "recall": 0.675,
+        "f1": 0.7875
+      },
+      {
+        "threshold": 0.43,
+        "precision": 0.949238578680203,
+        "recall": 0.6678571428571428,
+        "f1": 0.7840670859538784
+      },
+      {
+        "threshold": 0.44,
+        "precision": 0.9587628865979382,
+        "recall": 0.6642857142857143,
+        "f1": 0.7848101265822784
+      },
+      {
+        "threshold": 0.45,
+        "precision": 0.9587628865979382,
+        "recall": 0.6642857142857143,
+        "f1": 0.7848101265822784
+      },
+      {
+        "threshold": 0.46,
+        "precision": 0.9587628865979382,
+        "recall": 0.6642857142857143,
+        "f1": 0.7848101265822784
+      },
+      {
+        "threshold": 0.47,
+        "precision": 0.9637305699481865,
+        "recall": 0.6642857142857143,
+        "f1": 0.7864693446088795
+      },
+      {
+        "threshold": 0.48,
+        "precision": 0.9637305699481865,
+        "recall": 0.6642857142857143,
+        "f1": 0.7864693446088795
+      },
+      {
+        "threshold": 0.49,
+        "precision": 0.9631578947368421,
+        "recall": 0.6535714285714286,
+        "f1": 0.7787234042553192
+      },
+      {
+        "threshold": 0.5,
+        "precision": 0.9680851063829787,
+        "recall": 0.65,
+        "f1": 0.7777777777777778
+      },
+      {
+        "threshold": 0.51,
+        "precision": 0.9731182795698925,
+        "recall": 0.6464285714285715,
+        "f1": 0.776824034334764
+      },
+      {
+        "threshold": 0.52,
+        "precision": 0.9731182795698925,
+        "recall": 0.6464285714285715,
+        "f1": 0.776824034334764
+      },
+      {
+        "threshold": 0.53,
+        "precision": 0.9781420765027322,
+        "recall": 0.6392857142857142,
+        "f1": 0.7732181425485961
+      },
+      {
+        "threshold": 0.54,
+        "precision": 0.9777777777777777,
+        "recall": 0.6285714285714286,
+        "f1": 0.7652173913043478
+      },
+      {
+        "threshold": 0.55,
+        "precision": 0.9775280898876404,
+        "recall": 0.6214285714285714,
+        "f1": 0.759825327510917
+      },
+      {
+        "threshold": 0.56,
+        "precision": 0.9774011299435028,
+        "recall": 0.6178571428571429,
+        "f1": 0.7571115973741794
+      },
+      {
+        "threshold": 0.57,
+        "precision": 0.9774011299435028,
+        "recall": 0.6178571428571429,
+        "f1": 0.7571115973741794
+      },
+      {
+        "threshold": 0.58,
+        "precision": 0.9774011299435028,
+        "recall": 0.6178571428571429,
+        "f1": 0.7571115973741794
+      },
+      {
+        "threshold": 0.59,
+        "precision": 0.9774011299435028,
+        "recall": 0.6178571428571429,
+        "f1": 0.7571115973741794
+      },
+      {
+        "threshold": 0.6,
+        "precision": 0.9774011299435028,
+        "recall": 0.6178571428571429,
+        "f1": 0.7571115973741794
+      },
+      {
+        "threshold": 0.61,
+        "precision": 0.9771428571428571,
+        "recall": 0.6107142857142858,
+        "f1": 0.7516483516483516
+      },
+      {
+        "threshold": 0.62,
+        "precision": 0.9770114942528736,
+        "recall": 0.6071428571428571,
+        "f1": 0.748898678414097
+      },
+      {
+        "threshold": 0.63,
+        "precision": 0.976878612716763,
+        "recall": 0.6035714285714285,
+        "f1": 0.7461368653421634
+      },
+      {
+        "threshold": 0.64,
+        "precision": 0.9825581395348837,
+        "recall": 0.6035714285714285,
+        "f1": 0.7477876106194691
+      },
+      {
+        "threshold": 0.65,
+        "precision": 0.9823529411764705,
+        "recall": 0.5964285714285714,
+        "f1": 0.7422222222222222
+      },
+      {
+        "threshold": 0.66,
+        "precision": 0.9821428571428571,
+        "recall": 0.5892857142857143,
+        "f1": 0.7366071428571429
+      },
+      {
+        "threshold": 0.67,
+        "precision": 0.9820359281437125,
+        "recall": 0.5857142857142857,
+        "f1": 0.7337807606263982
+      },
+      {
+        "threshold": 0.68,
+        "precision": 0.9819277108433735,
+        "recall": 0.5821428571428572,
+        "f1": 0.7309417040358744
+      },
+      {
+        "threshold": 0.69,
+        "precision": 0.9819277108433735,
+        "recall": 0.5821428571428572,
+        "f1": 0.7309417040358744
+      },
+      {
+        "threshold": 0.7,
+        "precision": 0.9819277108433735,
+        "recall": 0.5821428571428572,
+        "f1": 0.7309417040358744
+      }
+    ]
+  },
+  "validation_final": {
+    "threshold": 0.35,
+    "accuracy": 0.8979591836734694,
+    "precision": 0.9285714285714286,
+    "recall": 0.6964285714285714,
+    "f1": 0.7959183673469388,
+    "roc_auc": 0.9648979591836735,
+    "confusion_matrix": {
+      "labels": [
+        "FALSE",
+        "TRUE"
+      ],
+      "matrix": [
+        [
+          685,
+          15
+        ],
+        [
+          85,
+          195
+        ]
+      ],
+      "format": "[[TN, FP], [FN, TP]]"
+    },
+    "prediction_distribution": {
+      "pred_FALSE": 770,
+      "pred_TRUE": 210
+    }
+  },
+  "test_prediction_distribution": {
+    "pred_FALSE": 1643,
+    "pred_TRUE": 457
+  },
+  "paths": {
+    "metrics": "/Users/dhruval/Documents/AI-Immune-System-Challenge/outputs/roberta_large/roberta_large_metrics.json",
+    "val_predictions": "/Users/dhruval/Documents/AI-Immune-System-Challenge/outputs/roberta_large/roberta_large_val_predictions.csv",
+    "error_analysis": "/Users/dhruval/Documents/AI-Immune-System-Challenge/outputs/roberta_large/roberta_large_error_analysis.csv",
+    "test_probabilities": "/Users/dhruval/Documents/AI-Immune-System-Challenge/outputs/roberta_large/roberta_large_test_probabilities.csv",
+    "submission": "/Users/dhruval/Documents/AI-Immune-System-Challenge/outputs/roberta_large/roberta_large_submission.csv",
+    "notes": "/Users/dhruval/Documents/AI-Immune-System-Challenge/outputs/roberta_large/roberta_large_notes.md",
+    "best_model_dir": "/Users/dhruval/Documents/AI-Immune-System-Challenge/outputs/roberta_large/best_model",
+    "best_state_dict": "/Users/dhruval/Documents/AI-Immune-System-Challenge/outputs/roberta_large/roberta_large_best_state_dict.pt"
+  }
+}
