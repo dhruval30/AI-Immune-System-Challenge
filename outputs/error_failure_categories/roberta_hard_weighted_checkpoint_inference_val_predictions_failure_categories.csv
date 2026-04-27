@@ -1,0 +1,121 @@
+text,true_label,pred_label,pred_prob_TRUE,is_error,char_length,word_count,token_count,unique_word_ratio,repeated_token_count,repeated_token_ratio,repeated_phrase_count,weird_token_count,weird_token_ratio,long_token_count,mixed_alnum_token_count,symbol_heavy_token_count,non_ascii_ratio,punctuation_ratio,digit_ratio,newline_count,repeated_char_count,prompt_code_hits,failure_category,confidence
+At that point on the journey Pauline felt a sense and yearn in anticipation of the coming event that she was to meet her beloved husband on the other side of the veil.,FALSE,TRUE,0.4616755,True,167.0,33.0,33.0,0.8181818181818182,6.0,0.18181818181818182,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.005988023952095809,0.0,0.0,0.0,0.0,BORDERLINE_AMBIGUOUS,0.4616755
+"After investing many sleepessees resting looking into the various gadgets on offer, we’ve located that the very best robot vacuum cleaners are those that are very easy to use, easy to clean up as well as fit your house and also lifestyle.",FALSE,TRUE,0.9554093,True,238.0,43.0,42.0,0.8372093023255814,7.0,0.16279069767441862,0.0,0.0,0.0,0.0,0.0,0.0,0.004201680672268907,0.012605042016806723,0.0,0.0,0.0,0.0,LIKELY_LABEL_NOISE,0.9554093
+"Deviate menu items to your taste preferences or avoid listed ingredients available ahead of ordering your meal items.
+How Does The Keto Morning Mistake Happel?
+How Does The Keto Morning Mistake Happel.",TRUE,FALSE,0.011748523,True,201.0,32.0,32.0,0.71875,9.0,0.28125,5.0,0.0,0.0,0.0,0.0,0.0,0.0,0.014925373134328358,0.0,2.0,0.0,0.0,REPETITIVE_OR_SPAM,0.988251477
+"What is lost of the time is used"",
+        objects=[""food"", True], verbosity=0)
+
+      to_buy_str = items_to_string(to_buy)
+
+      if to_buy_str.",TRUE,FALSE,0.025124725,True,145.0,18.0,16.0,0.8888888888888888,2.0,0.1111111111111111,0.0,4.0,0.25,1.0,1.0,3.0,0.0,0.15172413793103448,0.006896551724137931,5.0,3.0,0.0,LIKELY_LABEL_NOISE,0.974875275
+"Student says: 
+
+Hey professor/chat assistant/animator: 
+
+Amir: sorry for not posting when I missed my chance to do so yesterday.",TRUE,FALSE,0.051506434,True,128.0,21.0,19.0,1.0,0.0,0.0,0.0,1.0,0.05263157894736842,1.0,0.0,0.0,0.0,0.046875,0.0,4.0,0.0,0.0,LIKELY_LABEL_NOISE,0.948493566
+[DECODE ERROR] 2.,TRUE,FALSE,0.0077240057,True,17.0,3.0,3.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.17647058823529413,0.058823529411764705,0.0,0.0,0.0,LIKELY_LABEL_NOISE,0.9922759943
+"Decide upon specific limiting principles that are reasonable while still generally achievable, such an amount or period of time versus ongoing effort or difficulty.
+
+Once you’ve set these limits, it’s important to stick to them.",TRUE,FALSE,0.1829211,True,228.0,37.0,35.0,0.9459459459459459,2.0,0.05405405405405406,0.0,0.0,0.0,0.0,0.0,0.0,0.008771929824561403,0.017543859649122806,0.0,2.0,0.0,0.0,BORDERLINE_AMBIGUOUS,0.8170789
+"🎂 Meanwhile in the US Senate chamber, soon-to-be-formers of ""the Squad"" make various noises and do little to nothing.",TRUE,FALSE,0.011033719,True,117.0,21.0,19.0,0.9047619047619048,2.0,0.09523809523809523,0.0,1.0,0.05263157894736842,1.0,0.0,1.0,0.008547008547008548,0.05982905982905983,0.0,0.0,0.0,0.0,LIKELY_LABEL_NOISE,0.988966281
+"What action recommendations does Gordon suggest after diligent consideration”? Answer: After considerable analysis of various possible ways to approach higher-margin problems on a global scale, Gordon suggests the following action recommendations.",TRUE,FALSE,0.21222913,True,247.0,32.0,31.0,0.875,4.0,0.125,0.0,0.0,0.0,0.0,0.0,0.0,0.004048582995951417,0.020242914979757085,0.0,0.0,0.0,0.0,CLEAN_SEMANTIC_TRUE,0.78777087
+"Understanding its content allows individuals across age groups decide how, where all of other savings account, you can get a loan.",FALSE,TRUE,0.54553634,True,130.0,21.0,21.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.023076923076923078,0.0,0.0,0.0,0.0,BORDERLINE_AMBIGUOUS,0.54553634
+"Sub Menu Products Browse our carefully-by curated smidge and smoggle lines, featuring snack supplements from trusted brand name manufacturers.",TRUE,FALSE,0.011328008,True,142.0,20.0,19.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.02112676056338028,0.0,0.0,0.0,0.0,LIKELY_LABEL_NOISE,0.988671992
+quotesquizzes.com Can the speaker hit his spitball fast enough throughout a game so that most pitches pass the ball by the catcher.,TRUE,FALSE,0.119671844,True,131.0,23.0,22.0,0.9130434782608695,2.0,0.08695652173913043,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.015267175572519083,0.0,0.0,0.0,0.0,CLEAN_SEMANTIC_TRUE,0.880328156
+"At certain temperatures the roast enhances specific coffee twigs that build flavors that complement the deep, chocolatey, rich; and creamy, buttery, nutty notes of the coffee.",TRUE,FALSE,0.011281066,True,175.0,26.0,26.0,0.8461538461538461,4.0,0.15384615384615385,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.03428571428571429,0.0,0.0,0.0,0.0,LIKELY_LABEL_NOISE,0.988718934
+"Through examples sourced from various genres trimming' creative writing pieces for advanced, the book explores the interconnections between the two and demonstrates how they can be integrated to achieve a more powerful narrative voice.",FALSE,TRUE,0.75442606,True,235.0,34.0,34.0,0.9411764705882353,2.0,0.058823529411764705,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.01276595744680851,0.0,0.0,0.0,0.0,BORDERLINE_AMBIGUOUS,0.75442606
+"How having others in it varies depending, rather, whenever someone wants it makes the learner feel threatened or inadequate."" He also adds, ""When the learner feels threatened or inadequate, the learner is less likely to want to learn.",TRUE,FALSE,0.008367852,True,234.0,38.0,38.0,0.7631578947368421,9.0,0.23684210526315788,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.03418803418803419,0.0,0.0,0.0,0.0,REPETITIVE_OR_SPAM,0.991632148
+Draft an article providing upcoming advancements proposals in elementary school currichture accounting the following points.,FALSE,TRUE,0.88795775,True,124.0,15.0,15.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.008064516129032258,0.0,0.0,0.0,0.0,LIKELY_LABEL_NOISE,0.88795775
+"bool ok;
+
+ok=isPerfectDay(s.text);
+ std:::out if(ok)this is true*/  std::endl;
+760     */
+```
+
+The program reads a string from the user and checks whether it is a perfect day.",TRUE,FALSE,0.16378959,True,175.0,32.0,27.0,0.8125,6.0,0.1875,0.0,4.0,0.14814814814814814,1.0,0.0,4.0,0.0,0.12571428571428572,0.017142857142857144,7.0,3.0,1.0,PROMPT_OR_CODE_LEAKAGE,0.83621041
+"orraine
+
+A: Alright!
+
+T values for all others. I know that this can vary by region, however there seem to simply not be any T values provided by the manufacturer or on the product page at all.",TRUE,FALSE,0.0899828,True,192.0,37.0,37.0,0.8648648648648649,5.0,0.13513513513513514,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.026041666666666668,0.0,4.0,0.0,0.0,LIKELY_LABEL_NOISE,0.9100172
+"Is it covered everywhere I look? Probably not!}
+\hyperle{3pt}{12}{14pt]]:
+4rd ed.",TRUE,FALSE,0.03555545,True,81.0,14.0,11.0,1.0,0.0,0.0,0.0,2.0,0.18181818181818182,1.0,2.0,1.0,0.0,0.16049382716049382,0.07407407407407407,2.0,0.0,0.0,LIKELY_LABEL_NOISE,0.96444455
+"[DECODE ERROR] - The value for the ""decode"" parameter of the ""decode"" function is not valid.",TRUE,FALSE,0.005546704,True,92.0,15.0,16.0,0.7333333333333333,4.0,0.26666666666666666,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.08695652173913043,0.0,0.0,0.0,0.0,REPETITIVE_OR_SPAM,0.994453296
+"Acycloffastigati'ss'] (Figure A-A). Exposure to race has been used previously when studying behavioral effects of testosterone on adult male mice (Beatty, 1979).",TRUE,FALSE,0.31722516,True,161.0,23.0,22.0,0.9565217391304348,1.0,0.043478260869565216,0.0,2.0,0.09090909090909091,1.0,0.0,2.0,0.0,0.06832298136645963,0.024844720496894408,0.0,0.0,0.0,BORDERLINE_AMBIGUOUS,0.68277484
+"'',
+      //         ""Início brigade, que, de longascumbus vestigia fumus\n"",
+      //         ""Terra, cùm pluvias cùm sordida cùm sordida pluvia\n"",
+      //         ""Sed, dum tibi, deus, non fuit tibi, deus, non fuit.",FALSE,TRUE,0.9531846,True,219.0,32.0,29.0,0.6875,10.0,0.3125,3.0,3.0,0.10344827586206896,0.0,0.0,3.0,0.0182648401826484,0.1232876712328767,0.0,3.0,6.0,0.0,REPETITIVE_OR_SPAM,0.9531846
+"Each individual expresses oneself through the medium as technology allows, finalizing the product before it finds an intended audience. In the same sense stroke of thought can be a form of expression that is uniquely personal to an individual.",TRUE,FALSE,0.054897964,True,243.0,39.0,39.0,0.8717948717948718,5.0,0.1282051282051282,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.012345679012345678,0.0,0.0,0.0,0.0,CLEAN_SEMANTIC_TRUE,0.945102036
+"} - Write as if responding \\ to AT's request for some advice.]
+
+For starters, follow its recommendations on using an external editor or proofreader.",TRUE,FALSE,0.0588567,True,149.0,22.0,25.0,0.9545454545454546,1.0,0.045454545454545456,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.06040268456375839,0.0,2.0,0.0,0.0,LIKELY_LABEL_NOISE,0.9411433
+[DECODE ERROR] - Error decoding the input stream.,TRUE,FALSE,0.0054356284,True,49.0,7.0,8.0,0.8571428571428571,1.0,0.14285714285714285,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.08163265306122448,0.0,0.0,0.0,0.0,LIKELY_LABEL_NOISE,0.9945643716
+"Při přípravovaném jídlineno nakصات, rypcem, vystřihem a vložíme do misky.",FALSE,TRUE,0.9384183,True,73.0,16.0,10.0,0.9375,1.0,0.0625,0.0,0.0,0.0,0.0,0.0,0.0,0.1506849315068493,0.0410958904109589,0.0,0.0,0.0,0.0,MULTILINGUAL_OR_ENCODING,0.9384183
+"Как аутор а комику герова из Tarzan, а то и спорно Туга Ніедор. А наша босса Туга не вдається до нас.",TRUE,FALSE,0.24517815,True,101.0,1.0,21.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.7128712871287128,0.0297029702970297,0.0,0.0,0.0,0.0,MULTILINGUAL_OR_ENCODING,0.75482185
+"Incorporare la diversité dans lec ou nos en musique , et laiss les couleurs s’entremêler
+Il y a un temps où nous avons été très amis
+Je te revo, et je me rappelle
+Nous étions si heureux, si heureux
+Avec la musique, et le soleil, et la mer
+Nous avons ri, et chanté, et dansé, et roulé dans la boue
+Avec les amis, et la paix, et le soleil, et la mer
+Je te revo, et je me rappelle
+Et j’oublie tout, et je me rappelle
+Je me souviens de la maison, de la rue
+Et de la place, et de la fontaine
+Et de la rue, et de la place, et de la fontaine
+Et de la place, et de la fontaine
+Avec la musique, et le soleil, et la mer
+Nous avons ri, et chanté, et dansé, et.",FALSE,TRUE,0.7107323,True,649.0,143.0,140.0,0.3706293706293706,90.0,0.6293706293706294,45.0,0.0,0.0,0.0,0.0,0.0,0.02157164869029276,0.03697996918335902,0.0,14.0,0.0,0.0,REPETITIVE_OR_SPAM,0.7107323
+relatively fixed to the allocated objects as slack was too much or too compared to device-mapper routines. Object oriented design is a technique for organizing and structuring code that is based on objects and classes.,TRUE,FALSE,0.20700163,True,218.0,36.0,35.0,0.8611111111111112,5.0,0.1388888888888889,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.013761467889908258,0.0,0.0,0.0,0.0,CLEAN_SEMANTIC_TRUE,0.7929983700000001
+"Not-so-scienty) research I condo, come swimming, you'll accomplish another goal. She reads avidly, and is fond of science fiction and fantasy.",TRUE,FALSE,0.15935974,True,142.0,23.0,21.0,0.9565217391304348,1.0,0.043478260869565216,0.0,1.0,0.047619047619047616,0.0,0.0,1.0,0.0,0.06338028169014084,0.0,0.0,0.0,0.0,BORDERLINE_AMBIGUOUS,0.84064026
+"Friends
+""It's incredible, we earn 598 dollars by selling our secret recipe for cooking mustard extract paste. It's a great deal.",TRUE,FALSE,0.06394815,True,128.0,21.0,21.0,0.9523809523809523,1.0,0.047619047619047616,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.046875,0.0234375,1.0,0.0,0.0,CLEAN_SEMANTIC_TRUE,0.93605185
+"Dinner also immersing yourself with the view makes complimenting your enjoyable meal experience, and raises it accordingly ever higher quality.</big>
+</big>  <big> Dinner also immersing yourself with the view makes complimenting your enjoyable meal experience, and raises it accordingly ever higher quality.",TRUE,FALSE,0.15441145,True,307.0,43.0,42.0,0.4883720930232558,22.0,0.5116279069767442,18.0,2.0,0.047619047619047616,0.0,0.0,2.0,0.0,0.03908794788273615,0.0,1.0,0.0,0.0,REPETITIVE_OR_SPAM,0.84558855
+"Ä°s part, we’
+åä»åttes och det var inte jag jag själv kunde se och jag gick och jag tog mig fram och jag tillade mig och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag.",FALSE,TRUE,0.878092,True,821.0,202.0,201.0,0.0891089108910891,184.0,0.9108910891089109,172.0,0.0,0.0,0.0,0.0,0.0,0.0097442143727162,0.00243605359317905,0.0,1.0,0.0,0.0,REPETITIVE_OR_SPAM,0.878092
+"These findings differ profoundly from those observed among actors and provide other insights for plant biosis and evolution insights. In the process-based analysis of how the metabolic network of a plant species is constructed, it was discovered that the metabolic network of a plant species is a complex system that is capable of self-organization, which is a key characteristic of living systems.",TRUE,FALSE,0.07016422,True,398.0,64.0,62.0,0.6875,20.0,0.3125,6.0,1.0,0.016129032258064516,1.0,0.0,0.0,0.0,0.01507537688442211,0.0,0.0,0.0,0.0,REPETITIVE_OR_SPAM,0.92983578
+"An environmental safety assessment is then need assessing wrapper, ielts application essays and the overall impact on the environment.",FALSE,TRUE,0.6881961,True,134.0,19.0,19.0,0.9473684210526315,1.0,0.05263157894736842,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.014925373134328358,0.0,0.0,0.0,0.0,BORDERLINE_AMBIGUOUS,0.6881961
+"Using fine scissors specifically recommended but a standard shoeshask or pet clip won't hurt), or even a pair of fingering nail sheaves.",TRUE,FALSE,0.33928546,True,136.0,22.0,22.0,0.9090909090909091,2.0,0.09090909090909091,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.029411764705882353,0.0,0.0,0.0,0.0,CLEAN_SEMANTIC_TRUE,0.6607145400000001
+So why do aspects that are critical or debatabbable elements are not addressed in the presented consideration? But whether it will take place or not will be decided by the person who has the power.,TRUE,FALSE,0.0136307925,True,197.0,35.0,35.0,0.8285714285714286,6.0,0.17142857142857143,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.01015228426395939,0.0,0.0,0.0,0.0,LIKELY_LABEL_NOISE,0.9863692075
+"Our research team who are responsible of gathering materials and conclusions for the project are still behind on several goals, and there's nevertheless a question of exactly how long it will take to get to the conclusion of the project.",TRUE,FALSE,0.013250498,True,237.0,40.0,40.0,0.8,8.0,0.2,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.012658227848101266,0.0,0.0,0.0,0.0,REPETITIVE_OR_SPAM,0.986749502
+"We discover there is always somewhere this side,"" Basedon one not-too-scary myth, if the ghost sees treasure, even a small amount of it, she will become friendly.",TRUE,FALSE,0.22752807,True,162.0,29.0,27.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.04938271604938271,0.0,0.0,0.0,0.0,CLEAN_SEMANTIC_TRUE,0.77247193
+"Hence choosing the appropriate temperature relying on whether it as necessary. Based on the passage above, Could you paraphrase the sentence ""The temperature of the mixture should be adjusted to achieve the desired viscosity without overheating the polymer"" in simpler terms.",FALSE,TRUE,0.9730608,True,275.0,41.0,41.0,0.8048780487804879,8.0,0.1951219512195122,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.01818181818181818,0.0,0.0,0.0,0.0,LIKELY_LABEL_NOISE,0.9730608
+""")
+puts message.to_s.endsWith?$? ? """":""..."") # remove trailing newline if present
+puts message.",FALSE,TRUE,0.6037198,True,95.0,11.0,13.0,0.8181818181818182,2.0,0.18181818181818182,0.0,2.0,0.15384615384615385,1.0,0.0,2.0,0.0,0.21052631578947367,0.0,2.0,1.0,0.0,NOISY_FALSE,0.6037198
+"One particular highlight very close to his mom Katy Perry loves won’t even be viewed by her. She might point by pointing to it, but she won’t view it.",TRUE,FALSE,0.19763267,True,150.0,31.0,29.0,0.8064516129032258,6.0,0.1935483870967742,0.0,0.0,0.0,0.0,0.0,0.0,0.013333333333333334,0.02,0.0,0.0,0.0,0.0,CLEAN_SEMANTIC_TRUE,0.80236733
+Laying out wire baskets filled the dining theme of order and harmony. Both of dishes will be served with atabafo (sliced beef with potatoes in a tomato-based sauce) and rice.,TRUE,FALSE,0.09479391,True,174.0,31.0,30.0,0.9032258064516129,3.0,0.0967741935483871,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.028735632183908046,0.0,0.0,0.0,0.0,CLEAN_SEMANTIC_TRUE,0.90520609
+"Hopefully a few rays wonâ-menagerija.com, a book of poems by the late SÃ©amus Heaney, who died last month.",FALSE,TRUE,0.65629065,True,106.0,21.0,18.0,0.9523809523809523,1.0,0.047619047619047616,0.0,1.0,0.05555555555555555,1.0,0.0,1.0,0.02830188679245283,0.04716981132075472,0.0,0.0,0.0,0.0,NOISY_FALSE,0.65629065
+"Whether personal preferences lean far-drawn toward down-to-vertical or across-the-cliff cleaning systems, few invest well enough in the best cleaning tools.",TRUE,FALSE,0.014257726,True,156.0,25.0,20.0,0.92,2.0,0.08,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.04487179487179487,0.0,0.0,0.0,0.0,LIKELY_LABEL_NOISE,0.985742274
+"Приложиите в изб Millennimited by space, and focus only на тексте.",FALSE,TRUE,0.7742985,True,66.0,6.0,11.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.3333333333333333,0.030303030303030304,0.0,0.0,0.0,0.0,MULTILINGUAL_OR_ENCODING,0.7742985
+"Due west of town what remained was a vast, barren theocracy, hostile and inhospitable to the needs of the people, but the city's leaders had grown fat on its own success.",FALSE,TRUE,0.9630303,True,170.0,31.0,31.0,0.9032258064516129,3.0,0.0967741935483871,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.029411764705882353,0.0,0.0,0.0,0.0,LIKELY_LABEL_NOISE,0.9630303
+"PersonallyI think we dramatically minimized everything that goes in to building a sustainable model. Based on the passage above, How did the author's experience with a previous company compare to their current company in terms of providing resources and support to employees.",FALSE,TRUE,0.63315487,True,275.0,42.0,42.0,0.8571428571428571,6.0,0.14285714285714285,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.014545454545454545,0.0,0.0,0.0,0.0,BORDERLINE_AMBIGUOUS,0.63315487
+"what would be cohesive in this sentence?)
+Naah,I love it. Can you take a stab at this line?""The air is so thick with the smell of death that I can't breathe.",TRUE,FALSE,0.022266148,True,157.0,33.0,31.0,0.9090909090909091,3.0,0.09090909090909091,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.050955414012738856,0.0,1.0,0.0,0.0,LIKELY_LABEL_NOISE,0.977733852
+"“
+
+Now it couldn't take pins to load them. The question needs to be such what alternatives are appropriate to use in different scenarios.",TRUE,FALSE,0.2694318,True,137.0,23.0,24.0,0.9130434782608695,2.0,0.08695652173913043,0.0,0.0,0.0,0.0,0.0,0.0,0.0072992700729927005,0.021897810218978103,0.0,2.0,0.0,0.0,BORDERLINE_AMBIGUOUS,0.7305682
+"Being successful and influential with millions on Social Audit, Harvey is widely regarded among marketers today at the forefront incorporating what they call 'influence marketing' into their campaigns.",TRUE,FALSE,0.12671621,True,201.0,28.0,28.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.01990049751243781,0.0,0.0,0.0,0.0,CLEAN_SEMANTIC_TRUE,0.87328379
+"We get inside looks online at casting presentations where Disney is reportedly courcing Emma Watson Who Soulful Native Caribiennes Are Making Their Mark In Hollywood And How Theyre Fighting To Preserve Their Culture
+We get inside looks online at casting presentations where Disney is reportedly courcing Emma Watson
+Who Soulful Native Caribiennes Are Making Their Mark In Hollywood And How Theyre Fighting To Preserve Their Culture
+The Walt Disney Company has announced that it will be producing a live-action remake of its animated classic ""Mulan,"" which will be released on November 2, 2018.",TRUE,FALSE,0.12824956,True,593.0,94.0,93.0,0.6063829787234043,37.0,0.39361702127659576,31.0,1.0,0.010752688172043012,0.0,0.0,1.0,0.0,0.01011804384485666,0.008431703204047217,3.0,0.0,0.0,REPETITIVE_OR_SPAM,0.87175044
+"What are blackjack etiquette?
+Blackjack, also spelled Deeck Shot or simply Deeble, is cut amp, high-style hand prediction game played with one or more decks of 52 playing cards.",TRUE,FALSE,0.3609681,True,177.0,30.0,29.0,0.9333333333333333,2.0,0.06666666666666667,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.03389830508474576,0.011299435028248588,1.0,0.0,0.0,CLEAN_SEMANTIC_TRUE,0.6390319
+"If Amaris were going for three, maybe business, luxury hotel and casino next Saturday night in the port and heading inland, you’d be better off taking the train.",TRUE,FALSE,0.17492318,True,161.0,29.0,28.0,0.9310344827586207,2.0,0.06896551724137931,0.0,0.0,0.0,0.0,0.0,0.0,0.006211180124223602,0.024844720496894408,0.0,0.0,0.0,0.0,CLEAN_SEMANTIC_TRUE,0.82507682
+"For an organized, confident ride at Draft Fiddle #7 we’ll head out from the parking at Woldson Rd and take the trail to the intersection of Woldson Rd and the Old North Fork Road.",TRUE,FALSE,0.010699823,True,179.0,35.0,34.0,0.8,7.0,0.2,1.0,0.0,0.0,0.0,0.0,0.0,0.00558659217877095,0.01675977653631285,0.00558659217877095,0.0,0.0,0.0,REPETITIVE_OR_SPAM,0.989300177
+14 Teams of twelve players with infantry and riding abilities have entered combat in eight regions to secure $1MN prize money.,TRUE,FALSE,0.006721282,True,126.0,21.0,21.0,1.0,0.0,0.0,0.0,1.0,0.047619047619047616,0.0,1.0,0.0,0.0,0.015873015873015872,0.023809523809523808,0.0,0.0,0.0,LIKELY_LABEL_NOISE,0.993278718
+The source suggests reducing loud speeches per event hour forms part 64 of an anti-no waste team. This is commonly on festivals or occasions when a lot of people are gathered together.,TRUE,FALSE,0.25518808,True,184.0,33.0,32.0,0.9696969696969697,1.0,0.030303030303030304,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.016304347826086956,0.010869565217391304,0.0,0.0,0.0,CLEAN_SEMANTIC_TRUE,0.7448119200000001
+"Investing services can be a valuable tool [...tag=”finance,”]
+Can Affiliate Marketers Use ClickBank to Promote Their Own Products.",FALSE,TRUE,0.94387895,True,130.0,19.0,18.0,0.9473684210526315,1.0,0.05263157894736842,0.0,1.0,0.05555555555555555,1.0,0.0,1.0,0.015384615384615385,0.06153846153846154,0.0,1.0,1.0,0.0,NOISY_FALSE,0.94387895
+"What planning processes can one initiate should I require'?""}\
+user:{s} {""assistant,""/s}  
+
+The above response indicates the user wants to know if there is any specific planning process they can initiate in order to achieve their goal.",TRUE,FALSE,0.035932194,True,235.0,38.0,36.0,0.8157894736842105,7.0,0.18421052631578946,0.0,3.0,0.08333333333333333,0.0,0.0,3.0,0.0,0.06382978723404255,0.0,3.0,0.0,1.0,PROMPT_OR_CODE_LEAKAGE,0.964067806

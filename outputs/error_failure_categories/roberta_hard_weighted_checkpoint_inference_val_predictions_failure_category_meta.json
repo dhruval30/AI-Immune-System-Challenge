@@ -1,0 +1,21 @@
+{
+  "input": "/Users/dhruval/Documents/AI-Immune-System-Challenge/outputs/roberta_hard_weighted_checkpoint_inference/roberta_hard_weighted_checkpoint_inference_val_predictions.csv",
+  "rows_in_input": 980,
+  "rows_categorized": 59,
+  "include_correct": false,
+  "allowed_categories": [
+    "CLEAN_SEMANTIC_TRUE",
+    "NOISY_FALSE",
+    "PROMPT_OR_CODE_LEAKAGE",
+    "REPETITIVE_OR_SPAM",
+    "MULTILINGUAL_OR_ENCODING",
+    "BORDERLINE_AMBIGUOUS",
+    "LIKELY_LABEL_NOISE"
+  ],
+  "outputs": {
+    "categorized": "/Users/dhruval/Documents/AI-Immune-System-Challenge/outputs/error_failure_categories/roberta_hard_weighted_checkpoint_inference_val_predictions_failure_categories.csv",
+    "summary": "/Users/dhruval/Documents/AI-Immune-System-Challenge/outputs/error_failure_categories/roberta_hard_weighted_checkpoint_inference_val_predictions_failure_category_summary.csv",
+    "report": "/Users/dhruval/Documents/AI-Immune-System-Challenge/outputs/error_failure_categories/roberta_hard_weighted_checkpoint_inference_val_predictions_failure_category_report.md",
+    "meta": "/Users/dhruval/Documents/AI-Immune-System-Challenge/outputs/error_failure_categories/roberta_hard_weighted_checkpoint_inference_val_predictions_failure_category_meta.json"
+  }
+}
