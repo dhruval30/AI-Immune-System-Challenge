@@ -1,0 +1,2 @@
+exact_key,row_count,row_ids,example_text,TRUE_count,FALSE_count,labels,TRUE_rate,has_label_conflict
+[decode error] invalid character found in input.,2,1314|3621,[DECODE ERROR] Invalid character found in input.,1,1,TRUE|FALSE,0.5,True
