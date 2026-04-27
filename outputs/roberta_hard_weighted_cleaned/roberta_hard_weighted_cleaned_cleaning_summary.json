@@ -1,0 +1,29 @@
+{
+  "prediction_source": "/Users/dhruval/Documents/AI-Immune-System-Challenge/outputs/roberta_base_cv_v2/roberta_base_cv_v2_oof_predictions.csv",
+  "prediction_column": "oof_prob_TRUE_mean",
+  "alignment": {
+    "method": "row_order_with_text_validation",
+    "text_match_rate": 1.0,
+    "mismatched_rows": 0
+  },
+  "thresholds": {
+    "remove_TRUE_if_prob_TRUE_lte": 0.05,
+    "remove_FALSE_if_prob_TRUE_gte": 0.95
+  },
+  "original_rows": 4900,
+  "removed_rows": 100,
+  "final_rows": 4800,
+  "original_label_distribution": {
+    "FALSE": 3500,
+    "TRUE": 1400
+  },
+  "removed_label_distribution": {
+    "FALSE": 0,
+    "TRUE": 100
+  },
+  "final_label_distribution": {
+    "FALSE": 3500,
+    "TRUE": 1300
+  },
+  "removed_rows_path": "/Users/dhruval/Documents/AI-Immune-System-Challenge/outputs/roberta_hard_weighted_cleaned/roberta_hard_weighted_cleaned_removed_rows.csv"
+}

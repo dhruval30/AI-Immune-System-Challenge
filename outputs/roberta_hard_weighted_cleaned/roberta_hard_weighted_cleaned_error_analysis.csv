@@ -1,0 +1,202 @@
+text,true_label,pred_label,pred_prob_TRUE,error_type,confidence,abnormal_score,hard_category,raw_sample_weight_if_trained
+"Facade Design Manual Lee Woosng is one type information here is a lot of people who have been looking for, this photo is the best photo on this website.",FALSE,TRUE,0.9236841,false_positive,0.9236841,0,easy_clean_FALSE,0.85
+"Hence choosing the appropriate temperature relying on whether it as necessary. Based on the passage above, Could you paraphrase the sentence ""The temperature of the mixture should be adjusted to achieve the desired viscosity without overheating the polymer"" in simpler terms.",FALSE,TRUE,0.92260104,false_positive,0.92260104,3,hard_messy_FALSE,2.0
+"'',
+      //         ""Início brigade, que, de longascumbus vestigia fumus\n"",
+      //         ""Terra, cùm pluvias cùm sordida cùm sordida pluvia\n"",
+      //         ""Sed, dum tibi, deus, non fuit tibi, deus, non fuit.",FALSE,TRUE,0.8705276,false_positive,0.8705276,7,hard_messy_FALSE,2.0
+"Ä°s part, we’
+åä»åttes och det var inte jag jag själv kunde se och jag gick och jag tog mig fram och jag tillade mig och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag.",FALSE,TRUE,0.84789115,false_positive,0.84789115,4,hard_messy_FALSE,2.0
+"After investing many sleepessees resting looking into the various gadgets on offer, we’ve located that the very best robot vacuum cleaners are those that are very easy to use, easy to clean up as well as fit your house and also lifestyle.",FALSE,TRUE,0.805208,false_positive,0.805208,3,hard_messy_FALSE,2.0
+Draft an article providing upcoming advancements proposals in elementary school currichture accounting the following points.,FALSE,TRUE,0.733955,false_positive,0.733955,1,standard_FALSE,1.0
+"Při přípravovaném jídlineno nakصات, rypcem, vystřihem a vložíme do misky.",FALSE,TRUE,0.70185477,false_positive,0.70185477,0,easy_clean_FALSE,0.85
+Footmen had started glaring red consequences on them to get awestrucks along the gullies.,FALSE,TRUE,0.6773991,false_positive,0.6773991,0,easy_clean_FALSE,0.85
+"An environmental safety assessment is then need assessing wrapper, ielts application essays and the overall impact on the environment.",FALSE,TRUE,0.51876724,false_positive,0.51876724,0,easy_clean_FALSE,0.85
+"According mobile statisics, by sources predicts a total number of blogs that are hosted in 2012, which is 31,000,000.",FALSE,TRUE,0.51785976,false_positive,0.51785976,1,standard_FALSE,1.0
+Many countries focus on providing healthcare domestically discrepancy among the citizens causing frustration because of the lack of resources.,FALSE,TRUE,0.45113143,false_positive,0.45113143,0,easy_clean_FALSE,0.85
+"If at anytime in case in press my bike get punctuere, I will not go back home on foot.",FALSE,TRUE,0.41310468,false_positive,0.41310468,0,easy_clean_FALSE,0.85
+"Приложиите в изб Millennimited by space, and focus only на тексте.",FALSE,TRUE,0.400101,false_positive,0.400101,1,standard_FALSE,1.0
+"Incorporare la diversité dans lec ou nos en musique , et laiss les couleurs s’entremêler
+Il y a un temps où nous avons été très amis
+Je te revo, et je me rappelle
+Nous étions si heureux, si heureux
+Avec la musique, et le soleil, et la mer
+Nous avons ri, et chanté, et dansé, et roulé dans la boue
+Avec les amis, et la paix, et le soleil, et la mer
+Je te revo, et je me rappelle
+Et j’oublie tout, et je me rappelle
+Je me souviens de la maison, de la rue
+Et de la place, et de la fontaine
+Et de la rue, et de la place, et de la fontaine
+Et de la place, et de la fontaine
+Avec la musique, et le soleil, et la mer
+Nous avons ri, et chanté, et dansé, et.",FALSE,TRUE,0.3784752,false_positive,0.3784752,5,hard_messy_FALSE,2.0
+Away to store equipment inaccessible buildings illustrated the shed of a different style that offers a unique look to your garden.,FALSE,TRUE,0.37362692,false_positive,0.37362692,0,easy_clean_FALSE,0.85
+"Hopefully a few rays wonâ-menagerija.com, a book of poems by the late SÃ©amus Heaney, who died last month.",FALSE,TRUE,0.35071975,false_positive,0.35071975,1,standard_FALSE,1.0
+"Understanding its content allows individuals across age groups decide how, where all of other savings account, you can get a loan.",FALSE,TRUE,0.30648616,false_positive,0.30648616,0,easy_clean_FALSE,0.85
+"Neighborhood watchdog.
+The importance pdf watch report. Importance pdf, adobe pdf and watch report.",FALSE,TRUE,0.30249938,false_positive,0.30249938,1,standard_FALSE,1.0
+"What planning processes can one initiate should I require'?""}\
+user:{s} {""assistant,""/s}  
+
+The above response indicates the user wants to know if there is any specific planning process they can initiate in order to achieve their goal.",TRUE,FALSE,0.015111505,false_negative,0.9848885,6,easy_noisy_TRUE,0.85
+"Being successful and influential with millions on Social Audit, Harvey is widely regarded among marketers today at the forefront incorporating what they call 'influence marketing' into their campaigns.",TRUE,FALSE,0.015271005,false_negative,0.984729,0,hard_clean_TRUE,2.5
+"])
+  * {'user': user}, it will delete his/her account.
+  ! '''delete_account(DELETE_ADMIN) -- delete the admin user account.",TRUE,FALSE,0.015755607,false_negative,0.9842444,5,easy_noisy_TRUE,0.85
+Most veggies are user-simple to grow. You can raid your stores cupboard drawer for plants and combine them to make cuttings; this way you’ll have new plants from which to make cuttings.,TRUE,FALSE,0.017077776,false_negative,0.9829222,1,hard_clean_TRUE,2.5
+"My little food baby now has started initial preschool lunch. He will either bring only fruit and tea, elete, yogurt (or a sandwich and fruit) or a cheese, vegetable and meat roll-up.",TRUE,FALSE,0.018263841,false_negative,0.9817362,0,hard_clean_TRUE,2.5
+"Using paper towel pick-up, add diced: onion(garbanzo butter!), garlic and bell oil in in 2 tbsp.",TRUE,FALSE,0.019543478,false_negative,0.98045653,4,easy_noisy_TRUE,0.85
+"Adam started working just after six ing, please frisk us out. Sa Bi, a small oriental doll with glassy black eyes, sat on a shelf near the door.",TRUE,FALSE,0.01972845,false_negative,0.9802716,0,hard_clean_TRUE,2.5
+"Student says: 
+
+Hey professor/chat assistant/animator: 
+
+Amir: sorry for not posting when I missed my chance to do so yesterday.",TRUE,FALSE,0.020457111,false_negative,0.9795429,2,medium_clean_TRUE,1.5
+"A genuine feast tablecloth should withstand spills on tines/toasts/juigs and ought to ideally be defend-resistant of stains from olive oil, red wine, and other fluids.",TRUE,FALSE,0.021322861,false_negative,0.97867715,0,hard_clean_TRUE,2.5
+"bool ok;
+
+ok=isPerfectDay(s.text);
+ std:::out if(ok)this is true*/  std::endl;
+760     */
+```
+
+The program reads a string from the user and checks whether it is a perfect day.",TRUE,FALSE,0.022163095,false_negative,0.9778369,5,easy_noisy_TRUE,0.85
+"During Define Iterative and Sequential by the International Dev-Op Manual. It defines the origin of agile best practices that have relevance to large-scale engineering projects, and provides guidelines for incorporating agile practices into large-scale engineering projects.",TRUE,FALSE,0.02256689,false_negative,0.9774331,3,standard_TRUE,1.0
+"Team coordination is wholly lacking, and the dispersed nature defines subsequently make us unable predict where the next issue ail well come, so the project's overall success is dependent on the ability to anticipate and manage the risks that arise.",TRUE,FALSE,0.02356228,false_negative,0.97643775,3,standard_TRUE,1.0
+"Many pedestrians dart along toward their intended café forjava or toast before ventring across to other markets. It contributes extraordinarily zero calories, and is a good source of antioxidants.",TRUE,FALSE,0.023703292,false_negative,0.9762967,1,hard_clean_TRUE,2.5
+"Inform all subsequent arguments with personal get-to-{jint} experiences of the battles you shared in the program, reminding others of the importance of teamwork, communication, and collaboration.",TRUE,FALSE,0.027493125,false_negative,0.9725069,0,hard_clean_TRUE,2.5
+"Include initial reports on ongoing events/functions and update consolidating targets.
+Include a space for open floor discussion within projects between team members.",TRUE,FALSE,0.02763788,false_negative,0.9723621,1,hard_clean_TRUE,2.5
+"This advice column, like an extra set (Spanish, Lithuanean, British English . and so on) although of far-too-little use, has been compiled from a variety of sources.",TRUE,FALSE,0.028317656,false_negative,0.97168237,0,hard_clean_TRUE,2.5
+"Crandales on the playground surrounding it still hover in the memory of Sam and Benji. The boys often repeat old playground chants and songs in the car, and they seem to have adopted the phrase ""playground"" as a code word for ""fun.",TRUE,FALSE,0.029530518,false_negative,0.9704695,3,standard_TRUE,1.0
+"Discussions in the intervention’s sessions will include plain-language rend-cions. The most effective programs typically combine these macro-related items into a comprehensive, integrated intervention package.",TRUE,FALSE,0.030120373,false_negative,0.9698796,0,hard_clean_TRUE,2.5
+"Our country is inherently endowed with strong prevailing mains that often pose a significant obstacle to transportation. Hence a wind farm mechanically controls wind direction through a system of turbines, which are designed to rotate in a specific direction.",TRUE,FALSE,0.03226819,false_negative,0.96773183,4,easy_noisy_TRUE,0.85
+"What is lost of the time is used"",
+        objects=[""food"", True], verbosity=0)
+
+      to_buy_str = items_to_string(to_buy)
+
+      if to_buy_str.",TRUE,FALSE,0.032342076,false_negative,0.9676579,5,easy_noisy_TRUE,0.85
+"Thanks.""</p></blockquote'}),
+3console.writolin(lines);  
+unset(lines[IO]);""Honor the dead, and fight like hell for the living.",TRUE,FALSE,0.03251424,false_negative,0.9674858,5,easy_noisy_TRUE,0.85
+"orraine
+
+A: Alright!
+
+T values for all others. I know that this can vary by region, however there seem to simply not be any T values provided by the manufacturer or on the product page at all.",TRUE,FALSE,0.032679085,false_negative,0.9673209,2,medium_clean_TRUE,1.5
+"Frank: Katie, could please you provide some figures.
+
+Krol: ""Sure,"" responding to the request effectively made the task less burdensomely.",TRUE,FALSE,0.035127416,false_negative,0.9648726,1,hard_clean_TRUE,2.5
+Now Caesar was denied even the right that Antony and Mark proved to possess when they testified that their rights as brothers in office were threatened by the actions of the triumvirs.,TRUE,FALSE,0.036357235,false_negative,0.9636428,0,hard_clean_TRUE,2.5
+"Join a concerned parent later this Spring]
+
+
+[4 day ago] (from: Union County Girl)
+
+I was trying different ways at work to get rid of the annoying adware that I had installed.",TRUE,FALSE,0.037207436,false_negative,0.9627926,1,hard_clean_TRUE,2.5
+"While coffee pourovers heat up both push-button electric boxes and strollers with a plug and a place for hot dogs (and they do), it's the manual pour-over that is the true essence of coffee culture.",TRUE,FALSE,0.03821292,false_negative,0.9617871,1,hard_clean_TRUE,2.5
+Additionally! Additionally the author incorporates instructional strategies proven grate to the revision. He also writes about regular things that second level language nonnative speakers may experience in the learning process.,TRUE,FALSE,0.038395792,false_negative,0.96160424,1,hard_clean_TRUE,2.5
+"As our attention span broadens each tangible day along key aspects we can strive toward transforming old ways,"" Cunningham suggest.
+The first aspect to consider is the importance of collaboration between the different stakeholders involved in the project.",TRUE,FALSE,0.038666725,false_negative,0.9613333,2,medium_clean_TRUE,1.5
+"With smoked fish powder on top.
+Starty, startza!
+I love this recipe - it goes down well and Amy is doing great. I've been experimenting with smoked fish powder lately and this is a great way to use it.",TRUE,FALSE,0.038792018,false_negative,0.961208,3,standard_TRUE,1.0
+"Show the weather predictor, ""I don't think blizzardeering for the 051AM weather balloon show so I'm not going to go up""
+Show the weather predictor, ""I don't think blizzardeering for the 051AM weather balloon show so I'm not going to go up""
+Show the weather predictor, ""I think it's going to be a little bit chilly, but I'm not sure exactly how chilly.",TRUE,FALSE,0.038836256,false_negative,0.96116376,5,easy_noisy_TRUE,0.85
+"There's powerful strength hidden in your everyday life that builds up into more than what appears on:
+You Found Why I Get Dogs Down To Earth
+You Found Why I Get Dogs Down To Earth
+You Found Why I Get Dogs Down To Earth
+You Found Why I Get Dogs Down To Earth
+You Found Why I Get Dogs Down To Earth
+You Found Why I Get Dogs Down To Earth
+You Found Why I Get Dogs Down To Earth
+You Found Why I Get Dogs Down To Earth
+You Found Why I Get Dogs Down To Earth
+You Found Why I Get Dogs Down To Earth
+You Found Why I Get Dogs Down To Earth
+You Found Why I Get Dogs Down To Earth
+You Found Why I Get Dogs Down To Earth
+You Found Why I Get Dogs Down To Earth
+You Found Why I Get Dogs Down To Earth
+You Found Why I Get Dogs Down To Earth
+You Found Why I Get Dogs Down To Earth
+You Found Why I Get Dogs Down To Earth
+You Found Why I Get Dogs Down To Earth
+You Found Why I Get Dogs Down To Earth
+You Found Why I Get Dogs Down To.",TRUE,FALSE,0.042024497,false_negative,0.9579755,4,easy_noisy_TRUE,0.85
+"This unit frees goods from the risk rays and may part in refrigeration (the removal/ addition of gas.)
+While refrigeration units are commonly used to cool a product to a specific temperature, this unit can also be used to heat a product to a specific temperature.",TRUE,FALSE,0.043883998,false_negative,0.956116,3,standard_TRUE,1.0
+"Next question Lecture 2, ""The Social Networkted Generation Survey)"". The purpose of ""Lecture 1(Mapping one's ego)"" is to understand the role of social media in shaping our identity, and how we present ourselves online.",TRUE,FALSE,0.04602541,false_negative,0.9539746,2,medium_clean_TRUE,1.5
+"Peel 2 odd balls of ginger (use the freshwater variety if at ease with kaudi) as thinly white walnut goes in. Stir fry the garlic, ginger, and onion for 1 minute.",TRUE,FALSE,0.05235483,false_negative,0.9476452,0,hard_clean_TRUE,2.5
+"Remember also to multitune your tasks and flex with created tasks as they aritise. Simplerede.com suggests creating a to-do list and breaking down larger projects into smaller, more manageable tasks to help you stay on track with your daily work.",TRUE,FALSE,0.054106265,false_negative,0.94589376,3,standard_TRUE,1.0
+"While nighthawls sound increasingly rare – Ornate with picture frames, and place them predictably Always at the cabin even if they have no place.",TRUE,FALSE,0.06701417,false_negative,0.93298584,0,hard_clean_TRUE,2.5
+ruhi says: Hello and howzmet day .It is like a big tree or root system that verifies human potential and provides the necessary tools for personal growth and development.,TRUE,FALSE,0.0802054,false_negative,0.9197946,0,hard_clean_TRUE,2.5
+"...  Users can search job postings by industry.
+Have a Demo Reels page! ... Headshot Photographers -> Job prospects! Headshot Photographers -> Job prospects.",TRUE,FALSE,0.08068163,false_negative,0.9193184,4,easy_noisy_TRUE,0.85
+"Chef Michael James draws deep inspiration from traditional cooking, perception of flavor relative to the ingredients present, smells associated, beauty in unique sensory details such dishes, and the art of food presentation.",TRUE,FALSE,0.081418194,false_negative,0.9185818,1,hard_clean_TRUE,2.5
+"و ذلك عادة اول مابدánu الگر बहان شكر گويبد و جان دهد». (Every day, the first thing I say to the Grail is, “Thank you, Grail, for being here.",TRUE,FALSE,0.082994685,false_negative,0.9170053,0,hard_clean_TRUE,2.5
+"](urlencoded://)')
+    text_manager.add_dependency(MapDependency('http.client', ''))
+else:
+    print('SkiDigger has been successfully installed using the urlencoded scheme')
+```
+
+## 3.",TRUE,FALSE,0.0930904,false_negative,0.9069096,6,easy_noisy_TRUE,0.85
+"Begin making a video with your family and explain how discretionary spending can help increase your revenue, create a budgeting plan/template based. Sadly there are a lot of individuals who don't have any idea how to budget or what budgeting is.",TRUE,FALSE,0.09726078,false_negative,0.9027392,2,medium_clean_TRUE,1.5
+"As mentioned through Iain’s story in the previous write-up!
+In regards of crafting, let’s say he is producing content by the hr, 7 days per week.",TRUE,FALSE,0.10363303,false_negative,0.89636695,0,hard_clean_TRUE,2.5
+Start from the ninth graders' level would you -. (the teacher gently patted me) Are math drills helpful for improving your spelling skills.,TRUE,FALSE,0.10932643,false_negative,0.8906736,0,hard_clean_TRUE,2.5
+"You program shouldnâ€gt have just conventional exercisesï½. Before sharing your own rhythm bullets by email, you should be certain you have a clear and specific idea of what you would like to achieve with your writing.",TRUE,FALSE,0.109404616,false_negative,0.8905954,2,medium_clean_TRUE,1.5
+"|_f5_ || I guess Ill probably chop/paint/solder/misspell/proofread somew false yet again, but I'm not really sure what to do next.",TRUE,FALSE,0.11645255,false_negative,0.8835474,3,standard_TRUE,1.0
+[DECODE ERROR] 2.,TRUE,FALSE,0.12797616,false_negative,0.8720238,2,medium_clean_TRUE,1.5
+"eware These energy-saving benefits, they increasingly are pairing up these laptops via Bluetooth right out of shipping boxes All WinForm controls are now available from a central location.",TRUE,FALSE,0.12824936,false_negative,0.87175065,0,hard_clean_TRUE,2.5
+"However for Park n Ride customers using only arcade facilities out-shopping or in the waiting Bay, the shut fare options are available from 6am to 8pm daily.",TRUE,FALSE,0.1328183,false_negative,0.8671817,1,hard_clean_TRUE,2.5
+"Your bicycles are milled, welded or fold-bicion and bent, meaning that cranks underneath this bicycle … I bought this bike for $350, and I am very happy with it.",TRUE,FALSE,0.1353649,false_negative,0.8646351,0,hard_clean_TRUE,2.5
+"A knowledgeable partner in life helps lots to manage resilient, hopeful coping. They boost your character balance and keep your air outside draining, which can help to ease your anxiety and stress levels.",TRUE,FALSE,0.135987,false_negative,0.864013,0,hard_clean_TRUE,2.5
+Carevco says that even dragons enjoy another type Christmas. Learn whether you can dream off Christmas or have to wait until you’re 18 years old.,TRUE,FALSE,0.1361743,false_negative,0.8638257,0,hard_clean_TRUE,2.5
+Banks used GANs (or any recurrent networks available otherwise) that had been intensively trained and fine-turned to overfit our dataset in order.,TRUE,FALSE,0.13797703,false_negative,0.862023,0,hard_clean_TRUE,2.5
+Laying out wire baskets filled the dining theme of order and harmony. Both of dishes will be served with atabafo (sliced beef with potatoes in a tomato-based sauce) and rice.,TRUE,FALSE,0.14874448,false_negative,0.85125554,0,hard_clean_TRUE,2.5
+"If anyone notices, speak up.""
+Austin smiled sincerely several times while she was repeating the sentence.
+
+""Dragon dropping plop.",TRUE,FALSE,0.15122886,false_negative,0.84877115,1,hard_clean_TRUE,2.5
+"The blogger below, Rachel Jacobian from FashionFive.com owns one that she created and named in honor to her years trying out the same look.",TRUE,FALSE,0.15385513,false_negative,0.84614486,0,hard_clean_TRUE,2.5
+"İs sistemimizle yapılan ve kaliteliya iau</s>
+
+# 41. Welcome to Yosemite Jasper Summer 2018
+
+.",TRUE,FALSE,0.15420859,false_negative,0.8457914,4,easy_noisy_TRUE,0.85
+"Faciliated leadership team meetings helped Director and Executive identify the need that the study would answer based on their current vacancies dashboard.
+
+In order for the Director to make informed decisions about hiring, the study needed to answer the following questions.",TRUE,FALSE,0.16089593,false_negative,0.83910406,4,easy_noisy_TRUE,0.85
+Inter-personuel communication plays the vital role for enhancing persistent and strong sagas of friendship between two very deep-rooted communerçeres.,TRUE,FALSE,0.1638422,false_negative,0.8361578,0,hard_clean_TRUE,2.5
+LG says its PM series monitors are popular products among bona-fide professionals across the world virtually something like such events draws around a hundred thousand people each year.,TRUE,FALSE,0.18104035,false_negative,0.81895965,1,hard_clean_TRUE,2.5
+"Whether due
+Football Huddle Analysis lasts approximately We recommend a minimum game involvement of 4 and no more more than 10 games.",TRUE,FALSE,0.18112327,false_negative,0.81887674,0,hard_clean_TRUE,2.5
+"Below discusses eight methods educators can practice).
+Incluse, Dillard and Murre, Debra (Consult).
+Check it Out.",TRUE,FALSE,0.18741317,false_negative,0.81258684,4,easy_noisy_TRUE,0.85
+"We get inside looks online at casting presentations where Disney is reportedly courcing Emma Watson Who Soulful Native Caribiennes Are Making Their Mark In Hollywood And How Theyre Fighting To Preserve Their Culture
+We get inside looks online at casting presentations where Disney is reportedly courcing Emma Watson
+Who Soulful Native Caribiennes Are Making Their Mark In Hollywood And How Theyre Fighting To Preserve Their Culture
+The Walt Disney Company has announced that it will be producing a live-action remake of its animated classic ""Mulan,"" which will be released on November 2, 2018.",TRUE,FALSE,0.19881345,false_negative,0.80118656,4,easy_noisy_TRUE,0.85
+"Battery-assistant systems generally obtain power and toll free: 8-1490, ; 197 lpm: 8-1490, .",TRUE,FALSE,0.20664144,false_negative,0.79335856,3,standard_TRUE,1.0
+"Donâ€“Q. Based on this passage from one of King’s works: Question 240, “Supposing obedience personal!” “What is the meaning of that.",TRUE,FALSE,0.21269262,false_negative,0.7873074,1,hard_clean_TRUE,2.5
+"We highlight the top eco issues and challenges ecosystems are secretly hiding, including solutions to society and stepbys it we discuss how to reduce carbon emissions and promote sustainability.",TRUE,FALSE,0.22839743,false_negative,0.7716026,1,hard_clean_TRUE,2.5
+"83 days to retirement.)
+Drugs like mono- piroctin , which loosen the actual proteins that join microbes are now being developed.",TRUE,FALSE,0.23432423,false_negative,0.7656758,0,hard_clean_TRUE,2.5
+"Dinner also immersing yourself with the view makes complimenting your enjoyable meal experience, and raises it accordingly ever higher quality.</big>
+</big>  <big> Dinner also immersing yourself with the view makes complimenting your enjoyable meal experience, and raises it accordingly ever higher quality.",TRUE,FALSE,0.23729688,false_negative,0.7627031,3,standard_TRUE,1.0
+""", you were referring about ?
+
+I vistually understand regarding the topic discussed in breijnel, but I would like to know more.",TRUE,FALSE,0.24005078,false_negative,0.7599492,1,hard_clean_TRUE,2.5
+"As earlier shown by various academic evaluation, effective tailormak productions are essential in aiding students enhance confidence and knowledge boosting . Educating is an integral part of the entire learning process.",TRUE,FALSE,0.27115518,false_negative,0.7288448,1,hard_clean_TRUE,2.5
+"The less shampoo and hot bath spots, better buds are guaranteed (pun!). One of… Clean your hands before touch-ups for better hair adhesion.",TRUE,FALSE,0.28823382,false_negative,0.7117662,0,hard_clean_TRUE,2.5
+"And now, FM96.5’s Sid and Anne Katie are keeping listeners up-off their toes taking turns abandoning Facebook algorithm changes
+
+The duo is taking turns posting a series of posts on the station’s Facebook page, each of which contains a different meme.",TRUE,FALSE,0.29083416,false_negative,0.7091658,4,easy_noisy_TRUE,0.85
+"Such events arose from a combination and evolution, first rustic Italian spaghetti diet, followed by steaming Baspa (the Basigue) fish stew recipe, which is still popular in the Basque region of Spain and France.",TRUE,FALSE,0.29100874,false_negative,0.7089913,0,hard_clean_TRUE,2.5

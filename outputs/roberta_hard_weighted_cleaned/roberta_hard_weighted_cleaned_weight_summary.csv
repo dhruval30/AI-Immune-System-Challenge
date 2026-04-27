@@ -1,0 +1,9 @@
+label,hard_category,rows,mean_abnormal_score,mean_raw_weight,mean_normalized_weight
+FALSE,easy_clean_FALSE,1741,0.0,0.85,0.6493842
+FALSE,hard_messy_FALSE,325,3.763076923076923,2.0,1.5279628
+FALSE,medium_messy_FALSE,221,2.0,1.4,1.0695739
+FALSE,standard_FALSE,513,1.0,1.0,0.7639814
+TRUE,easy_noisy_TRUE,103,4.563106796116505,0.85,0.6493842
+TRUE,hard_clean_TRUE,652,0.3006134969325153,2.5,1.9099535
+TRUE,medium_clean_TRUE,143,2.0,1.5,1.145972
+TRUE,standard_TRUE,142,3.0,1.0,0.7639814
