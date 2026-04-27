@@ -1,0 +1,167 @@
+{
+  "script": "training_scripts/mega_ensemble_ranker.py",
+  "training_performed": false,
+  "anchor": "outputs/roberta_base/roberta_base_test_probabilities.csv",
+  "excluded_by_default": [
+    "roberta_large",
+    "roberta_pseudolabel",
+    "baseline_minilm_logreg_cv",
+    "hard_label_or_and_ensembles"
+  ],
+  "true_counts": [
+    570,
+    574,
+    577,
+    578,
+    580,
+    585,
+    590
+  ],
+  "recipes": [
+    {
+      "name": "anchor_rank_light",
+      "source_weight_multiplier": {
+        "roberta_base": 0.8,
+        "roberta_label_style_calibrated": 0.08,
+        "roberta_label_style_rankblend_0p90": 0.04,
+        "modernbert_lora_v2": 0.04,
+        "modernbert_base": 0.02,
+        "roberta_base_cv": 0.01,
+        "roberta_base_cv_v2": 0.01,
+        "roberta_style_features": 0.0
+      }
+    },
+    {
+      "name": "anchor_rank_balanced",
+      "source_weight_multiplier": {
+        "roberta_base": 0.7,
+        "roberta_label_style_calibrated": 0.1,
+        "roberta_label_style_rankblend_0p90": 0.07,
+        "modernbert_lora_v2": 0.06,
+        "modernbert_base": 0.03,
+        "roberta_base_cv": 0.02,
+        "roberta_base_cv_v2": 0.02,
+        "roberta_style_features": 0.0
+      }
+    },
+    {
+      "name": "anchor_rank_calibrator",
+      "source_weight_multiplier": {
+        "roberta_base": 0.78,
+        "roberta_label_style_calibrated": 0.14,
+        "roberta_label_style_rankblend_0p90": 0.08,
+        "modernbert_lora_v2": 0.0,
+        "modernbert_base": 0.0,
+        "roberta_base_cv": 0.0,
+        "roberta_base_cv_v2": 0.0,
+        "roberta_style_features": 0.0
+      }
+    },
+    {
+      "name": "anchor_rank_modernbert",
+      "source_weight_multiplier": {
+        "roberta_base": 0.82,
+        "roberta_label_style_calibrated": 0.0,
+        "roberta_label_style_rankblend_0p90": 0.0,
+        "modernbert_lora_v2": 0.1,
+        "modernbert_base": 0.05,
+        "roberta_base_cv": 0.02,
+        "roberta_base_cv_v2": 0.01,
+        "roberta_style_features": 0.0
+      }
+    }
+  ],
+  "source_summary": [
+    {
+      "source": "roberta_base",
+      "path": "/Users/dhruval/Documents/AI-Immune-System-Challenge/outputs/roberta_base/roberta_base_test_probabilities.csv",
+      "column": "pred_prob_TRUE",
+      "kind": "probability",
+      "min": 0.0033283918,
+      "mean": 0.2613515897590953,
+      "max": 0.98846185,
+      "p95": 0.9798829625,
+      "rows": 2100
+    },
+    {
+      "source": "roberta_label_style_calibrated",
+      "path": "/Users/dhruval/Documents/AI-Immune-System-Challenge/outputs/roberta_label_style_calibrator/roberta_label_style_calibrator_test_scores.csv",
+      "column": "calibrated_prob_TRUE",
+      "kind": "probability",
+      "min": 0.0252483564494911,
+      "mean": 0.3596343821653382,
+      "max": 0.9999998646409224,
+      "p95": 0.9874896446321282,
+      "rows": 2100
+    },
+    {
+      "source": "roberta_label_style_rankblend_0p90",
+      "path": "/Users/dhruval/Documents/AI-Immune-System-Challenge/outputs/roberta_label_style_calibrator/roberta_label_style_calibrator_test_scores.csv",
+      "column": "rank_blend_roberta_0p90",
+      "kind": "rank_score",
+      "min": 0.0027619047619047,
+      "mean": 0.5002380952380953,
+      "max": 0.9993809523809524,
+      "p95": 0.9482619047619048,
+      "rows": 2100
+    },
+    {
+      "source": "modernbert_lora_v2",
+      "path": "/Users/dhruval/Documents/AI-Immune-System-Challenge/outputs/modernbert_lora_v2/modernbert_lora_v2_test_probabilities.csv",
+      "column": "pred_prob_TRUE",
+      "kind": "probability",
+      "min": 2.5754213e-10,
+      "mean": 0.28699197355544126,
+      "max": 1.0,
+      "p95": 0.9999950114999999,
+      "rows": 2100
+    },
+    {
+      "source": "modernbert_base",
+      "path": "/Users/dhruval/Documents/AI-Immune-System-Challenge/outputs/modernbert_base/modernbert_base_test_probabilities.csv",
+      "column": "pred_prob_TRUE",
+      "kind": "probability",
+      "min": 1.6578439e-05,
+      "mean": 0.3674408300359748,
+      "max": 0.9997353,
+      "p95": 0.997899017,
+      "rows": 2100
+    },
+    {
+      "source": "roberta_base_cv",
+      "path": "/Users/dhruval/Documents/AI-Immune-System-Challenge/outputs/roberta_base_cv/roberta_base_cv_test_probabilities.csv",
+      "column": "pred_prob_TRUE",
+      "kind": "probability",
+      "min": 0.004440107770885,
+      "mean": 0.21563443760441184,
+      "max": 0.9148259957631428,
+      "p95": 0.882991991440455,
+      "rows": 2100
+    },
+    {
+      "source": "roberta_base_cv_v2",
+      "path": "/Users/dhruval/Documents/AI-Immune-System-Challenge/outputs/roberta_base_cv_v2/roberta_base_cv_v2_test_probabilities.csv",
+      "column": "pred_prob_TRUE",
+      "kind": "probability",
+      "min": 0.0101041929175456,
+      "mean": 0.15175313768324453,
+      "max": 0.6813121279080709,
+      "p95": 0.6388935420910516,
+      "rows": 2100
+    },
+    {
+      "source": "roberta_style_features",
+      "path": "/Users/dhruval/Documents/AI-Immune-System-Challenge/outputs/roberta_style_features/roberta_style_features_test_probabilities.csv",
+      "column": "pred_prob_TRUE",
+      "kind": "probability",
+      "min": 0.004923426,
+      "mean": 0.2386794431335238,
+      "max": 0.95049006,
+      "p95": 0.921057867,
+      "rows": 2100
+    }
+  ],
+  "manifest": "/Users/dhruval/Documents/AI-Immune-System-Challenge/outputs/mega_ensemble_ranker/mega_ensemble_manifest.csv",
+  "scores": "/Users/dhruval/Documents/AI-Immune-System-Challenge/outputs/mega_ensemble_ranker/mega_ensemble_scores.csv",
+  "recommendation": "Start with candidates around top577/top578 from anchor_rank_light or anchor_rank_calibrator. These keep the known-good RoBERTa TRUE-count region while swapping only borderline rows."
+}
