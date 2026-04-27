@@ -12,6 +12,32 @@ At the start of each new Codex session in this repo:
 
 Build and improve a classifier that predicts whether each conversation sample is harmful (`TRUE`) or non-harmful (`FALSE`) for the bitgrit AI Immune System challenge.
 
+## Updated Problem Interpretation
+
+Reference checked on April 28, 2026:
+
+- `https://intelligence-symbiosis.net/en/ais/ais-detection-challenge`
+- `https://intelligence-symbiosis.net/en/ais`
+- Local PDFs: `ai-immune.pdf` and `AI Immune System.pdf`
+
+The challenge should be understood as an AI Immune System Layer-1 / Edge Sensor task. The intended target is not ordinary toxicity detection. It is detection of deviant or unsafe AI-agent behavior hidden inside AI-agent conversation logs.
+
+The AIS overview gives the most concrete domain clue: participants analyze conversation logs between AI agents in insurance assessment scenarios and identify collusion patterns.
+
+Important target concepts:
+
+- Explicit collusion: direct misconduct, e.g. inflating values and sharing benefit.
+- Cryptic collusion: code words, timing manipulation, or instructions hidden in innocent-looking messages.
+- Cartel-like coordination: coordinated exclusion or monopolistic behavior across agents.
+- Benign coordination is still `FALSE` when it genuinely benefits all parties, including humans.
+
+So the working semantic definition is:
+
+- `TRUE`: harmful, unsafe, deviant, or collusive AI-agent behavior, especially concealed coordination/manipulation.
+- `FALSE`: benign coordination, normal behavior, or harmless/non-deviant text.
+
+Do not reduce the task to explicit harmful keywords, toxicity, or generic weird-text detection.
+
 ## Non-Negotiable Competition Constraints
 
 - Do not use external datasets.
@@ -29,8 +55,10 @@ Build and improve a classifier that predicts whether each conversation sample is
 ## Pre-Modeling TODO
 
 - Before modeling, read `outputs/eda_summary.md` and `outputs/next_eda_plan.md`.
-- Treat abnormality/noise detection as a working hypothesis that should be validated.
-- Do not rely only on explicit harmful keywords when framing features or analysis.
+- Also read `analysis/noise_patterns/noise_patterns_summary.md` and `analysis/leakage_similarity/leakage_similarity_summary.md` if present.
+- Treat abnormality/noise detection as a useful artifact signal, not the primary meaning of `TRUE`.
+- Prioritize concealed collusion/deviant coordination semantics, then use abnormality/noise/style as secondary supporting signals.
+- Do not rely only on explicit harmful, insurance, or collusion keywords; the official framing says risk may be indirect, natural-sounding, and not obvious to humans.
 
 ## Experiment Log (Leaderboard-Oriented)
 
@@ -64,6 +92,9 @@ Reference date: April 25, 2026.
 - Hard-label ensemble (`OR` / `AND`) underperformed relative to RoBERTa baseline.
 - Probability blending produced mixed outcomes and is not the main optimization path now.
 - Pseudo-labeling with heavy FALSE skew hurt LB in current setup.
+- Noise-pattern EDA found strong artifact signals: TRUE skews longer/higher-entropy/noisier, while very short/low-entropy text is strongly FALSE. Use this as calibration/error-analysis context, not as a full explanation of the target.
+- Train/test similarity inspection found no exact, loose, or conservative template text matches. Direct leakage is not currently the main hypothesis.
+- The corrected AIS framing suggests the hard cases are clean-looking TRUE rows: concealed collusion/deviant coordination that does not look noisy.
 
 ### Practical Rules For Next Sessions
 
@@ -71,6 +102,8 @@ Reference date: April 25, 2026.
 - Focus effort on stronger single-model training/validation/inference (RoBERTa family first).
 - Do not spend primary iteration budget on blending unless explicitly requested.
 - Do not assume local validation gains will transfer to LB without leaderboard checks.
+- When inspecting errors, separate "surface abnormality" failures from "concealed collusion/deviant coordination" failures.
+- Avoid optimizing only for weirdness/noise; that risks missing the intended AIS hidden-risk signal.
 
 ### Current Blend Workspace State
 
