@@ -1,0 +1,6 @@
+candidate,filename,roberta_weight,electra_weight,threshold,pred_FALSE_count,pred_TRUE_count,changed_vs_roberta_base,changed_vs_electra_base
+count577_r0p90_thr0p34,roberta_electra_blend_count577_r0p90_thr0p34_r0p90_e0p10_thr0p34.csv,0.9,0.09999999999999998,0.34,1523,577,2,154
+count577_r0p85_thr0p34,roberta_electra_blend_count577_r0p85_thr0p34_r0p85_e0p15_thr0p34.csv,0.85,0.15000000000000002,0.34,1523,577,6,150
+count578_r0p95_thr0p32,roberta_electra_blend_count578_r0p95_thr0p32_r0p95_e0p05_thr0p32.csv,0.95,0.050000000000000044,0.32,1522,578,1,155
+count576_r0p95_thr0p34,roberta_electra_blend_count576_r0p95_thr0p34_r0p95_e0p05_thr0p34.csv,0.95,0.050000000000000044,0.34,1524,576,1,155
+count578_r0p80_thr0p34,roberta_electra_blend_count578_r0p80_thr0p34_r0p80_e0p20_thr0p34.csv,0.8,0.19999999999999996,0.34,1522,578,9,147
