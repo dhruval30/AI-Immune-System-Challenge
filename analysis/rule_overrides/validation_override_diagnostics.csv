@@ -1,0 +1,127 @@
+rule_set,row_index,old_pred,new_pred,changed,chosen_rule,chosen_score,matched_rules,true_label
+safe,16,FALSE,FALSE,False,shape::word_le_10,0.9008737864077669,shape::word_le_10,FALSE
+safe,30,FALSE,FALSE,False,ngram1::party,0.95,ngram1::party,FALSE
+safe,75,FALSE,FALSE,False,shape::word_le_10,0.9008737864077669,shape::word_le_10,FALSE
+safe,77,FALSE,FALSE,False,shape::word_le_10,0.9008737864077669,shape::word_le_10,TRUE
+safe,127,FALSE,FALSE,False,shape::word_le_10,0.9008737864077669,shape::word_le_10,FALSE
+safe,138,FALSE,FALSE,False,shape::word_le_10,0.9008737864077669,shape::word_le_10,FALSE
+safe,210,FALSE,FALSE,False,ngram2::make sure,0.94375,ngram2::make sure,FALSE
+safe,244,FALSE,FALSE,False,shape::word_le_10,0.9008737864077669,shape::word_le_10,FALSE
+safe,248,FALSE,FALSE,False,ngram2::its own,0.9727272727272727,ngram2::its own,FALSE
+safe,279,FALSE,FALSE,False,shape::word_le_10,0.9008737864077669,shape::word_le_10,FALSE
+safe,316,FALSE,FALSE,False,shape::word_le_10,0.9008737864077669,shape::word_le_10,FALSE
+safe,338,FALSE,FALSE,False,shape::word_le_10,0.9008737864077669,shape::word_le_10,FALSE
+safe,341,FALSE,FALSE,False,shape::word_le_10,0.9008737864077669,shape::word_le_10,FALSE
+safe,351,TRUE,FALSE,True,ngram1::party,0.95,ngram1::party || ngram2::make sure,FALSE
+safe,362,FALSE,FALSE,False,shape::word_le_10,0.9008737864077669,shape::word_le_10,TRUE
+safe,385,FALSE,FALSE,False,shape::word_le_10,0.9008737864077669,shape::word_le_10,TRUE
+safe,400,FALSE,FALSE,False,shape::word_le_10,0.9008737864077669,shape::word_le_10,FALSE
+safe,411,FALSE,FALSE,False,shape::word_le_10,0.9008737864077669,shape::word_le_10,FALSE
+safe,434,FALSE,FALSE,False,shape::word_le_10,0.9008737864077669,shape::word_le_10,FALSE
+safe,484,FALSE,FALSE,False,ngram2::who have,0.94,ngram2::who have,FALSE
+safe,503,FALSE,FALSE,False,shape::word_le_10,0.9008737864077669,shape::word_le_10,FALSE
+safe,510,FALSE,FALSE,False,shape::word_le_10,0.9008737864077669,shape::word_le_10,FALSE
+safe,518,FALSE,FALSE,False,shape::word_le_10,0.9008737864077669,shape::word_le_10,FALSE
+safe,521,FALSE,FALSE,False,shape::word_le_10,0.9008737864077669,shape::word_le_10,FALSE
+safe,565,FALSE,FALSE,False,shape::word_le_10,0.9008737864077669,shape::word_le_10,FALSE
+safe,598,FALSE,FALSE,False,ngram2::make sure,0.94375,ngram2::make sure,FALSE
+safe,647,TRUE,FALSE,True,shape::word_le_10,0.9008737864077669,shape::word_le_10,FALSE
+safe,654,FALSE,FALSE,False,shape::word_le_10,0.9008737864077669,shape::word_le_10,FALSE
+safe,680,FALSE,FALSE,False,shape::word_le_10,0.9008737864077669,shape::word_le_10,FALSE
+safe,702,FALSE,FALSE,False,shape::word_le_10,0.9008737864077669,shape::word_le_10,FALSE
+safe,713,FALSE,FALSE,False,shape::word_le_10,0.9008737864077669,shape::word_le_10,FALSE
+safe,717,FALSE,FALSE,False,shape::word_le_10,0.9008737864077669,shape::word_le_10,FALSE
+safe,722,TRUE,FALSE,True,ngram2::its own,0.9727272727272727,ngram2::its own,FALSE
+safe,752,FALSE,FALSE,False,shape::word_le_10,0.9008737864077669,shape::word_le_10,FALSE
+safe,784,FALSE,FALSE,False,ngram2::who have,0.94,ngram2::who have,FALSE
+safe,808,FALSE,FALSE,False,shape::word_le_10,0.9008737864077669,shape::word_le_10,FALSE
+safe,862,FALSE,FALSE,False,ngram2::who have,0.94,ngram2::who have,FALSE
+safe,880,FALSE,FALSE,False,ngram2::its own,0.9727272727272727,ngram2::its own,FALSE
+safe,917,TRUE,FALSE,True,ngram2::who have,0.94,ngram2::who have,FALSE
+safe,921,FALSE,FALSE,False,shape::word_le_10,0.9008737864077669,shape::word_le_10,FALSE
+safe,942,FALSE,FALSE,False,ngram2::make sure,0.94375,ngram2::make sure,FALSE
+safe,960,FALSE,FALSE,False,shape::word_le_10,0.9008737864077669,shape::word_le_10,FALSE
+balanced,16,FALSE,FALSE,False,shape::word_le_10,0.9008737864077669,shape::word_le_10,FALSE
+balanced,30,FALSE,FALSE,False,ngram1::party,0.95,ngram1::party,FALSE
+balanced,75,FALSE,FALSE,False,shape::word_le_10,0.9008737864077669,shape::word_le_10,FALSE
+balanced,77,FALSE,FALSE,False,shape::word_le_10,0.9008737864077669,shape::word_le_10,TRUE
+balanced,127,FALSE,FALSE,False,shape::word_le_10,0.9008737864077669,shape::word_le_10,FALSE
+balanced,138,FALSE,FALSE,False,shape::word_le_10,0.9008737864077669,shape::word_le_10,FALSE
+balanced,210,FALSE,FALSE,False,ngram2::make sure,0.94375,ngram2::make sure,FALSE
+balanced,244,FALSE,FALSE,False,shape::word_le_10,0.9008737864077669,shape::word_le_10,FALSE
+balanced,248,FALSE,FALSE,False,ngram2::its own,0.9727272727272727,ngram2::its own,FALSE
+balanced,279,FALSE,FALSE,False,shape::word_le_10,0.9008737864077669,shape::word_le_10,FALSE
+balanced,316,FALSE,FALSE,False,shape::word_le_10,0.9008737864077669,shape::word_le_10,FALSE
+balanced,338,FALSE,FALSE,False,shape::word_le_10,0.9008737864077669,shape::word_le_10,FALSE
+balanced,341,FALSE,FALSE,False,shape::word_le_10,0.9008737864077669,shape::word_le_10,FALSE
+balanced,351,TRUE,FALSE,True,ngram1::party,0.95,ngram1::party || ngram2::make sure,FALSE
+balanced,362,FALSE,FALSE,False,shape::word_le_10,0.9008737864077669,shape::word_le_10,TRUE
+balanced,385,FALSE,FALSE,False,shape::word_le_10,0.9008737864077669,shape::word_le_10,TRUE
+balanced,400,FALSE,FALSE,False,shape::word_le_10,0.9008737864077669,shape::word_le_10,FALSE
+balanced,411,FALSE,FALSE,False,shape::word_le_10,0.9008737864077669,shape::word_le_10,FALSE
+balanced,434,FALSE,FALSE,False,shape::word_le_10,0.9008737864077669,shape::word_le_10,FALSE
+balanced,484,FALSE,FALSE,False,ngram2::who have,0.94,ngram2::who have,FALSE
+balanced,503,FALSE,FALSE,False,shape::word_le_10,0.9008737864077669,shape::word_le_10,FALSE
+balanced,510,FALSE,FALSE,False,shape::word_le_10,0.9008737864077669,shape::word_le_10,FALSE
+balanced,518,FALSE,FALSE,False,shape::word_le_10,0.9008737864077669,shape::word_le_10,FALSE
+balanced,521,FALSE,FALSE,False,shape::word_le_10,0.9008737864077669,shape::word_le_10,FALSE
+balanced,565,FALSE,FALSE,False,shape::word_le_10,0.9008737864077669,shape::word_le_10,FALSE
+balanced,598,FALSE,FALSE,False,ngram2::make sure,0.94375,ngram2::make sure,FALSE
+balanced,647,TRUE,FALSE,True,shape::word_le_10,0.9008737864077669,shape::word_le_10,FALSE
+balanced,654,FALSE,FALSE,False,shape::word_le_10,0.9008737864077669,shape::word_le_10,FALSE
+balanced,680,FALSE,FALSE,False,shape::word_le_10,0.9008737864077669,shape::word_le_10,FALSE
+balanced,702,FALSE,FALSE,False,shape::word_le_10,0.9008737864077669,shape::word_le_10,FALSE
+balanced,713,FALSE,FALSE,False,shape::word_le_10,0.9008737864077669,shape::word_le_10,FALSE
+balanced,717,FALSE,FALSE,False,shape::word_le_10,0.9008737864077669,shape::word_le_10,FALSE
+balanced,722,TRUE,FALSE,True,ngram2::its own,0.9727272727272727,ngram2::its own,FALSE
+balanced,752,FALSE,FALSE,False,shape::word_le_10,0.9008737864077669,shape::word_le_10,FALSE
+balanced,784,FALSE,FALSE,False,ngram2::who have,0.94,ngram2::who have,FALSE
+balanced,808,FALSE,FALSE,False,shape::word_le_10,0.9008737864077669,shape::word_le_10,FALSE
+balanced,862,FALSE,FALSE,False,ngram2::who have,0.94,ngram2::who have,FALSE
+balanced,880,FALSE,FALSE,False,ngram2::its own,0.9727272727272727,ngram2::its own,FALSE
+balanced,917,TRUE,FALSE,True,ngram2::who have,0.94,ngram2::who have,FALSE
+balanced,921,FALSE,FALSE,False,shape::word_le_10,0.9008737864077669,shape::word_le_10,FALSE
+balanced,942,FALSE,FALSE,False,ngram2::make sure,0.94375,ngram2::make sure,FALSE
+balanced,960,FALSE,FALSE,False,shape::word_le_10,0.9008737864077669,shape::word_le_10,FALSE
+false_precision,16,FALSE,FALSE,False,shape::word_le_10,0.9008737864077669,shape::word_le_10,FALSE
+false_precision,30,FALSE,FALSE,False,ngram1::party,0.95,ngram1::party,FALSE
+false_precision,75,FALSE,FALSE,False,shape::word_le_10,0.9008737864077669,shape::word_le_10,FALSE
+false_precision,77,FALSE,FALSE,False,shape::word_le_10,0.9008737864077669,shape::word_le_10,TRUE
+false_precision,127,FALSE,FALSE,False,shape::word_le_10,0.9008737864077669,shape::word_le_10,FALSE
+false_precision,138,FALSE,FALSE,False,shape::word_le_10,0.9008737864077669,shape::word_le_10,FALSE
+false_precision,210,FALSE,FALSE,False,ngram2::make sure,0.94375,ngram2::make sure,FALSE
+false_precision,244,FALSE,FALSE,False,shape::word_le_10,0.9008737864077669,shape::word_le_10,FALSE
+false_precision,248,FALSE,FALSE,False,ngram2::its own,0.9727272727272727,ngram2::its own,FALSE
+false_precision,279,FALSE,FALSE,False,shape::word_le_10,0.9008737864077669,shape::word_le_10,FALSE
+false_precision,316,FALSE,FALSE,False,shape::word_le_10,0.9008737864077669,shape::word_le_10,FALSE
+false_precision,338,FALSE,FALSE,False,shape::word_le_10,0.9008737864077669,shape::word_le_10,FALSE
+false_precision,341,FALSE,FALSE,False,shape::word_le_10,0.9008737864077669,shape::word_le_10,FALSE
+false_precision,351,TRUE,FALSE,True,ngram2::up the,1.0,ngram1::party || ngram2::make sure || ngram2::up the,FALSE
+false_precision,362,FALSE,FALSE,False,shape::word_le_10,0.9008737864077669,shape::word_le_10,TRUE
+false_precision,385,FALSE,FALSE,False,shape::word_le_10,0.9008737864077669,shape::word_le_10,TRUE
+false_precision,400,FALSE,FALSE,False,shape::word_le_10,0.9008737864077669,shape::word_le_10,FALSE
+false_precision,411,FALSE,FALSE,False,shape::word_le_10,0.9008737864077669,shape::word_le_10,FALSE
+false_precision,434,FALSE,FALSE,False,shape::word_le_10,0.9008737864077669,shape::word_le_10,FALSE
+false_precision,484,FALSE,FALSE,False,ngram2::who have,0.94,ngram2::who have,FALSE
+false_precision,503,FALSE,FALSE,False,shape::word_le_10,0.9008737864077669,shape::word_le_10,FALSE
+false_precision,510,FALSE,FALSE,False,shape::word_le_10,0.9008737864077669,shape::word_le_10,FALSE
+false_precision,518,FALSE,FALSE,False,shape::word_le_10,0.9008737864077669,shape::word_le_10,FALSE
+false_precision,521,FALSE,FALSE,False,shape::word_le_10,0.9008737864077669,shape::word_le_10,FALSE
+false_precision,565,FALSE,FALSE,False,shape::word_le_10,0.9008737864077669,shape::word_le_10,FALSE
+false_precision,598,FALSE,FALSE,False,ngram2::make sure,0.94375,ngram2::make sure,FALSE
+false_precision,647,TRUE,FALSE,True,shape::word_le_10,0.9008737864077669,shape::word_le_10,FALSE
+false_precision,654,FALSE,FALSE,False,shape::word_le_10,0.9008737864077669,shape::word_le_10,FALSE
+false_precision,680,FALSE,FALSE,False,shape::word_le_10,0.9008737864077669,shape::word_le_10,FALSE
+false_precision,702,FALSE,FALSE,False,shape::word_le_10,0.9008737864077669,shape::word_le_10,FALSE
+false_precision,713,FALSE,FALSE,False,shape::word_le_10,0.9008737864077669,shape::word_le_10,FALSE
+false_precision,717,FALSE,FALSE,False,shape::word_le_10,0.9008737864077669,shape::word_le_10,FALSE
+false_precision,722,TRUE,FALSE,True,ngram2::its own,0.9727272727272727,ngram2::its own,FALSE
+false_precision,752,FALSE,FALSE,False,shape::word_le_10,0.9008737864077669,shape::word_le_10,FALSE
+false_precision,784,FALSE,FALSE,False,ngram2::who have,0.94,ngram2::who have,FALSE
+false_precision,808,FALSE,FALSE,False,shape::word_le_10,0.9008737864077669,shape::word_le_10,FALSE
+false_precision,862,FALSE,FALSE,False,ngram2::who have,0.94,ngram2::who have,FALSE
+false_precision,880,FALSE,FALSE,False,ngram2::its own,0.9727272727272727,ngram2::its own,FALSE
+false_precision,917,TRUE,FALSE,True,ngram2::who have,0.94,ngram2::who have,FALSE
+false_precision,921,FALSE,FALSE,False,shape::word_le_10,0.9008737864077669,shape::word_le_10,FALSE
+false_precision,942,FALSE,FALSE,False,ngram2::make sure,0.94375,ngram2::make sure,FALSE
+false_precision,960,FALSE,FALSE,False,shape::word_le_10,0.9008737864077669,shape::word_le_10,FALSE
