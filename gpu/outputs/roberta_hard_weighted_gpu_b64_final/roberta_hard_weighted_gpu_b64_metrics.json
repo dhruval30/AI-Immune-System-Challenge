@@ -1,0 +1,756 @@
+{
+  "model": "/workspace/gpu/roberta-base",
+  "seed": 42,
+  "device": "cuda",
+  "config": {
+    "max_length": 384,
+    "epochs": 12,
+    "train_batch_size": 16,
+    "eval_batch_size": 64,
+    "gradient_accumulation_steps": 1,
+    "effective_train_batch_size": 16,
+    "learning_rate": 1e-05,
+    "weight_decay": 0.01,
+    "adam_eps": 1e-08,
+    "optimizer": "AdamW",
+    "scheduler": "linear_warmup",
+    "warmup_steps": 294,
+    "loss": "sample_weighted_cross_entropy",
+    "weight_strategy": {
+      "hard_clean_TRUE": 2.5,
+      "medium_clean_TRUE": 1.5,
+      "easy_noisy_TRUE": 0.85,
+      "hard_messy_FALSE": 2.0,
+      "medium_messy_FALSE": 1.4,
+      "easy_clean_FALSE": 0.85,
+      "normalization": "divide train split raw weights by train split mean weight"
+    },
+    "feature_thresholds": {
+      "char_length_p90": 220.0,
+      "word_count_p90": 36.0,
+      "punctuation_ratio_p90": 0.061178628754872726,
+      "special_char_ratio_p90": 0.0641208791208791,
+      "weird_token_ratio_p90": 0.05263157894736842,
+      "repeated_token_count_p90": 6.0,
+      "max_word_length_p95": 14.0,
+      "stopword_ratio_p10": 0.23809523809523808
+    }
+  },
+  "split": {
+    "train_rows": 3920,
+    "val_rows": 980,
+    "test_rows": 2100,
+    "stratified": true,
+    "random_state": 42
+  },
+  "epoch_metrics_threshold_0_5": [
+    {
+      "threshold": 0.5,
+      "accuracy": 0.9112244897959184,
+      "precision": 0.8844621513944223,
+      "recall": 0.7928571428571428,
+      "f1": 0.8361581920903954,
+      "roc_auc": 0.9513775510204081,
+      "confusion_matrix": {
+        "labels": [
+          "FALSE",
+          "TRUE"
+        ],
+        "matrix": [
+          [
+            671,
+            29
+          ],
+          [
+            58,
+            222
+          ]
+        ],
+        "format": "[[TN, FP], [FN, TP]]"
+      },
+      "prediction_distribution": {
+        "pred_FALSE": 729,
+        "pred_TRUE": 251
+      },
+      "epoch": 1,
+      "train_weighted_loss": 0.6198532720609587,
+      "train_unweighted_loss": 0.587649086665134,
+      "val_loss": 0.2511809464620084
+    },
+    {
+      "threshold": 0.5,
+      "accuracy": 0.9285714285714286,
+      "precision": 0.9565217391304348,
+      "recall": 0.7857142857142857,
+      "f1": 0.8627450980392157,
+      "roc_auc": 0.9758061224489797,
+      "confusion_matrix": {
+        "labels": [
+          "FALSE",
+          "TRUE"
+        ],
+        "matrix": [
+          [
+            690,
+            10
+          ],
+          [
+            60,
+            220
+          ]
+        ],
+        "format": "[[TN, FP], [FN, TP]]"
+      },
+      "prediction_distribution": {
+        "pred_FALSE": 750,
+        "pred_TRUE": 230
+      },
+      "epoch": 2,
+      "train_weighted_loss": 0.23151555872921434,
+      "train_unweighted_loss": 0.21317517686521217,
+      "val_loss": 0.34036019310659293
+    },
+    {
+      "threshold": 0.5,
+      "accuracy": 0.9581632653061225,
+      "precision": 0.947565543071161,
+      "recall": 0.9035714285714286,
+      "f1": 0.9250457038391224,
+      "roc_auc": 0.9857908163265307,
+      "confusion_matrix": {
+        "labels": [
+          "FALSE",
+          "TRUE"
+        ],
+        "matrix": [
+          [
+            686,
+            14
+          ],
+          [
+            27,
+            253
+          ]
+        ],
+        "format": "[[TN, FP], [FN, TP]]"
+      },
+      "prediction_distribution": {
+        "pred_FALSE": 713,
+        "pred_TRUE": 267
+      },
+      "epoch": 3,
+      "train_weighted_loss": 0.13716368819016736,
+      "train_unweighted_loss": 0.11390516006302241,
+      "val_loss": 0.21974494007168985
+    },
+    {
+      "threshold": 0.5,
+      "accuracy": 0.9142857142857143,
+      "precision": 0.9711538461538461,
+      "recall": 0.7214285714285714,
+      "f1": 0.8278688524590164,
+      "roc_auc": 0.9673571428571428,
+      "confusion_matrix": {
+        "labels": [
+          "FALSE",
+          "TRUE"
+        ],
+        "matrix": [
+          [
+            694,
+            6
+          ],
+          [
+            78,
+            202
+          ]
+        ],
+        "format": "[[TN, FP], [FN, TP]]"
+      },
+      "prediction_distribution": {
+        "pred_FALSE": 772,
+        "pred_TRUE": 208
+      },
+      "epoch": 4,
+      "train_weighted_loss": 0.08128430128301856,
+      "train_unweighted_loss": 0.06879933655430677,
+      "val_loss": 0.5360015543139711
+    },
+    {
+      "threshold": 0.5,
+      "accuracy": 0.9459183673469388,
+      "precision": 0.963265306122449,
+      "recall": 0.8428571428571429,
+      "f1": 0.8990476190476191,
+      "roc_auc": 0.9818214285714285,
+      "confusion_matrix": {
+        "labels": [
+          "FALSE",
+          "TRUE"
+        ],
+        "matrix": [
+          [
+            691,
+            9
+          ],
+          [
+            44,
+            236
+          ]
+        ],
+        "format": "[[TN, FP], [FN, TP]]"
+      },
+      "prediction_distribution": {
+        "pred_FALSE": 735,
+        "pred_TRUE": 245
+      },
+      "epoch": 5,
+      "train_weighted_loss": 0.03806043946349338,
+      "train_unweighted_loss": 0.03139993027416866,
+      "val_loss": 0.4171296723034917
+    },
+    {
+      "threshold": 0.5,
+      "accuracy": 0.9326530612244898,
+      "precision": 0.9652173913043478,
+      "recall": 0.7928571428571428,
+      "f1": 0.8705882352941177,
+      "roc_auc": 0.9657551020408164,
+      "confusion_matrix": {
+        "labels": [
+          "FALSE",
+          "TRUE"
+        ],
+        "matrix": [
+          [
+            692,
+            8
+          ],
+          [
+            58,
+            222
+          ]
+        ],
+        "format": "[[TN, FP], [FN, TP]]"
+      },
+      "prediction_distribution": {
+        "pred_FALSE": 750,
+        "pred_TRUE": 230
+      },
+      "epoch": 6,
+      "train_weighted_loss": 0.025054942210839246,
+      "train_unweighted_loss": 0.019839757355820976,
+      "val_loss": 0.47145844041084756
+    },
+    {
+      "threshold": 0.5,
+      "accuracy": 0.9428571428571428,
+      "precision": 0.9590163934426229,
+      "recall": 0.8357142857142857,
+      "f1": 0.8931297709923665,
+      "roc_auc": 0.9716071428571429,
+      "confusion_matrix": {
+        "labels": [
+          "FALSE",
+          "TRUE"
+        ],
+        "matrix": [
+          [
+            690,
+            10
+          ],
+          [
+            46,
+            234
+          ]
+        ],
+        "format": "[[TN, FP], [FN, TP]]"
+      },
+      "prediction_distribution": {
+        "pred_FALSE": 736,
+        "pred_TRUE": 244
+      },
+      "epoch": 7,
+      "train_weighted_loss": 0.020295053032792307,
+      "train_unweighted_loss": 0.015276536149149807,
+      "val_loss": 0.4407497033780935
+    },
+    {
+      "threshold": 0.5,
+      "accuracy": 0.9193877551020408,
+      "precision": 0.958904109589041,
+      "recall": 0.75,
+      "f1": 0.8416833667334669,
+      "roc_auc": 0.9580969387755103,
+      "confusion_matrix": {
+        "labels": [
+          "FALSE",
+          "TRUE"
+        ],
+        "matrix": [
+          [
+            691,
+            9
+          ],
+          [
+            70,
+            210
+          ]
+        ],
+        "format": "[[TN, FP], [FN, TP]]"
+      },
+      "prediction_distribution": {
+        "pred_FALSE": 761,
+        "pred_TRUE": 219
+      },
+      "epoch": 8,
+      "train_weighted_loss": 0.007136207563287047,
+      "train_unweighted_loss": 0.007695066977389708,
+      "val_loss": 0.7022937830613584
+    },
+    {
+      "threshold": 0.5,
+      "accuracy": 0.923469387755102,
+      "precision": 0.9596412556053812,
+      "recall": 0.7642857142857142,
+      "f1": 0.8508946322067594,
+      "roc_auc": 0.9658494897959184,
+      "confusion_matrix": {
+        "labels": [
+          "FALSE",
+          "TRUE"
+        ],
+        "matrix": [
+          [
+            691,
+            9
+          ],
+          [
+            66,
+            214
+          ]
+        ],
+        "format": "[[TN, FP], [FN, TP]]"
+      },
+      "prediction_distribution": {
+        "pred_FALSE": 757,
+        "pred_TRUE": 223
+      },
+      "epoch": 9,
+      "train_weighted_loss": 0.009548145553901344,
+      "train_unweighted_loss": 0.008931439874719886,
+      "val_loss": 0.6739039941709869
+    },
+    {
+      "threshold": 0.5,
+      "accuracy": 0.9316326530612244,
+      "precision": 0.961038961038961,
+      "recall": 0.7928571428571428,
+      "f1": 0.8688845401174168,
+      "roc_auc": 0.9741556122448979,
+      "confusion_matrix": {
+        "labels": [
+          "FALSE",
+          "TRUE"
+        ],
+        "matrix": [
+          [
+            691,
+            9
+          ],
+          [
+            58,
+            222
+          ]
+        ],
+        "format": "[[TN, FP], [FN, TP]]"
+      },
+      "prediction_distribution": {
+        "pred_FALSE": 749,
+        "pred_TRUE": 231
+      },
+      "epoch": 10,
+      "train_weighted_loss": 0.0072451581023526565,
+      "train_unweighted_loss": 0.005057186111216837,
+      "val_loss": 0.5891075766816432
+    },
+    {
+      "threshold": 0.5,
+      "accuracy": 0.9255102040816326,
+      "precision": 0.96,
+      "recall": 0.7714285714285715,
+      "f1": 0.8554455445544554,
+      "roc_auc": 0.9740382653061225,
+      "confusion_matrix": {
+        "labels": [
+          "FALSE",
+          "TRUE"
+        ],
+        "matrix": [
+          [
+            691,
+            9
+          ],
+          [
+            64,
+            216
+          ]
+        ],
+        "format": "[[TN, FP], [FN, TP]]"
+      },
+      "prediction_distribution": {
+        "pred_FALSE": 755,
+        "pred_TRUE": 225
+      },
+      "epoch": 11,
+      "train_weighted_loss": 0.007954038110263503,
+      "train_unweighted_loss": 0.006896827112166425,
+      "val_loss": 0.665493740840834
+    },
+    {
+      "threshold": 0.5,
+      "accuracy": 0.9326530612244898,
+      "precision": 0.9652173913043478,
+      "recall": 0.7928571428571428,
+      "f1": 0.8705882352941177,
+      "roc_auc": 0.9775663265306123,
+      "confusion_matrix": {
+        "labels": [
+          "FALSE",
+          "TRUE"
+        ],
+        "matrix": [
+          [
+            692,
+            8
+          ],
+          [
+            58,
+            222
+          ]
+        ],
+        "format": "[[TN, FP], [FN, TP]]"
+      },
+      "prediction_distribution": {
+        "pred_FALSE": 750,
+        "pred_TRUE": 230
+      },
+      "epoch": 12,
+      "train_weighted_loss": 0.0030218765642066317,
+      "train_unweighted_loss": 0.003060832634827773,
+      "val_loss": 0.6067850884126157
+    }
+  ],
+  "best_epoch": {
+    "epoch": 3,
+    "val_f1_threshold_0_5": 0.9250457038391224,
+    "checkpoint_dir": "/workspace/gpu/outputs/roberta_hard_weighted_gpu_b64_final2/best_model",
+    "state_dict_path": "/workspace/gpu/outputs/roberta_hard_weighted_gpu_b64_final2/roberta_hard_weighted_gpu_b64_best_state_dict.pt"
+  },
+  "threshold_tuning": {
+    "search_range": [
+      0.3,
+      0.7
+    ],
+    "step": 0.01,
+    "selection_objective": "max_validation_f1",
+    "selected_threshold": 0.5,
+    "table": [
+      {
+        "threshold": 0.3,
+        "precision": 0.9440298507462687,
+        "recall": 0.9035714285714286,
+        "f1": 0.9233576642335767
+      },
+      {
+        "threshold": 0.31,
+        "precision": 0.9440298507462687,
+        "recall": 0.9035714285714286,
+        "f1": 0.9233576642335767
+      },
+      {
+        "threshold": 0.32,
+        "precision": 0.9440298507462687,
+        "recall": 0.9035714285714286,
+        "f1": 0.9233576642335767
+      },
+      {
+        "threshold": 0.33,
+        "precision": 0.9440298507462687,
+        "recall": 0.9035714285714286,
+        "f1": 0.9233576642335767
+      },
+      {
+        "threshold": 0.34,
+        "precision": 0.9440298507462687,
+        "recall": 0.9035714285714286,
+        "f1": 0.9233576642335767
+      },
+      {
+        "threshold": 0.35,
+        "precision": 0.9440298507462687,
+        "recall": 0.9035714285714286,
+        "f1": 0.9233576642335767
+      },
+      {
+        "threshold": 0.36,
+        "precision": 0.9440298507462687,
+        "recall": 0.9035714285714286,
+        "f1": 0.9233576642335767
+      },
+      {
+        "threshold": 0.37,
+        "precision": 0.9440298507462687,
+        "recall": 0.9035714285714286,
+        "f1": 0.9233576642335767
+      },
+      {
+        "threshold": 0.38,
+        "precision": 0.9440298507462687,
+        "recall": 0.9035714285714286,
+        "f1": 0.9233576642335767
+      },
+      {
+        "threshold": 0.39,
+        "precision": 0.9440298507462687,
+        "recall": 0.9035714285714286,
+        "f1": 0.9233576642335767
+      },
+      {
+        "threshold": 0.4,
+        "precision": 0.9440298507462687,
+        "recall": 0.9035714285714286,
+        "f1": 0.9233576642335767
+      },
+      {
+        "threshold": 0.41,
+        "precision": 0.9440298507462687,
+        "recall": 0.9035714285714286,
+        "f1": 0.9233576642335767
+      },
+      {
+        "threshold": 0.42,
+        "precision": 0.9440298507462687,
+        "recall": 0.9035714285714286,
+        "f1": 0.9233576642335767
+      },
+      {
+        "threshold": 0.43,
+        "precision": 0.9440298507462687,
+        "recall": 0.9035714285714286,
+        "f1": 0.9233576642335767
+      },
+      {
+        "threshold": 0.44,
+        "precision": 0.9440298507462687,
+        "recall": 0.9035714285714286,
+        "f1": 0.9233576642335767
+      },
+      {
+        "threshold": 0.45,
+        "precision": 0.9440298507462687,
+        "recall": 0.9035714285714286,
+        "f1": 0.9233576642335767
+      },
+      {
+        "threshold": 0.46,
+        "precision": 0.9440298507462687,
+        "recall": 0.9035714285714286,
+        "f1": 0.9233576642335767
+      },
+      {
+        "threshold": 0.47,
+        "precision": 0.9440298507462687,
+        "recall": 0.9035714285714286,
+        "f1": 0.9233576642335767
+      },
+      {
+        "threshold": 0.48,
+        "precision": 0.9440298507462687,
+        "recall": 0.9035714285714286,
+        "f1": 0.9233576642335767
+      },
+      {
+        "threshold": 0.49,
+        "precision": 0.9440298507462687,
+        "recall": 0.9035714285714286,
+        "f1": 0.9233576642335767
+      },
+      {
+        "threshold": 0.5,
+        "precision": 0.947565543071161,
+        "recall": 0.9035714285714286,
+        "f1": 0.9250457038391224
+      },
+      {
+        "threshold": 0.51,
+        "precision": 0.9473684210526315,
+        "recall": 0.9,
+        "f1": 0.9230769230769231
+      },
+      {
+        "threshold": 0.52,
+        "precision": 0.9473684210526315,
+        "recall": 0.9,
+        "f1": 0.9230769230769231
+      },
+      {
+        "threshold": 0.53,
+        "precision": 0.9473684210526315,
+        "recall": 0.9,
+        "f1": 0.9230769230769231
+      },
+      {
+        "threshold": 0.54,
+        "precision": 0.9473684210526315,
+        "recall": 0.9,
+        "f1": 0.9230769230769231
+      },
+      {
+        "threshold": 0.55,
+        "precision": 0.9473684210526315,
+        "recall": 0.9,
+        "f1": 0.9230769230769231
+      },
+      {
+        "threshold": 0.56,
+        "precision": 0.9473684210526315,
+        "recall": 0.9,
+        "f1": 0.9230769230769231
+      },
+      {
+        "threshold": 0.57,
+        "precision": 0.9473684210526315,
+        "recall": 0.9,
+        "f1": 0.9230769230769231
+      },
+      {
+        "threshold": 0.58,
+        "precision": 0.9473684210526315,
+        "recall": 0.9,
+        "f1": 0.9230769230769231
+      },
+      {
+        "threshold": 0.59,
+        "precision": 0.9473684210526315,
+        "recall": 0.9,
+        "f1": 0.9230769230769231
+      },
+      {
+        "threshold": 0.6,
+        "precision": 0.9473684210526315,
+        "recall": 0.9,
+        "f1": 0.9230769230769231
+      },
+      {
+        "threshold": 0.61,
+        "precision": 0.9473684210526315,
+        "recall": 0.9,
+        "f1": 0.9230769230769231
+      },
+      {
+        "threshold": 0.62,
+        "precision": 0.9473684210526315,
+        "recall": 0.9,
+        "f1": 0.9230769230769231
+      },
+      {
+        "threshold": 0.63,
+        "precision": 0.9473684210526315,
+        "recall": 0.9,
+        "f1": 0.9230769230769231
+      },
+      {
+        "threshold": 0.64,
+        "precision": 0.9473684210526315,
+        "recall": 0.9,
+        "f1": 0.9230769230769231
+      },
+      {
+        "threshold": 0.65,
+        "precision": 0.9473684210526315,
+        "recall": 0.9,
+        "f1": 0.9230769230769231
+      },
+      {
+        "threshold": 0.66,
+        "precision": 0.9473684210526315,
+        "recall": 0.9,
+        "f1": 0.9230769230769231
+      },
+      {
+        "threshold": 0.67,
+        "precision": 0.9473684210526315,
+        "recall": 0.9,
+        "f1": 0.9230769230769231
+      },
+      {
+        "threshold": 0.68,
+        "precision": 0.9473684210526315,
+        "recall": 0.9,
+        "f1": 0.9230769230769231
+      },
+      {
+        "threshold": 0.69,
+        "precision": 0.9473684210526315,
+        "recall": 0.9,
+        "f1": 0.9230769230769231
+      },
+      {
+        "threshold": 0.7,
+        "precision": 0.9471698113207547,
+        "recall": 0.8964285714285715,
+        "f1": 0.9211009174311927
+      }
+    ]
+  },
+  "validation_final": {
+    "threshold": 0.5,
+    "accuracy": 0.9581632653061225,
+    "precision": 0.947565543071161,
+    "recall": 0.9035714285714286,
+    "f1": 0.9250457038391224,
+    "roc_auc": 0.9857908163265307,
+    "confusion_matrix": {
+      "labels": [
+        "FALSE",
+        "TRUE"
+      ],
+      "matrix": [
+        [
+          686,
+          14
+        ],
+        [
+          27,
+          253
+        ]
+      ],
+      "format": "[[TN, FP], [FN, TP]]"
+    },
+    "prediction_distribution": {
+      "pred_FALSE": 713,
+      "pred_TRUE": 267
+    }
+  },
+  "test_prediction_distribution": {
+    "pred_FALSE": 1508,
+    "pred_TRUE": 592
+  },
+  "paths": {
+    "metrics": "/workspace/gpu/outputs/roberta_hard_weighted_gpu_b64_final2/roberta_hard_weighted_gpu_b64_metrics.json",
+    "val_predictions": "/workspace/gpu/outputs/roberta_hard_weighted_gpu_b64_final2/roberta_hard_weighted_gpu_b64_val_predictions.csv",
+    "error_analysis": "/workspace/gpu/outputs/roberta_hard_weighted_gpu_b64_final2/roberta_hard_weighted_gpu_b64_error_analysis.csv",
+    "test_probabilities": "/workspace/gpu/outputs/roberta_hard_weighted_gpu_b64_final2/roberta_hard_weighted_gpu_b64_test_probabilities.csv",
+    "submission": "/workspace/gpu/outputs/roberta_hard_weighted_gpu_b64_final2/roberta_hard_weighted_gpu_b64_submission.csv",
+    "notes": "/workspace/gpu/outputs/roberta_hard_weighted_gpu_b64_final2/roberta_hard_weighted_gpu_b64_notes.md",
+    "weight_summary": "/workspace/gpu/outputs/roberta_hard_weighted_gpu_b64_final2/roberta_hard_weighted_gpu_b64_weight_summary.csv",
+    "feature_thresholds": "/workspace/gpu/outputs/roberta_hard_weighted_gpu_b64_final2/roberta_hard_weighted_gpu_b64_feature_thresholds.json",
+    "best_model_dir": "/workspace/gpu/outputs/roberta_hard_weighted_gpu_b64_final2/best_model",
+    "best_state_dict": "/workspace/gpu/outputs/roberta_hard_weighted_gpu_b64_final2/roberta_hard_weighted_gpu_b64_best_state_dict.pt"
+  },
+  "comparison_target": {
+    "submission": "outputs/roberta_base/roberta_base_submission.csv",
+    "public_lb": 0.90909091
+  }
+}

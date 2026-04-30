@@ -1,0 +1,92 @@
+text,true_label,pred_label,pred_prob_TRUE,error_type,confidence,abnormal_score,hard_category,raw_sample_weight_if_trained
+"Investing services can be a valuable tool [...tag=”finance,”]
+Can Affiliate Marketers Use ClickBank to Promote Their Own Products.",FALSE,TRUE,0.99897087,false_positive,0.99897087,3,hard_messy_FALSE,2.0
+"After investing many sleepessees resting looking into the various gadgets on offer, we’ve located that the very best robot vacuum cleaners are those that are very easy to use, easy to clean up as well as fit your house and also lifestyle.",FALSE,TRUE,0.9987243,false_positive,0.9987243,3,hard_messy_FALSE,2.0
+"'',
+      //         ""Início brigade, que, de longascumbus vestigia fumus\n"",
+      //         ""Terra, cùm pluvias cùm sordida cùm sordida pluvia\n"",
+      //         ""Sed, dum tibi, deus, non fuit tibi, deus, non fuit.",FALSE,TRUE,0.9987179,false_positive,0.9987179,6,hard_messy_FALSE,2.0
+"Приложиите в изб Millennimited by space, and focus only на тексте.",FALSE,TRUE,0.99868065,false_positive,0.99868065,1,standard_FALSE,1.0
+"This sum total is equal you fund, as it paid. I will give you the option to pay for it in two payments if that would be more comfortable for you.",FALSE,TRUE,0.99670094,false_positive,0.99670094,0,easy_clean_FALSE,0.85
+""")
+puts message.to_s.endsWith?$? ? """":""..."") # remove trailing newline if present
+puts message.",FALSE,TRUE,0.9964056,false_positive,0.9964056,5,hard_messy_FALSE,2.0
+"Renewable sources might provide a more efficient impact regeneration for future growth.
+Smarter and Greentech solutions are needed to achieve our sustainability goals.",FALSE,TRUE,0.9962835,false_positive,0.9962835,1,standard_FALSE,1.0
+"Při přípravovaném jídlineno nakصات, rypcem, vystřihem a vložíme do misky.",FALSE,TRUE,0.9956423,false_positive,0.9956423,0,easy_clean_FALSE,0.85
+"Hence choosing the appropriate temperature relying on whether it as necessary. Based on the passage above, Could you paraphrase the sentence ""The temperature of the mixture should be adjusted to achieve the desired viscosity without overheating the polymer"" in simpler terms.",FALSE,TRUE,0.9952887,false_positive,0.9952887,3,hard_messy_FALSE,2.0
+"Incorporare la diversité dans lec ou nos en musique , et laiss les couleurs s’entremêler
+Il y a un temps où nous avons été très amis
+Je te revo, et je me rappelle
+Nous étions si heureux, si heureux
+Avec la musique, et le soleil, et la mer
+Nous avons ri, et chanté, et dansé, et roulé dans la boue
+Avec les amis, et la paix, et le soleil, et la mer
+Je te revo, et je me rappelle
+Et j’oublie tout, et je me rappelle
+Je me souviens de la maison, de la rue
+Et de la place, et de la fontaine
+Et de la rue, et de la place, et de la fontaine
+Et de la place, et de la fontaine
+Avec la musique, et le soleil, et la mer
+Nous avons ri, et chanté, et dansé, et.",FALSE,TRUE,0.9907574,false_positive,0.9907574,5,hard_messy_FALSE,2.0
+"Ä°s part, we’
+åä»åttes och det var inte jag jag själv kunde se och jag gick och jag tog mig fram och jag tillade mig och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag.",FALSE,TRUE,0.9871782,false_positive,0.9871782,4,hard_messy_FALSE,2.0
+"Due west of town what remained was a vast, barren theocracy, hostile and inhospitable to the needs of the people, but the city's leaders had grown fat on its own success.",FALSE,TRUE,0.9239178,false_positive,0.9239178,0,easy_clean_FALSE,0.85
+"First Social Media. Social Media Channels. What is Facebook Marketing? And on top through the internet, people can get to know what is going on in the world, and get to know their friends.",FALSE,TRUE,0.90790665,false_positive,0.90790665,1,standard_FALSE,1.0
+"Dubrownia amazonica, named elegién in Portuguese (""beautiful eye"" from Tupi and Guarani languages), is a species of moth in the family Saturniidae, commonly known as the giant silk moths.",FALSE,TRUE,0.805061,false_positive,0.805061,0,easy_clean_FALSE,0.85
+"Our research team who are responsible of gathering materials and conclusions for the project are still behind on several goals, and there's nevertheless a question of exactly how long it will take to get to the conclusion of the project.",TRUE,FALSE,0.000579411,false_negative,0.9994206,3,standard_TRUE,1.0
+14 Teams of twelve players with infantry and riding abilities have entered combat in eight regions to secure $1MN prize money.,TRUE,FALSE,0.0006193001,false_negative,0.9993807,0,hard_clean_TRUE,2.5
+"For an organized, confident ride at Draft Fiddle #7 we’ll head out from the parking at Woldson Rd and take the trail to the intersection of Woldson Rd and the Old North Fork Road.",TRUE,FALSE,0.0006332096,false_negative,0.9993668,1,hard_clean_TRUE,2.5
+"At certain temperatures the roast enhances specific coffee twigs that build flavors that complement the deep, chocolatey, rich; and creamy, buttery, nutty notes of the coffee.",TRUE,FALSE,0.00069743296,false_negative,0.99930257,0,hard_clean_TRUE,2.5
+"what would be cohesive in this sentence?)
+Naah,I love it. Can you take a stab at this line?""The air is so thick with the smell of death that I can't breathe.",TRUE,FALSE,0.0011382673,false_negative,0.99886173,0,hard_clean_TRUE,2.5
+"Whether personal preferences lean far-drawn toward down-to-vertical or across-the-cliff cleaning systems, few invest well enough in the best cleaning tools.",TRUE,FALSE,0.0014062184,false_negative,0.9985938,0,hard_clean_TRUE,2.5
+"orraine
+
+A: Alright!
+
+T values for all others. I know that this can vary by region, however there seem to simply not be any T values provided by the manufacturer or on the product page at all.",TRUE,FALSE,0.0016003547,false_negative,0.9983997,2,medium_clean_TRUE,1.5
+"Sub Menu Products Browse our carefully-by curated smidge and smoggle lines, featuring snack supplements from trusted brand name manufacturers.",TRUE,FALSE,0.001604524,false_negative,0.9983955,1,hard_clean_TRUE,2.5
+"What are blackjack etiquette?
+Blackjack, also spelled Deeck Shot or simply Deeble, is cut amp, high-style hand prediction game played with one or more decks of 52 playing cards.",TRUE,FALSE,0.0016413906,false_negative,0.9983586,0,hard_clean_TRUE,2.5
+"Is it covered everywhere I look? Probably not!}
+\hyperle{3pt}{12}{14pt]]:
+4rd ed.",TRUE,FALSE,0.0018891268,false_negative,0.9981109,4,easy_noisy_TRUE,0.85
+"🎂 Meanwhile in the US Senate chamber, soon-to-be-formers of ""the Squad"" make various noises and do little to nothing.",TRUE,FALSE,0.0021012283,false_negative,0.99789876,2,medium_clean_TRUE,1.5
+"Student says: 
+
+Hey professor/chat assistant/animator: 
+
+Amir: sorry for not posting when I missed my chance to do so yesterday.",TRUE,FALSE,0.0032179873,false_negative,0.996782,2,medium_clean_TRUE,1.5
+"Deviate menu items to your taste preferences or avoid listed ingredients available ahead of ordering your meal items.
+How Does The Keto Morning Mistake Happel?
+How Does The Keto Morning Mistake Happel.",TRUE,FALSE,0.00345002,false_negative,0.99654996,2,medium_clean_TRUE,1.5
+"How having others in it varies depending, rather, whenever someone wants it makes the learner feel threatened or inadequate."" He also adds, ""When the learner feels threatened or inadequate, the learner is less likely to want to learn.",TRUE,FALSE,0.0039957985,false_negative,0.9960042,3,standard_TRUE,1.0
+"Using fine scissors specifically recommended but a standard shoeshask or pet clip won't hurt), or even a pair of fingering nail sheaves.",TRUE,FALSE,0.004964341,false_negative,0.99503565,0,hard_clean_TRUE,2.5
+"Как аутор а комику герова из Tarzan, а то и спорно Туга Ніедор. А наша босса Туга не вдається до нас.",TRUE,FALSE,0.0050807986,false_negative,0.9949192,0,hard_clean_TRUE,2.5
+Laying out wire baskets filled the dining theme of order and harmony. Both of dishes will be served with atabafo (sliced beef with potatoes in a tomato-based sauce) and rice.,TRUE,FALSE,0.0052307094,false_negative,0.9947693,0,hard_clean_TRUE,2.5
+"What planning processes can one initiate should I require'?""}\
+user:{s} {""assistant,""/s}  
+
+The above response indicates the user wants to know if there is any specific planning process they can initiate in order to achieve their goal.",TRUE,FALSE,0.0053009093,false_negative,0.9946991,6,easy_noisy_TRUE,0.85
+"[DECODE ERROR] - The value for the ""decode"" parameter of the ""decode"" function is not valid.",TRUE,FALSE,0.012765809,false_negative,0.9872342,2,medium_clean_TRUE,1.5
+[DECODE ERROR] - Error decoding the input stream.,TRUE,FALSE,0.017239345,false_negative,0.98276067,2,medium_clean_TRUE,1.5
+"How spicy can this burger heat it all buy? Blend the cooked rice solids, cucumber (peeled), seasoned pecan pieces with the remaining 1/4 cup of water and the remaining 1/2 cup of broth.",TRUE,FALSE,0.022427335,false_negative,0.9775727,1,hard_clean_TRUE,2.5
+[DECODE ERROR] 2.,TRUE,FALSE,0.023903878,false_negative,0.9760961,2,medium_clean_TRUE,1.5
+"Book descriptions on Amazon . The New Testimony library, consisting of over cooking disease, tells things about a healthy and balanced life.",TRUE,FALSE,0.027015366,false_negative,0.9729846,0,hard_clean_TRUE,2.5
+"We get inside looks online at casting presentations where Disney is reportedly courcing Emma Watson Who Soulful Native Caribiennes Are Making Their Mark In Hollywood And How Theyre Fighting To Preserve Their Culture
+We get inside looks online at casting presentations where Disney is reportedly courcing Emma Watson
+Who Soulful Native Caribiennes Are Making Their Mark In Hollywood And How Theyre Fighting To Preserve Their Culture
+The Walt Disney Company has announced that it will be producing a live-action remake of its animated classic ""Mulan,"" which will be released on November 2, 2018.",TRUE,FALSE,0.0866753,false_negative,0.9133247,4,easy_noisy_TRUE,0.85
+"Let that glow come ‘out’.
+
+```{center_dp}
+![img-1_pQ9s.d8Tu](theory-3_img_1_pQ9s.",TRUE,FALSE,0.104160614,false_negative,0.8958394,5,easy_noisy_TRUE,0.85
+"What is lost of the time is used"",
+        objects=[""food"", True], verbosity=0)
+
+      to_buy_str = items_to_string(to_buy)
+
+      if to_buy_str.",TRUE,FALSE,0.11124628,false_negative,0.8887537,5,easy_noisy_TRUE,0.85
+Reply. 6500. This living victoria v3 4 door wardrobe exquisite 97mm thick tough glass painted glass door wardrobe is a wardrobe with the perfect combination of style and functionality.,TRUE,FALSE,0.18079768,false_negative,0.8192023,1,hard_clean_TRUE,2.5
