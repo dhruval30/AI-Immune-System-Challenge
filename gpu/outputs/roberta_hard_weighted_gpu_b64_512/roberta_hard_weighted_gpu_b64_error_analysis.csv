@@ -1,0 +1,100 @@
+text,true_label,pred_label,pred_prob_TRUE,error_type,confidence,abnormal_score,hard_category,raw_sample_weight_if_trained
+"Investing services can be a valuable tool [...tag=”finance,”]
+Can Affiliate Marketers Use ClickBank to Promote Their Own Products.",FALSE,TRUE,0.99891806,false_positive,0.99891806,3,hard_messy_FALSE,2.0
+"After investing many sleepessees resting looking into the various gadgets on offer, we’ve located that the very best robot vacuum cleaners are those that are very easy to use, easy to clean up as well as fit your house and also lifestyle.",FALSE,TRUE,0.9987993,false_positive,0.9987993,3,hard_messy_FALSE,2.0
+"'',
+      //         ""Início brigade, que, de longascumbus vestigia fumus\n"",
+      //         ""Terra, cùm pluvias cùm sordida cùm sordida pluvia\n"",
+      //         ""Sed, dum tibi, deus, non fuit tibi, deus, non fuit.",FALSE,TRUE,0.9984669,false_positive,0.9984669,6,hard_messy_FALSE,2.0
+"Приложиите в изб Millennimited by space, and focus only на тексте.",FALSE,TRUE,0.99837697,false_positive,0.99837697,1,standard_FALSE,1.0
+"This sum total is equal you fund, as it paid. I will give you the option to pay for it in two payments if that would be more comfortable for you.",FALSE,TRUE,0.99797755,false_positive,0.99797755,0,easy_clean_FALSE,0.85
+""")
+puts message.to_s.endsWith?$? ? """":""..."") # remove trailing newline if present
+puts message.",FALSE,TRUE,0.9979752,false_positive,0.9979752,5,hard_messy_FALSE,2.0
+"Hence choosing the appropriate temperature relying on whether it as necessary. Based on the passage above, Could you paraphrase the sentence ""The temperature of the mixture should be adjusted to achieve the desired viscosity without overheating the polymer"" in simpler terms.",FALSE,TRUE,0.9979729,false_positive,0.9979729,3,hard_messy_FALSE,2.0
+"Due west of town what remained was a vast, barren theocracy, hostile and inhospitable to the needs of the people, but the city's leaders had grown fat on its own success.",FALSE,TRUE,0.997416,false_positive,0.997416,0,easy_clean_FALSE,0.85
+"PersonallyI think we dramatically minimized everything that goes in to building a sustainable model. Based on the passage above, How did the author's experience with a previous company compare to their current company in terms of providing resources and support to employees.",FALSE,TRUE,0.99722797,false_positive,0.99722797,3,hard_messy_FALSE,2.0
+"Při přípravovaném jídlineno nakصات, rypcem, vystřihem a vložíme do misky.",FALSE,TRUE,0.996799,false_positive,0.996799,0,easy_clean_FALSE,0.85
+"Ä°s part, we’
+åä»åttes och det var inte jag jag själv kunde se och jag gick och jag tog mig fram och jag tillade mig och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag och jag.",FALSE,TRUE,0.99651706,false_positive,0.99651706,4,hard_messy_FALSE,2.0
+"Dubrownia amazonica, named elegién in Portuguese (""beautiful eye"" from Tupi and Guarani languages), is a species of moth in the family Saturniidae, commonly known as the giant silk moths.",FALSE,TRUE,0.99216616,false_positive,0.99216616,0,easy_clean_FALSE,0.85
+"Incorporare la diversité dans lec ou nos en musique , et laiss les couleurs s’entremêler
+Il y a un temps où nous avons été très amis
+Je te revo, et je me rappelle
+Nous étions si heureux, si heureux
+Avec la musique, et le soleil, et la mer
+Nous avons ri, et chanté, et dansé, et roulé dans la boue
+Avec les amis, et la paix, et le soleil, et la mer
+Je te revo, et je me rappelle
+Et j’oublie tout, et je me rappelle
+Je me souviens de la maison, de la rue
+Et de la place, et de la fontaine
+Et de la rue, et de la place, et de la fontaine
+Et de la place, et de la fontaine
+Avec la musique, et le soleil, et la mer
+Nous avons ri, et chanté, et dansé, et.",FALSE,TRUE,0.99195135,false_positive,0.99195135,5,hard_messy_FALSE,2.0
+"First Social Media. Social Media Channels. What is Facebook Marketing? And on top through the internet, people can get to know what is going on in the world, and get to know their friends.",FALSE,TRUE,0.9790598,false_positive,0.9790598,1,standard_FALSE,1.0
+"Our research team who are responsible of gathering materials and conclusions for the project are still behind on several goals, and there's nevertheless a question of exactly how long it will take to get to the conclusion of the project.",TRUE,FALSE,0.00031118258,false_negative,0.9996888,3,standard_TRUE,1.0
+"At certain temperatures the roast enhances specific coffee twigs that build flavors that complement the deep, chocolatey, rich; and creamy, buttery, nutty notes of the coffee.",TRUE,FALSE,0.00031329726,false_negative,0.9996867,0,hard_clean_TRUE,2.5
+"For an organized, confident ride at Draft Fiddle #7 we’ll head out from the parking at Woldson Rd and take the trail to the intersection of Woldson Rd and the Old North Fork Road.",TRUE,FALSE,0.0003269734,false_negative,0.999673,1,hard_clean_TRUE,2.5
+"How having others in it varies depending, rather, whenever someone wants it makes the learner feel threatened or inadequate."" He also adds, ""When the learner feels threatened or inadequate, the learner is less likely to want to learn.",TRUE,FALSE,0.00034004304,false_negative,0.99965996,3,standard_TRUE,1.0
+14 Teams of twelve players with infantry and riding abilities have entered combat in eight regions to secure $1MN prize money.,TRUE,FALSE,0.00034072256,false_negative,0.9996593,0,hard_clean_TRUE,2.5
+"Book descriptions on Amazon . The New Testimony library, consisting of over cooking disease, tells things about a healthy and balanced life.",TRUE,FALSE,0.0003591856,false_negative,0.9996408,0,hard_clean_TRUE,2.5
+"Sub Menu Products Browse our carefully-by curated smidge and smoggle lines, featuring snack supplements from trusted brand name manufacturers.",TRUE,FALSE,0.00038544874,false_negative,0.99961454,1,hard_clean_TRUE,2.5
+"} - Write as if responding \\ to AT's request for some advice.]
+
+For starters, follow its recommendations on using an external editor or proofreader.",TRUE,FALSE,0.0004294835,false_negative,0.9995705,2,medium_clean_TRUE,1.5
+"Student says: 
+
+Hey professor/chat assistant/animator: 
+
+Amir: sorry for not posting when I missed my chance to do so yesterday.",TRUE,FALSE,0.00055336166,false_negative,0.99944663,2,medium_clean_TRUE,1.5
+"Is it covered everywhere I look? Probably not!}
+\hyperle{3pt}{12}{14pt]]:
+4rd ed.",TRUE,FALSE,0.0007436114,false_negative,0.9992564,4,easy_noisy_TRUE,0.85
+"Как аутор а комику герова из Tarzan, а то и спорно Туга Ніедор. А наша босса Туга не вдається до нас.",TRUE,FALSE,0.0007984679,false_negative,0.99920154,0,hard_clean_TRUE,2.5
+"[DECODE ERROR] - The value for the ""decode"" parameter of the ""decode"" function is not valid.",TRUE,FALSE,0.0009333302,false_negative,0.99906665,2,medium_clean_TRUE,1.5
+"orraine
+
+A: Alright!
+
+T values for all others. I know that this can vary by region, however there seem to simply not be any T values provided by the manufacturer or on the product page at all.",TRUE,FALSE,0.0010418365,false_negative,0.9989582,2,medium_clean_TRUE,1.5
+"These findings differ profoundly from those observed among actors and provide other insights for plant biosis and evolution insights. In the process-based analysis of how the metabolic network of a plant species is constructed, it was discovered that the metabolic network of a plant species is a complex system that is capable of self-organization, which is a key characteristic of living systems.",TRUE,FALSE,0.0010583613,false_negative,0.99894166,4,easy_noisy_TRUE,0.85
+[DECODE ERROR] 2.,TRUE,FALSE,0.0011499795,false_negative,0.99885005,2,medium_clean_TRUE,1.5
+"🎂 Meanwhile in the US Senate chamber, soon-to-be-formers of ""the Squad"" make various noises and do little to nothing.",TRUE,FALSE,0.0012280471,false_negative,0.99877197,2,medium_clean_TRUE,1.5
+"What planning processes can one initiate should I require'?""}\
+user:{s} {""assistant,""/s}  
+
+The above response indicates the user wants to know if there is any specific planning process they can initiate in order to achieve their goal.",TRUE,FALSE,0.0013836912,false_negative,0.99861634,6,easy_noisy_TRUE,0.85
+"bool ok;
+
+ok=isPerfectDay(s.text);
+ std:::out if(ok)this is true*/  std::endl;
+760     */
+```
+
+The program reads a string from the user and checks whether it is a perfect day.",TRUE,FALSE,0.0014093475,false_negative,0.99859065,5,easy_noisy_TRUE,0.85
+[DECODE ERROR] - Error decoding the input stream.,TRUE,FALSE,0.0016581457,false_negative,0.99834186,2,medium_clean_TRUE,1.5
+""", you were referring about ?
+
+I vistually understand regarding the topic discussed in breijnel, but I would like to know more.",TRUE,FALSE,0.0019520742,false_negative,0.99804795,1,hard_clean_TRUE,2.5
+"Deviate menu items to your taste preferences or avoid listed ingredients available ahead of ordering your meal items.
+How Does The Keto Morning Mistake Happel?
+How Does The Keto Morning Mistake Happel.",TRUE,FALSE,0.0024174731,false_negative,0.99758255,2,medium_clean_TRUE,1.5
+Laying out wire baskets filled the dining theme of order and harmony. Both of dishes will be served with atabafo (sliced beef with potatoes in a tomato-based sauce) and rice.,TRUE,FALSE,0.008555713,false_negative,0.9914443,0,hard_clean_TRUE,2.5
+"what would be cohesive in this sentence?)
+Naah,I love it. Can you take a stab at this line?""The air is so thick with the smell of death that I can't breathe.",TRUE,FALSE,0.009526642,false_negative,0.99047333,0,hard_clean_TRUE,2.5
+"What is lost of the time is used"",
+        objects=[""food"", True], verbosity=0)
+
+      to_buy_str = items_to_string(to_buy)
+
+      if to_buy_str.",TRUE,FALSE,0.009642706,false_negative,0.9903573,5,easy_noisy_TRUE,0.85
+"- user : ""Where else has this old-school train station design been used""--classic, quaint setting
+
+            ```python
+            print(""The old-school train station design has been used in many places.",TRUE,FALSE,0.009722983,false_negative,0.990277,5,easy_noisy_TRUE,0.85
+relatively fixed to the allocated objects as slack was too much or too compared to device-mapper routines. Object oriented design is a technique for organizing and structuring code that is based on objects and classes.,TRUE,FALSE,0.020351214,false_negative,0.97964877,1,hard_clean_TRUE,2.5
+"Using fine scissors specifically recommended but a standard shoeshask or pet clip won't hurt), or even a pair of fingering nail sheaves.",TRUE,FALSE,0.023711031,false_negative,0.976289,0,hard_clean_TRUE,2.5
+"Not-so-scienty) research I condo, come swimming, you'll accomplish another goal. She reads avidly, and is fond of science fiction and fantasy.",TRUE,FALSE,0.03258275,false_negative,0.96741724,1,hard_clean_TRUE,2.5
+"Visual and spatial embellisher, such a feeling, philosophy has in the former been the subject more commonly. The idea of the soul as a separate entity from the body, which is not to say that he has a certain objectivity about it.",TRUE,FALSE,0.055922154,false_negative,0.94407785,3,standard_TRUE,1.0
