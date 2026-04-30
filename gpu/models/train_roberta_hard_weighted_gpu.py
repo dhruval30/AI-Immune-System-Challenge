@@ -48,10 +48,10 @@ INSTALL_CMD = "pip install pandas numpy scikit-learn tqdm torch transformers acc
 
 SEED = 42
 MODEL_NAME = "/workspace/gpu/roberta-base"
-MAX_LENGTH = 256
-EPOCHS = 6
-TRAIN_BATCH_SIZE = 64
-EVAL_BATCH_SIZE = 128
+MAX_LENGTH = 384
+EPOCHS = 12
+TRAIN_BATCH_SIZE = 16
+EVAL_BATCH_SIZE = 64
 GRADIENT_ACCUMULATION_STEPS = 1
 LEARNING_RATE = 1e-5
 WEIGHT_DECAY = 0.01
@@ -62,7 +62,7 @@ THRESHOLD_GRID = np.round(np.arange(0.30, 0.701, 0.01), 2)
 
 ROOT_DIR = Path(__file__).resolve().parents[1]
 DATA_DIR = ROOT_DIR / "data"
-OUTPUT_DIR = ROOT_DIR / "outputs" / "roberta_hard_weighted_gpu_b64"
+OUTPUT_DIR = ROOT_DIR / "outputs" / "roberta_hard_weighted_gpu_b64_final2"
 BEST_MODEL_DIR = OUTPUT_DIR / "best_model"
 BEST_STATE_DICT_PATH = OUTPUT_DIR / "roberta_hard_weighted_gpu_b64_best_state_dict.pt"
 

@@ -19,6 +19,10 @@ The remote `/workspace/gpu/roberta-base` directory should already exist and cont
 - `data/solution_format.csv`
 - `models/train_roberta_base.py`
 - `models/train_roberta_base_seed_sweep.py`
+- `models/train_roberta_hard_weighted_gpu.py`
+- `models/train_roberta_hard_weighted_cv_gpu.py`
+- `models/train_roberta_hard_weighted_sweep_gpu.py`
+- `models/make_probability_count_candidates.py`
 - `outputs/`
 
 ## Copy To Remote
@@ -87,6 +91,51 @@ python models/make_probability_count_candidates.py \
   --output-dir outputs/roberta_hard_weighted_gpu_b64/count_candidates \
   --name roberta_hard_weighted_gpu_b64 \
   --counts 568 572 577 582 586
+```
+
+## Hard-Weighted CV Ensemble
+
+The next stronger GPU run keeps the same hard-weighted recipe, but trains it across
+stratified folds and averages fold test probabilities:
+
+```bash
+python models/train_roberta_hard_weighted_cv_gpu.py
+```
+
+Default output:
+
+```text
+outputs/roberta_hard_weighted_cv_gpu/roberta_hard_weighted_cv_gpu_submission.csv
+outputs/roberta_hard_weighted_cv_gpu/roberta_hard_weighted_cv_gpu_test_probabilities.csv
+outputs/roberta_hard_weighted_cv_gpu/count_candidates/
+```
+
+It does not save fold model weights by default. If checkpoint inference is needed later:
+
+```bash
+python models/train_roberta_hard_weighted_cv_gpu.py --save-fold-models
+```
+
+## Hard-Weighted Hyperparameter Sweep
+
+To run a curated set of strong hard-weighted variants in one script:
+
+```bash
+python models/train_roberta_hard_weighted_sweep_gpu.py
+```
+
+This writes one subdirectory per run plus ensemble outputs:
+
+```text
+outputs/roberta_hard_weighted_gpu_sweep/
+outputs/roberta_hard_weighted_gpu_sweep/ensembles/
+outputs/roberta_hard_weighted_gpu_sweep/roberta_hard_weighted_gpu_sweep_summary.csv
+```
+
+It does not save `.pt` or `.safetensors` files. For a shorter first pass:
+
+```bash
+python models/train_roberta_hard_weighted_sweep_gpu.py --profile fast
 ```
 
 ## Submission Files
