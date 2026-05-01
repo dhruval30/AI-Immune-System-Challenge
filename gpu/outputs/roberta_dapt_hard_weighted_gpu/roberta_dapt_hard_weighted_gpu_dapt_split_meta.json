@@ -1,8 +1,0 @@
-{
-  "seed": 42,
-  "use_test_text_for_dapt": true,
-  "combined_rows": 7000,
-  "mlm_train_rows": 6650,
-  "mlm_eval_rows": 350,
-  "eval_split": 0.05
-}
