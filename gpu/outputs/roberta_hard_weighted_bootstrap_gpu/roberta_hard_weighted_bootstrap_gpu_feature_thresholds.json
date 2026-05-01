@@ -1,0 +1,10 @@
+{
+  "char_length_p90": 220.0,
+  "word_count_p90": 36.0,
+  "punctuation_ratio_p90": 0.061178628754872726,
+  "special_char_ratio_p90": 0.0641208791208791,
+  "weird_token_ratio_p90": 0.05263157894736842,
+  "repeated_token_count_p90": 6.0,
+  "max_word_length_p95": 14.0,
+  "stopword_ratio_p10": 0.23809523809523808
+}
