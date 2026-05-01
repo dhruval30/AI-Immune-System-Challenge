@@ -1,0 +1,6 @@
+filename,bootstrap_weight,hard_weight,threshold,pred_FALSE,pred_TRUE,changed_vs_hard_thr0p32,changed_vs_bootstrap_thr0p32,avg_abs_prob_delta_between_sources,max_abs_prob_delta_between_sources
+/Users/dhruval/Documents/AI-Immune-System-Challenge/gpu/outputs/roberta_hard_bootstrap_blend/roberta_hard_bootstrap_blend_boot050_hard050_thr0p32.csv,0.5,0.5,0.32,1482,618,21,17,0.017942953737714287,0.9787785915
+/Users/dhruval/Documents/AI-Immune-System-Challenge/gpu/outputs/roberta_hard_bootstrap_blend/roberta_hard_bootstrap_blend_boot060_hard040_thr0p32.csv,0.6,0.4,0.32,1480,620,25,13,0.017942953737714287,0.9787785915
+/Users/dhruval/Documents/AI-Immune-System-Challenge/gpu/outputs/roberta_hard_bootstrap_blend/roberta_hard_bootstrap_blend_boot070_hard030_thr0p32.csv,0.7,0.30000000000000004,0.32,1482,618,31,7,0.017942953737714287,0.9787785915
+/Users/dhruval/Documents/AI-Immune-System-Challenge/gpu/outputs/roberta_hard_bootstrap_blend/roberta_hard_bootstrap_blend_boot080_hard020_thr0p32.csv,0.8,0.19999999999999996,0.32,1484,616,33,5,0.017942953737714287,0.9787785915
+/Users/dhruval/Documents/AI-Immune-System-Challenge/gpu/outputs/roberta_hard_bootstrap_blend/roberta_hard_bootstrap_blend_boot090_hard010_thr0p32.csv,0.9,0.09999999999999998,0.32,1481,619,36,2,0.017942953737714287,0.9787785915
